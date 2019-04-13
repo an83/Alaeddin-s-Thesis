@@ -1,24 +1,8 @@
 
 \section{AR Annotation on Social Video Sharing}
 \label{sec:video}
-% =============== PREVIOUS WORK ================
 
-% A. Nassani, H. Kim, G. Lee, M. Billinghurst, T. Langlotz, and R. W. Lindeman, “Augmented reality annotation for social video sharing,” in SIGGRAPH ASIA 2016 Mobile Graphics and Interactive Applications on - SA '16, 2016, pp. 1–5.
-
-% =============== PREVIOUS WORK ================
-
-
-% \subsection{Abstract}
-
-In this work we investigate an AR interface displaying comments directly on the streamed live video. Our described prototype allows remote spectators to perceive the streamed live video with different interfaces for displaying the comments, including an interface which puts AR annotation feedback directly on the shared video, and another interface that provides feedback in a separate widnow. We conducted a user study to compare different ways of visualising comments and found that users prefer having comments directly in the AR view rather than on a separate list. We discuss the implications of this research and directions for future work.
-
-% \subsection{Introduction}
-
-% Advancements in mobile phone hardware and increased network connectivity made live video streaming apps popular among smart phone users. Live video streaming apps have been used for sharing social experiences in various contexts. For instance, a person attending a conference or a concert could use her mobile phone to stream the event to her friends and family who could not be there. Similarly, live video streaming apps have also been used for Social journalism turning laypersons into live reporters. Consequently, these apps are now available from different sources with applications such as Periscope\footnote{https://www.periscope.tv/} and Facebook Live\footnote{https://live.fb.com/} among the most popular apps. 
-
-% They all share common features such as using the phones' camera which can be either pointed outward (recording what the user sees) or inward (where the user appears in the video) and allowing users to send a live video stream of what they are doing to hundreds or even thousands of viewers. The purpose of sharing the video is social, so the experience is improved if the viewer can also provide feedback. Applications like Periscope allow the users who are sharing to receive comments on the video they are sharing as well as they can receive simple graphical feedback. 
-
-% In these applications, the feedback comments usually appear in a list below or beside the video being shared, separate from the visual context of what the viewer is commenting on. This may cause problems when the person sending the video changes his or her viewpoint. For example, a viewer might send the comment “I really like that picture”, but by the time the comment appears, the view might already have changed from the picture being commented on.
+In this work we investigate an AR interface displaying comments directly on the streamed live video. Our described prototype allows remote spectators to perceive the streamed live video with different interfaces for displaying the comments, including an interface which puts AR annotation feedback directly on the shared video, and another interface that provides feedback in a separate window. We conducted a user study to compare different ways of visualising comments and found that users prefer having comments directly in the AR view rather than on a separate list. We discuss the implications of this research and directions for future work.
 
 We implemented three different interfaces to display comments: (1) List, (2) Augmented Reality (AR), and (3) List + AR (see Figure \ref{fig:mgia16:conditions}). In the rest of the chapter, we first describe earlier research, then our prototype implementations, and finally a user evaluation comparing the three different methods. 
 
@@ -28,13 +12,8 @@ We implemented three different interfaces to display comments: (1) List, (2) Aug
   \label{fig:mgia16:conditions}
 \end{figure}
 
-% \subsection{Related Work}
-
 Our work extends earlier work on live video sharing on mobile devices and different types of interfaces for showing feedback from the viewers. 
 
-% Current popular live video sharing apps, such as Periscope, or popular live streaming websites  such as Douyu\footnote{http://www.douyu.com/} and Ingkee\footnote{http://www.ingkee.com/} use a single way of displaying comments from other users. The common method is to display comments as a list either beside or below the shared video or sometimes floating on top of the video from left to right. This approach is a good extension of standard chat applications. However, it may not be the best for sharing a video from a hand-held device; the sharing person is moving the device and therefore the camera view could be different when the comments arrive. 
-
- 
 % TODO: [it would be good to add more detail here and also several more references. There must be other papers on video commenting?]
 
 % Other research has looked into adding comments on video by analyzing the video content \cite{LaiolaGuimaraes2012}. Kim \textit{et al.} \cite{Kim2013} have explored how spatially aligned drawing on a live AR view can improve remote collaboration. However this did not include live text comments. Some researchers have explored how to easily add text and graphic annotations to recorded videos on mobile devices. For example MoVia \cite{Cunha2013} allows people to draw on or add text tags to recorded video that can then be shared asynchronously. However the focus of applications like this is on annotation and not real time social sharing or live streaming. 
@@ -43,8 +22,7 @@ Our work extends earlier work on live video sharing on mobile devices and differ
 
 % One of the few examples of previous research into annotation on live video streamed from a mobile platform is the work of Huang \cite{Huang2012}, who developed a system for adding text or drawing onto a live camera view and sharing it with a remote user. However in this case their research was focusing on the system performance and not an evaluation of the interface usability. The interface also did not support real time comment feedback and was not focusing on social networking.  
 
-In our research we want to place comments in a spatially aligned AR view on top of the live video feed. Using spatially aligned AR to add content to the real world is not a novel idea. For example, \cite{Langlotz2013} used GPS coordinates to determine the position of a sound and positioned them spatially around the user in a mobile AR interface. Similarly the AR browser applications Junaio\footnote{junaio.com, unavailable since 2015. Acquired by Apple} and Sekai Camera\footnote{sekaicamera.com, unavailable since 2014. Evolved to http://tab.do/} allowed users to add AR comments in the real world. However, to our knowledge, no previous research on methods for commenting on live video has been done. Spatially aligned comments or annotations can benefit from understanding the surrounding 3D environment. For example, \cite{Nassani2015} implemented AR tagging using Google Tango to track from the environment, and Google Glass to display AR comments, however this did not support real time video sharing. 
-% TODO: Mark: (about Tobias paper above) In this case they are adding audio annotation, so I'm not 100% sure how relevant this is.
+In our research we want to place comments in a spatially aligned AR view on top of the live video feed. Using spatially aligned AR to add content to the real world is not a novel idea. For example, \cite{Langlotz2013} used GPS coordinates to determine the position of a sound and positioned them spatially around the user in a mobile AR interface. Similarly the AR browser applications Junaio\footnote{https://en.wikipedia.org/wiki/Junaio} and Sekai Camera\footnote{https://techcrunch.com/2010/07/14/augmented-reality-app-sekai-camera-goes-multi-platform-adds-api-and-social-gaming/} allowed users to add AR comments in the real world. However, to our knowledge, no previous research on methods for commenting on live video has been done. Spatially aligned comments or annotations can benefit from understanding the surrounding 3D environment. For example, \cite{Nassani2015} implemented AR tagging using Google Tango to track from the environment, and Google Glass to display AR comments, however this did not support real time video sharing. 
 
 Although previous work has demonstrated live video sharing on a mobile platform and support for viewer feedback, there has been little evaluation of different methods for providing feedback. In this chapter, we report on investigations into different user interface (UI) options for viewing comments left by multiple users on a shared live video stream. Thus, the main contribution is investigating if comment placement on live video sharing improves the user experience. In the next section we describe the prototype developed to explore this question.
 
