@@ -1,25 +1,9 @@
 \section{Filtering Shared Social Data in AR}
+\label{sec:surrounding:360}
 
+In this work \cite{Nassani2018a}, we describe a method and a prototype implementation for filtering shared social data (e.g., 360 video) in a wearable Augmented Reality (e.g., HoloLens) application. The data filtering is based on user-viewer relationships. For example, when sharing a 360 video, if the user has an intimate relationship with the viewer, then full fidelity (i.e. the 360 video) of the user's environment is visible. But if the two are strangers then only a snapshot image is shared. By varying the fidelity of the shared content, the viewer is able to focus more on the data shared by their close relations and differentiate this from other content. Also, the approach enables the sharing-user to have more control over the fidelity of the content shared with their contacts for privacy.
 
-% =============== PREVIOUS WORK ================
-
-% Nassani, A., Bai, H., Lee, G., Billinghurst, M., Langlotz, T. and Lindeman, R. W. (2018). Filtering Shared Social Data in AR. In Extended Abstracts of the 2018 CHI Conference on Human Factors in Computing Systems - CHI ’18 (pp. 1–6). New York, New York, USA: ACM Press. 
-
-% =============== PREVIOUS WORK ================
-
-
-% Abstract
-We describe a method and a prototype implementation for filtering shared social data (e.g., 360 video) in a wearable Augmented Reality (e.g., HoloLens) application. The data filtering is based on user-viewer relationships. For example, when sharing a 360 video, if the user has an intimate relationship with the viewer, then full fidelity (i.e. the 360 video) of the user's environment is visible. But if the two are strangers then only a snapshot image is shared. By varying the fidelity of the shared content, the viewer is able to focus more on the data shared by their close relations and differentiate this from other content. Also, the approach enables the sharing-user to have more control over the fidelity of the content shared with their contacts for privacy.
-
-% =============================================================================
-% \subsection{Introduction}
-% =============================================================================
-
-% Social Augmented Reality (AR) applications such as Wikitude\footnote{https://www.wikitude.com/} and World Around Me\footnote{https://worldaroundmeapp.com/}, place virtual cues over live video of the real world, showing content produced by the user's social network. However, with people having hundreds or thousands of contacts in social networks, this AR view can quickly become cluttered. Our previous work explored how users can differentiate between AR representations of social contacts in AR using different levels of proximity and fidelity \cite{Nassani2017b}. The current work explores how the type and amount of shared data from a social contact can vary based on a social AR continuum \cite{Nassani2017a}. 
-
-% Viewing the highest fidelity of the shared content, for example, live streaming 360 videos and audio from a remote contact, might seem to be the most desirable option. However, when having many friends (social contacts), all of them sharing high fidelity data content might be an overwhelming experience. The user may not be able to distinguish between social contacts, and may not be able to enjoy their content. Also for the user sharing the content, revealing full fidelity to everyone could be concerning in terms of privacy, hence there is a need to control and filter the fidelity of shared content based on social relationship. 
-
-In this work, we are trying to answer the question, what would be the best way to share rich data (such as 360 videos) within a large social network? The hypothesis is that filtering data based on the user-viewer relationship or proximity will increase the feeling of being together or interconnectedness. 
+In this work, we are trying to answer the question, what would be the best way to share rich data (such as 360 videos) within a large social network? The hypothesis is that filtering data based on the user-viewer relationship or proximity will increase the feeling of being together or inter-connectedness. 
 
 \begin{figure}[ht]
 	\centering
@@ -27,16 +11,6 @@ In this work, we are trying to answer the question, what would be the best way t
 	\caption{Sharing point of view with different fidelity of its representation.}
 	\label{fig:data:sharer}
 \end{figure}
-
-% =============================================================================
-% \subsection{Related Work}
-% =============================================================================
-
-% Proximity-based interactions in AR/VR has been studied before as social bubbles \cite{Sousa2016} where projection and mobile phones are used to connect two people remotely. They described a four layers of gradual engagement model based on physical distance between remote collaborators in synchronous situations. This work was limited to synchronous situation and mainly for collaboration purposes. 
-
-% Virtual avatars have been studied in social applications such as social networks and multi-users environments such as in Second Life \cite{Kaplan2009} and other VR games. Virtual avatars have been used to share social experiences such as in Facebook Spaces\cite{Facebook} where users can meet in VR, take selfies and teleport to a 360 video. However, representing social contact in VR/AR can be overwhelming \cite{Nassani2017b}. It will be more overwhelming to represent the data content that social avatars are trying to share. 
-
-% Building on previous work in proximity-based relationship \cite{Sousa2016}, we focus on the shared contents of social avatars in asynchronous situation. Unlike previous work in social avatars, we study representing social contacts in large-scale network. We aim to reduce clutter that maybe caused by displaying the social avatars and their shared content. We address the question of how we can use social relationship between avatars and the viewer as a way to filter and enhance viewing the shared-content experience. 
 
 % =============================================================================
 \subsection{Sharing Social Data}
@@ -50,20 +24,11 @@ A use-case scenario for filtering by sharer is where the sharer is going on a hi
 \subsection{Viewing Shared Social Data}
 % =============================================================================
 
-
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=3in]{images/chi/3_levels_of_data.png}
 	\caption{Social contact sharing in different relationships with the viewer. (Left to right: intimate, friend, stranger). The shared data content (top of avatar) is filtered out (360 video, 2D video, 2D image) based on social relationship.}
   	\label{fig:data:viewer}
-\end{figure}
-
-\begin{figure}[ht]
-	\centering
-	\includegraphics[width=3in]{images/chi/images-03.eps}
-	\caption{Social contact sharing in different relationships with the viewer. (Left to right: intimate, friend, stranger). The shared data content (top of avatar) is filtered out (360 video, 2D video, 2D image) based on social relationship.}
-  	\caption{System components.}
-  	\label{fig:data:system}
 \end{figure}
 
 The user viewing the shared data (viewer) uses a wearable AR interface to see content from their social network superimposed over the real world based on proxemics. 
@@ -78,6 +43,14 @@ In addition to this basic operation, here we propose the viewers seeing the shar
 \subsection{Prototype}
 % =============================================================================
 
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=3in]{images/chi/images-03.eps}
+	\caption{Social contact sharing in different relationships with the viewer. (Left to right: intimate, friend, stranger). The shared data content (top of avatar) is filtered out (360 video, 2D video, 2D image) based on social relationship.}
+  	\caption{System components.}
+  	\label{fig:data:system}
+\end{figure}
+
 To explore using a social AR continuum metaphor for sharing data between social contacts, we built a prototype on a HoloLens. The prototype software is built using Unity 3D game engine and it allows users to view their social contacts on a wearable AR headset. Figure \ref{fig:data:system} shows the structure of the prototype system. 
 
 The prototype places social contacts around the user (viewer) in 3 concentric circles which are controlled by \textit{Circles Manager}. The social contacts have different visual fidelity and proximity based on their initial relationship to the viewer rendered using \textit{Avatar Controller}. The avatars were randomly pre-generated without any resemblance to actual contacts. We used MakeHuman\footnote{http://www.makehuman.org/} to generate the 3D avatars. The viewer (HoloLens user) can turn his or her head to face different social contacts and then use gestures (air taps) to interact with the contact (viewing their data or changing their position which represents social relationship). The interactions with HoloLens are enabled using the open source library \textit{HoloToolkit}\footnote{https://github.com/Microsoft/MixedRealityToolkit-Unity}. The shared data content by social contacts are controlled by \textit{Data Controller} which determines which fidelity need to be displayed based on the social relationship between the avatar and the viewer. The top-level \textit{Scenario Manager} defines the implementation needed for different conditions in the user study including interaction with avatars, shared data and the concentric circles. 
@@ -85,7 +58,6 @@ The prototype places social contacts around the user (viewer) in 3 concentric ci
 % =============================================================================
 \subsection{Pilot User Study}
 % =============================================================================
-
 
 \begin{figure}[ht]
 	\centering
@@ -97,9 +69,9 @@ The prototype places social contacts around the user (viewer) in 3 concentric ci
 We conducted a pilot user study to test the system usability and its effect on social presence comparing the following conditions: 
 
 \begin{itemize}
-\item C1-Baseline: Shows the shared 360 video from all social contacts.
-\item C2-Tap to change: Filter the fidelity of the shared 360 video based on the relationship between viewer and the social contact. The user can tap on any social contact to cycle through the different relationships.
-\item C3-Walk to change: Filter the fidelity of the shared 360 video based on physical distance between the viewer and the social contact.
+    \item C1-Baseline: Shows the shared 360 video from all social contacts.
+    \item C2-Tap to change: Filter the fidelity of the shared 360 video based on the relationship between viewer and the social contact. The user can tap on any social contact to cycle through the different relationships.
+    \item C3-Walk to change: Filter the fidelity of the shared 360 video based on physical distance between the viewer and the social contact.
 \end{itemize}
 
 The task was to ask participants to wear the headset and observe 12 social contacts (mocked up, not reflecting the participant's real social contacts) placed around the user at equal angles away from each others to complete a circle (360 degrees) around the viewer, and at different distances to the viewer (centre)  based on the social relationship. 
@@ -113,25 +85,22 @@ We asked participants to answer 5-point Likert-scale questions shown in Table \r
 \subsection{Results}
 % =============================================================================
 
-We ran a pilot user study with 8 participants (4 female) aged 26-35 (SD=3.03). All participants used social networking platforms on regular basis, and most of them were familiar with AR/VR displays. 
-
-After filling in a demographic questionnaire, we asked the participants to experience the three conditions in a random order, then they filled in a social presence questionnaire and SMEQ about the condition they just tried. After finished all three conditions, we asked them to fill-in a post-experiment questionnaire where we asked about the overall experience and if they have any suggestions to improve. 
-
-From the questionnaire results (Figure \ref{fig:data:results}) we can see that C2 was rated (3.6) better in term of social presence compared to C1 (3.3) in average. C3 (3.5) was relatively close compared to C2. The SMEQ results show that all three conditions were rated low in mental effort, while both C2 (M=16.875) and C3 (M=16.875) were rated lower than C1 (M=21).
-
-As part of post-questionnaire, we asked participants to rate the three conditions (1=least preferred, 3=most preferred). The ranking results (see Figure \ref{fig:data:ranking}) show that C1 was least preferred (1.3) while C2 (2.25) and C3 (2.375) are close. There was statistically significant difference in ranking conditions $\chi^2(2)=7, p=0.05$. Post hoc analysis with Wilcoxon signed-rank tests was conducted. There was a statistically significant difference between C1-baseline and C3-Walk to change. ($Z=-2.081, p=0.037$).
-
-
-
-\begin{figure}
+\begin{figure}[h]
   \centering
   \includegraphics[width=\columnwidth]{images/chi/images-01.eps}
   \caption{Results of social presence (top) and SMEQ (bottom). *=reversed rating scale. Whiskers=standard error}
   \label{fig:data:results}
 \end{figure}
 
+We ran a pilot user study with 8 participants (4 female) aged 26-35 (SD=3.03). All participants used social networking platforms on regular basis, and most of them were familiar with AR/VR displays. 
 
-\begin{figure}
+After filling in a demographic questionnaire, we asked the participants to experience the three conditions in a random order, then they filled in a social presence questionnaire and SMEQ about the condition they just tried. After finished all three conditions, we asked them to fill-in a post-experiment questionnaire where we asked about the overall experience and if they have any suggestions to improve. 
+
+From the questionnaire results (Figure \ref{fig:data:results}) we can see that C2 was rated (3.6) better in term of social presence compared to C1 (3.3) in average. C3 (3.5) was relatively close compared to C2. The SMEQ results show that all three conditions were rated low in mental effort, while both C2 (M=16.875) and C3 (M=16.875) were rated lower than C1 (M=21).
+
+As part of post-questionnaire, we asked participants to rate the three conditions (1=least preferred, 3=most preferred). The ranking results (see Figure \ref{fig:data:ranking}) show that C1 was least preferred (1.3) while C2 (2.25) and C3 (2.375) are close. There was statistically significant difference in ranking conditions $\chi^2(2)=7, p=0.05$. Post-hoc analysis with Wilcoxon signed-rank tests was conducted. There was a statistically significant difference between C1-baseline and C3-Walk to change. ($Z=-2.081, p=0.037$).
+
+\begin{figure}[h]
   \centering
   \includegraphics[width=1.5in]{images/chi/images-05.eps}
   \caption{Conditions ranking results. Reverse rating scale: 3=most favorable, 1=least preferred. Whiskers=standard error. $*=$ statistically significant difference (Friedman test: $X^2(2)=7, p=.05$).}  
@@ -148,7 +117,6 @@ On the downside, participants mentioned some weakness for condition "C2-tap to c
 Viewing 360 videos through an optical see-through display was considered not as ideal as the 360 video appears to be semi-transparent on top of the real environment.
 
 Overall the participants expressed their interest in using such system to manage and view their social contacts and shared content in AR, and that it's useful and easy to use. 
-
 
 % =============================================================================
 \subsection{Limitations and future work}
