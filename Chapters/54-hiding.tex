@@ -1,7 +1,9 @@
 \section{Sharing Surrounding Spaces}
 \label{sec:surrounding:hiding}
 
-This section describes a system and a user study for sharing social surrounding spaces on wearable Augmented Reality (AR) devices. Unlike sharing for collaborative purposes, we focus on sharing between social contacts. We extend the previous work of the Social AR Continuum by exploring how sharing the surrounding environment can vary based on the social proximity between social contacts. We built a prototype for sharing a 3D captured room on a HoloLens, which enables the user to display three levels of social relationships: intimate, friend and stranger and maps them to three levels of the surrounding environment. In a user study with the prototype, we focused on how socially connected participants felt, as well as on how they felt knowing that they were sharing more or fewer details of their surrounding environment with their social contacts. We found that all participant preferred having a social filter when sharing a view of their environment over having no filter. We discuss the research findings and outline future directions for research in sharing social surrounding spaces on wearable AR devices. 
+This section describes a system and a user study for sharing social surrounding spaces on wearable AR devices. Unlike sharing for collaborative purposes, we focus on sharing between social contacts. We extend the previous work of the Social AR Continuum by exploring how sharing the surrounding environment can vary based on the social proximity between social contacts. We built a prototype for sharing a 3D captured room on a HoloLens, which enables the user to display three levels of social relationships: intimate, friend and stranger, and maps them to three levels of the surrounding environment. 
+
+In a user study with the prototype, we focused on how socially connected participants felt, as well as on how they felt knowing that they were sharing more or fewer details of their surrounding environment with their social contacts. We found that all participant preferred having a social filter when sharing a view of their environment over having no filter. We discuss the research findings and outline future directions for research in sharing social surrounding spaces on wearable AR devices. 
 
 It is easy to imagine that in the future it will be possible for wearable AR systems to be used to capture and share a 3D view of the user's surroundings with hundreds or thousands of followers on a social network. However, before this becomes commonplace, many exciting research questions should be addressed. For example, would a person be comfortable with sharing a view of their real space with relative strangers? This work aims to explore how wearable AR systems could share a user’s surrounding room environment with social contacts and to measure how comfortable the sharer and the viewer would feel regarding privacy in different interface options. 
 
@@ -10,22 +12,22 @@ In the remainder of the section, we first report on related work that is informi
 \begin{figure}
 \begin{center}
 \includegraphics[width=\linewidth]{images/frontier18/images-02.png}
-\caption{Social filter applied to the shared room. a) In an Intimate relationship, everything is shared. b) For a Friend relationship, some sensitive items are hidden (e.g., family photo, stock market). c) While for a Stranger relationship almost everything is hidden in the room.}\label{fig:frontier18:social-filter}
+\caption{A social filter applied to the shared room. a) In an Intimate relationship, everything is shared. b) For a Friend relationship, some sensitive items are hidden (e.g., family photo, stock market). c) While for a Stranger relationship almost everything is hidden in the room.}\label{fig:frontier18:social-filter}
 \end{center}
 \end{figure}
 
 \subsection{System}
 
-We built an AR prototype system on the Microsoft HoloLens\footnote{https://www.microsoft.com/en-us/hololens} that connects a person (the sharer) sharing a view of their surrounding physical space to a remote person (the viewer) viewing the shared virtual room overlaid on top of their physical space. Figure \ref{fig:frontier18:system} shows the components of the system that we developed.
+We built an AR prototype system using a Microsoft HoloLens\footnote{https://www.microsoft.com/en-us/hololens} that connects a person (the sharer) sharing a view of their surrounding physical space to a remote person (the viewer) viewing the shared virtual room overlaid on top of their physical space. Figure \ref{fig:frontier18:system} shows the components of the system that we developed.
 
-In the future, it will be possible to scan and immediately create a 3D model of the wearable AR user’s surroundings. However, we emulate this by creating a virtual 3D room modelled to match the sharer’s real room as if has been 3D scanned (see figure 2).  The 3D modelling was done on Autodesk Maya\footnote{https://www.autodesk.com/education/free-software/maya} and rendered on the HoloLens display using the Unity3D\footnote{https://unity3d.com/} game engine. The avatars representing the remote people are generated using MakeHuman\footnote{http://www.makehumancommunity.org/}.
+In the future, it will be possible to scan and immediately create a 3D model of the wearable AR user’s surroundings. We emulate this by creating a virtual 3D room modelled to match the sharer’s real room as if it had been 3D scanned (see figure 2).  The 3D modelling was done on Autodesk Maya\footnote{https://www.autodesk.com/education/free-software/maya} and rendered on the HoloLens display using the Unity3D\footnote{https://unity3d.com/} game engine. The avatars representing the remote people were generated using MakeHuman\footnote{http://www.makehumancommunity.org/}.
 
 We used UNET\footnote{https://docs.unity3d.com/Manual/UNet.html} as the high-level networking API from Unity to synchronise the state of the shared room and the remote person. The state of the remote person includes 1) the position and rotation of the virtual avatar representing the remote person, 2) the level of detail of the avatar based on the social relationship (i.e., stranger=half 2D image, friend=2D image, intimate=3D avatar). The synchronised state of the room involves changing the level of detail of the shared room depending on the social relationship as well as which part of the room is hidden by the user. 
 
 \begin{figure}
 \begin{center}
 \includegraphics[width=\linewidth]{images/frontier18/system.jpg}
-\caption{System components representing the sharer server-side (left) sharing with the viewer client-side (right) via WiFi: 1) the avatar position and orientation, 2) the social relationship data and 3) room and hidden components data. The system is built on Unity and runs on HoloLens.}\label{fig:frontier18:system}
+\caption{The system components representing the sharer server-side (left) sharing with the viewer client-side (right) via WiFi: 1) the avatar position and orientation, 2) the social relationship data and 3) room and hidden components data. The system is built on Unity and runs on the HoloLens.}\label{fig:frontier18:system}
 \end{center}
 \end{figure}
 
@@ -60,7 +62,7 @@ Each participant tried the conditions from both sides of a viewer and a sharer. 
 
 Figure \ref{fig:frontier18:setup} shows that the experiment was set up in two similar rooms so that the sharer was sharing his/her room with a remote viewer. The relative position and rotation of each user were synchronised and represented as a virtual avatar in the remote person view. The sharer could change the social relationship with the viewer by using 3-buttons (intimate, friend, stranger) situated in the middle of the room. The viewer could request the relationship to change by clicking on one of the relationship buttons. Once this happens, the sharer saw the relationship request in a different colour, which then they could approve and change the social relationship.
 
-After completing each task, we asked participants (see Table \ref{tab:frontier18:questions}) to answer three sets of Likert questionnaires; six bi-polar questions (BP), six co-presence questions (CoP) and three subjective questions (S) to measure the sense of privacy.  
+After completing each task, we asked participants to answer three sets of Likert questionnaires; six bi-polar questions (BP), six co-presence questions (CoP) and three subjective questions (S) to measure the sense of privacy (see Table \ref{tab:frontier18:questions}).  
 
 \begin{table}
     \centering
@@ -81,16 +83,16 @@ S1  & Uncomfortable-Comfortable\\
 S2  & Insecure-Secure\\
 S3  & Not-Interested-Interested\\
     \end{tabular}
-    \caption{Subjective questions we asked participants to rate their experience on a 7-point likert scale}
+    \caption{The subjective questions we asked participants to rate their experience on a 7-point Likert scale (1 = XXX, 7 = XXX)}
     \label{tab:frontier18:questions}
 \end{table}
 
-We asked the participants open-ended questions about the strength and weakness of each condition. We also asked them to rank from most preferred to least preferred condition for each task, then explain the reason for why they chose the best and the worst condition. 
+We asked the participants open-ended questions about the strength and weakness of each condition. We also asked them to rank from most preferred to least preferred condition for each task, then explain the reason for why they chose the best and the worst conditions. 
 
 \begin{figure}
 \begin{center}
 \includegraphics[width=\linewidth]{images/frontier18/experiment-setup.jpg}
-\caption{Experiment setup. The sharer (right) is sharing his/her 3D room with the viewer (left). The viewer sees the virtual room of the sharer overlaid on top of her/his physical room. Each user is seeing the remote person as a virtual avatar in their environment that has the position and orientation mapped to remote person.}\label{fig:frontier18:setup}
+\caption{The experiment setup. The sharer (right) is sharing his/her 3D room with the viewer (left). The viewer sees the virtual room of the sharer overlaid on top of her/his physical room. Each user is seeing the remote person as a virtual avatar in their environment that has the position and orientation mapped to remote person.}\label{fig:frontier18:setup}
 \end{center}
 \end{figure}
 
@@ -117,18 +119,19 @@ A Wilcoxon signed-rank test on the results of Task1 comparing no social filter (
 \begin{figure}
 \begin{center}
 \includegraphics[width=.9\linewidth]{images/frontier18/images-05.eps}
-\caption{Results of hiding mechanism as viewer.}\label{fig:frontier18:result-hiding-viewer}
+\caption{The results of using a hiding mechanism as a viewer.}\label{fig:frontier18:result-hiding-viewer}
 \end{center}
 \end{figure}
 
 \begin{figure}
 \begin{center}
 \includegraphics[width=.9\linewidth]{images/frontier18/images-06.eps}
-\caption{Results of hiding mechanism as sharer.}\label{fig:frontier18:result-hiding-sharer}
+\caption{The results of using a hiding mechanism as a sharer.}\label{fig:frontier18:result-hiding-sharer}
 \end{center}
 \end{figure}
 
-In response to the ranking questions (Figure \ref{fig:frontier18:result-ranking}), all 12 participants preferred having a social filter when sharing room over having no filter (i.e., showing everything in the room to all social relationships). As for ranking the hiding mechanism, the most preferred option for hiding sensitive data in the room was the Remove option followed by the Overlay option, while the least preferred option was Blurring. 
+In response to the ranking questions (Figure \ref{fig:frontier18:result-ranking}), all 12 participants preferred having a social filter when sharing a view of their room over having no filter (i.e., showing everything in the room to all social relationships). As for ranking the hiding mechanism, the most preferred option for hiding sensitive data in the room was the Remove option followed by the Overlay option, while the least preferred option was Blurring. 
+
 We also asked participants if there was a different mechanism of hiding objects in their shared room that they would prefer (such as replacing the hidden object with a similar but less sensitive one). About 42\% thought that replacing the object was a good idea; however, most of them raised concerns about how they may not like the additional effort needed for selecting a similar object to replace.
 
 \begin{figure}
@@ -140,13 +143,13 @@ We also asked participants if there was a different mechanism of hiding objects 
 
 \subsection{Discussion and Future Work}
 
-The ranking results show that having the social filter is preferred over no social filter. However, in Likert questions, we found statistical differences in 2-5 questions out of 15. Participants with the sharer point of view had a more statistical difference than those with the viewer point of view which indicates that having a social filter is essential for people to feel comfortable regarding privacy when they have to choose. However, not as much when they have to go through the efforts of selecting which objects to hide for each social relationship.  
+The ranking results show that having the social filter was preferred over no social filter. However, in the Likert questions, we found statistical differences in only 2-5 questions out of 15. Participants with the sharer point of view had more statistical differences than those with the viewer point of view which indicates that having a social filter is essential for people to feel comfortable regarding privacy when they have to choose. However, not as much when they have to go through the efforts of selecting which objects to hide for each social relationship.  
 
 In the future, we would like to allow users to customise their room so that they feel more attached to the space they are sharing. In this user study, the sharer was hiding objects in the room while the viewer was observing the shared room synchronously. In the future, we can study if hiding before the viewer is connected asynchronously would affect the sense of co-presence or the feeling of being comfortable with sharing. We also would also allow participants to choose their avatars from a predefined list rather than being assigned an avatar randomly.   
 
 \subsection{Summary}
 
-In this work, we described a HoloLens prototype built to share a 3D surrounding environment with social contacts, and simulate a future wearable AR social networking application; which was designed to explore how users would be willing to share views of their surroundings with remote people with different social relationships. 
+In this work, we described a HoloLens prototype built to share a 3D surrounding environment with social contacts, and simulate a future wearable AR social networking application. The prototype was designed to explore how users would be willing to share views of their surroundings with remote people with different social relationships. 
 
 We allowed users to choose which part of the room to hide or show to different social groups (intimate, friends, strangers). We run a pilot user study to test the effect of using a social filter on co-presence and the feeling of privacy from both sides as a sharer and a viewer. We found that all participants preferred having a social filter, and there was some statistical difference regarding feelings of co-presence and privacy. 
 
