@@ -3,13 +3,6 @@
 
 Augmented Reality (AR) is technology that enables the seamless merging of the real world with virtual content (including visual and audio) so that both real and virtual can be seen and interacted with at the same time. Azuma defined AR as the coexistence of the virtual world and the real world, and that "it would appear to the user that the virtual and real objects coexisted in the same space"  \cite{azuma1997survey}. Milgram defined the mixed reality (MR) continuum (Figure \ref{fig:mr-continuum}) and placed AR between virtual reality (VR) where full immersion of virtual contents and augmented virtuality (AV) where mostly virtual content is overlaid by real content \cite{Milgram1995a}. 
 
-% \begin{figure}
-%     \centering
-%     \includegraphics[width=.8\linewidth]{images/video-see-through-ar.png}
-%     \caption{A video see-through AR display}
-%     \label{fig:video-see-through}
-% \end{figure}
-
 \begin{figure}
     \centering
     \includegraphics[width=.8\linewidth]{images/mixed-reality-continuum.png}
@@ -17,29 +10,21 @@ Augmented Reality (AR) is technology that enables the seamless merging of the re
     \label{fig:mr-continuum}
 \end{figure}
 
-Social interactions are important because...\todo[inline]{importance}
+We as humans are social creatures and it is our way to stay connected with each other, communicating our identity and the feeling of relatedness to one another \cite{HuangWeidong2013}. Social interactions help establishing mutual understandings in collaborative scenarios, and therefore can be used as an effectiveness measure of collaborative technology \cite{Li2013}. Social interactions has been influenced by technology. For instance the use of emoticons has been used in written communication instead of text to represent our emotions, intentions and cultural differences \cite{Pavalanathan2016}, and was found to be related to expressing emotions in face-to-face situations \cite{Derks2007}. 
 
-The needs and reasons for using AR for social interactions are... \todo[inline]{needs}
+One of the advantages of AR in communicating social dynamics is that it enables the user to interact with virtual contents while keeping social connections with people around in the real world \cite{HuangWeidong2013}. Mobile AR facilitate shared spaces and experiences with remote users which add to social connections and increase users' engagement. Having people contributing to an AR content would lead to increase in sense of community and inter-connectedness. However, when more information is shared, there is more risk of reducing the sense of privacy \cite{Olsson2013}. In a study of social interaction and mobility in AR games, and found that with mobile AR games, players are more likely to interact with each other socially and physically, which lead to increase the enjoyment of AR experience \cite{Schmalstieg_144}. 
 
-AR could improve social interactions by... \todo[inline]{improvement expected}
-
+AR could improve social interactions by making people more connected with each other and excited about sharing virtual experiences with each other, and making the social experience richer with additional virtual content. 
 
 In \cite{Zhou2008} and \cite{Kim2018} looked at trends in AR in the academic conference ISMAR\footnote{http://www.ismar.net/} and in the research community as a whole, and reported "\textit{AR technology will continue to develop even more dynamically and effectively over the next ten years, toward the vision of pervasive presence in our daily lives.}" \cite{Kim2018}. AR displays are getting more affordable with better rendering and registration techniques. Also, AR displays are becoming more self-contained and lighter which enables mobile AR applications.
 
 In a review about the historic uses of wearable displays and AR displays \cite{Peddie2017}, it started in 1940 with the first heads-up display (HUD) in the UK. Then in the 1960s, most uses of AR were to build AR helmet for pilots field of view. Then interest in AR started increasing in 2009 when Lego introduced AR Digital box, then started relative decline since Google Glass was introduced in 2012. In the Gartner 2019 trends report \cite{gartner2019}, it shows that AR and immersive technologies have been getting out the disillusionment phase of the hype cycle and moving toward a steady adoption and day to day scenarios in the next 5-10 years.
 
-Social interactions have been studied in the past. 
-\cite{AlanKellerGomes} looked into...
-
-\cite{Damian2015}
-\cite{Wilson2012a} reviews Facebook social interactions 
-
 \section{Problem Statement}
 
-The focus of this thesis is on enabling the use of wearable AR for sharing social experiences. The gap between the vision of social AR and the current state of the art is... \todo[inline]{gap..}
+With the rapid development of technology and the potential use of AR in every day life, this thesis aims to study the challenges in social AR in the near future. The focus of this thesis is on enabling the use of wearable AR for sharing social experiences. The gap between the vision of social AR and the current state of the art is that the state of the art in AR research was focused on a task-oriented collaborative AR more than social AR. Initial attempts of exploring social AR in 2013 (at the beginning of this thesis) were limited to single or few number of user(s) experience. This thesis explores how would multiple people use social AR to connect with each other, the shared virtual space and the interactions techniques. 
 
 This PhD thesis addresses the problems of: 
-
 \begin{enumerate}
     \item using visualising and interacting with social contacts through wearable AR displays.
     \item displaying a large amount of 3D content of sharing social data that is overlaid over a limited available physical space through wearable AR devices.
@@ -71,15 +56,18 @@ With major industry players (e.g., Microsoft, Facebook and Magic Leap) supportin
 
 Applications for Social VR and 360-degree video have been introduced on new VR headsets. For instance, Facebook Spaces\footnote{https://www.facebook.com/spaces} allows VR users to connect with friends and family and share 360-degree photos and take selfies. AltSpaceVR\footnote{https://altvr.com/} was acquired by Microsoft and enables more diverse hand-held and wearable devices to be used for social connection with others. Most recently, Magic Leap's Avatar Chat\footnote{https://www.magicleap.com/stories/blog/connect-with-friends-with-avatar-chat}(Figure \ref{fig:ml-avatar-chat}) offers similar experiences where avatars representing social friends are displayed in an AR space . 
 
-
 \begin{figure}
     \centering
     \includegraphics[width=.8\linewidth]{images/magic-leap-avatar-chat.jpg}
-    \caption{Magic Leap's Avatar Chat by Magic Leap in 2018}
+    \caption{Avatar Chat by Magic Leap, 2018}
     \label{fig:ml-avatar-chat}
 \end{figure}
 
 By using a wearable AR display like the Microsoft HoloLens\footnote{https://www.microsoft.com/en-nz/hololens}, it could be possible for the user to see an AR representation of their social network visible at all times. However, this raises the question of how to visually represent the user's contacts in the network. For example, if a user has a large social network with hundreds of contacts available, visually representing each of them might clutter the user's visual space.
+
+The limitation of prior work is that until recently (2018) there was no comprehensive analysis of the social AR space and no sufficient exploration of sharing social experiences on wearable AR. 
+
+In the following section, this thesis outlines the research questions based on the above problem space and the gap identified in previous work.
 
 \section{Research Questions}
 
@@ -122,7 +110,7 @@ Chapter \ref{ch:continuum}: "The Social AR Continuum" aims to answer \ref{rq:con
 The following summarises the contributions of this thesis: 
 
 \begin{enumerate}
-    \item We identify the parameters and dimensions of the social AR continuum. The main contribution is defining the social AR continuum which consists of a set of parameters that define the space of sharing social experiences through wearable/hand-held AR devices. We define the space of the AR continuum by exploring the main parameters that can be varied based on social proximity. These parameters are grouped into the following categories 1) self and other, 2) shared objects and annotation and 3) surrounding environment. Under each of these categories, we define the dimensions of variables that affect the shared social experience.
+    \item We identify the parameters and dimensions of the social AR continuum. The main contribution is defining the social AR continuum which consists of a set of parameters that define the space of sharing social experiences through wearable/hand-held AR devices. We define the space of the AR continuum by exploring the main parameters that can be varied based on social proximity. These parameters are grouped into the following categories 1) self and other, 2) shared objects \& surrounding environment and 3) interactions and annotations. Under each of these categories, we define the dimensions of variables that affect the shared social experience.
     
     \item We implemented several social AR experiences in terms of user interfaces. For each dimension defined on the continuum, we built software prototypes to test the user interface design with human subjects. The implementation details are described in the thesis for future use.
     
@@ -143,16 +131,17 @@ The rest of the thesis is organised as follows: Chapter \ref{ch:continuum} descr
 \end{figure}
 
 \section{Selected Publications}
+\preto\fullcite{\AtNextCite{\defcounter{maxnames}{99}}}
 
 Most of the work of this thesis has been submitted, peer-reviewed and published at scientific conferences and journals specialising in the AR, HCI and computer graphics fields. This list contains selected publications that are relevant to this thesis. 
 
-The following publication defines the concept of the social AR continuum and describes a focus group and a user study implementing visualising social contacts through AR headset, and addressing RQ1. 
+The following publication defines the concept of the social AR continuum and describes a focus group and a user study implementing visualising social contacts through AR headset, and addressing \ref{rq:continuum}. 
 
 \begin{itemize}
     \item{ \fullcite{Nassani2017a}}
 \end{itemize}
 
-The following publications focus on placing AR annotations/tags on shared 360-degree panoramas and video streaming content, addressing RQ2.
+The following publications focus on placing AR annotations/tags on shared 360-degree panoramas and video streaming content, addressing \ref{rq:interaction}.
 
 \begin{itemize}
     \item{ \fullcite{Nassani2016}}
@@ -162,7 +151,7 @@ The following publications focus on placing AR annotations/tags on shared 360-de
     \item{ \fullcite{Billinghurst2014}}
 \end{itemize}
 
-The following publications focus on shared surrounding environments and changing the levels of detail based on social proximity, addressing RQ3.
+The following publications focus on shared surrounding environments and changing the levels of detail based on social proximity, addressing \ref{rq:data}.
 
 \begin{itemize}
     \item{ \fullcite{Nassani2018a}}
@@ -170,7 +159,7 @@ The following publications focus on shared surrounding environments and changing
     % \item{ \fullcite{Nassani2018c}} -- frontier paper rejected
 \end{itemize}
 
-The following publications focus on visualising social contacts based on social proximity, addressing RQ4. 
+The following publications focus on visualising social contacts based on social proximity, addressing \ref{rq:people}. 
 
 \begin{itemize}
     \item{ \fullcite{Nassani2017b}}
@@ -178,8 +167,3 @@ The following publications focus on visualising social contacts based on social 
 \end{itemize}
 
 The above publications help to answer the research questions of this thesis, including how to share social experiences on AR devices for each category on the social AR continuum. 
-
-
-% \todo[inline]{Mark: In the remainder of the thesis we first review related work and explain the research gap that our work files (section 2). Then [put  more here – summarise the thesis structure] }
-
-% \todo[inline]{[You may also want to put together a  thesis outline chart. Basically showing the experiments you conducted and  prototypes you developed and  how these  contribute to addressing  the research questions that you’ve raised. This is helpful if you have a lot of material to report on, so the reviewers can understand how it all fits together] }

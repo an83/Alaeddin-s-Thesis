@@ -12,11 +12,11 @@ We implemented three different interfaces to display comments: (1) List, (2) Aug
   \label{fig:mgia16:conditions}
 \end{figure}
 
-Previous work has demonstrated live video sharing on a mobile platform and support for viewer feedback, there has been little evaluation of different methods for providing feedback. In this section, we report on investigations into different user interface (UI) options for viewing comments left by multiple users on a shared live video stream. Thus, the main contribution is investigating if comment placement on live video sharing improves the user experience. Then we describe the prototype developed to explore this question.
+Previous work has demonstrated live video sharing on a mobile platform and support for viewer feedback. However, there has been little evaluation of different methods for providing feedback. In this section, we report on investigations into different user interface (UI) options for viewing comments left by multiple users on a shared live video stream. Thus, the main contribution is investigating if comment placement on live video sharing improves the user experience. Then we describe the prototype developed to explore this question.
 
 \subsection{System Design}
 
-In order to explore different ways to share AR comments from remote collaborators, we developed a prototype that enables a user to share a live video stream with others and receive comments from multiple users watching. Our system consists of a WebRTC\footnote{https://webrtc.org} application running on AppEngine\footnote{https://appengine.google.com/} on Google Cloud servers, which offers a fast peer-to-peer connection between devices. Being built on a web platform, this solution can run on multiple hardware specifications including desktop, hand-held, and wearable devices. Figure \ref{fig:mgia16:system} shows the overall design of the prototype system.
+In order to explore different ways to share AR comments from remote collaborators, we developed a prototype that enables a user to share a live video stream with others and receive comments from multiple users who are watching. Our system consists of a WebRTC\footnote{https://webrtc.org} application running on AppEngine\footnote{https://appengine.google.com/} on Google Cloud servers, which offers a fast peer-to-peer connection between devices. Being built on a web platform, this solution can run on multiple hardware specifications including desktop, hand-held, and wearable devices. Figure \ref{fig:mgia16:system} shows the overall design of the prototype system.
 
 \begin{figure}[ht]
   \centering
@@ -25,7 +25,7 @@ In order to explore different ways to share AR comments from remote collaborator
 	\label{fig:mgia16:system}
 \end{figure}
 
-The prototype was built on top of AppRTC\footnote{https://apprtc.appspot.com/} which hosts a website that enables people to start a video conferencing session on the web. To support AR visualization of comments, we utilized the AppRTC code to track device orientation by listening to the device sensors, and transfer it to the receivers’ devices via DataChannel. The AppRTC application is written in Python for the backend and Javascript for the front-end. It takes advantage of being hosted on AppSpot so that it complies with the WebRTC requirements for HTTPS. The AppRTC system allows users to communicate with each other over the Internet. To render comments in the AR visualization, we used the Three.js library\footnote{http://threejs.org/}. The AR visualization is implemented with two graphical layers (see Figure \ref{fig:mgia16:layers}). The background layer shows the video stream captured by the camera on the mobile device. On top of the background, comments are drawn on the front layer using orientation tracking information to show them in a body-stabilized manner. 
+The prototype was built on top of AppRTC\footnote{https://apprtc.appspot.com/} which hosts a website that enables people to start a video conferencing session on the web. To support AR visualization of comments, we utilized the AppRTC code to track device orientation by listening to the device sensors, and transferring the data to the receivers’ devices via DataChannel. The AppRTC application is written in Python for the backend and Javascript for the front-end. It takes advantage of being hosted on AppSpot so that it complies with the WebRTC requirements for HTTPS. The AppRTC system allows users to communicate with each other over the Internet. To render comments in the AR visualization, we used the Three.js library\footnote{http://threejs.org/}. The AR visualization is implemented with two graphical layers (see Figure \ref{fig:mgia16:layers}). The background layer shows the video stream captured by the camera on the mobile device. On top of the background, comments are drawn on the front layer using orientation tracking information to show them in a body-stabilized manner. 
 
 \begin{figure}[h]
   \centering
@@ -36,12 +36,12 @@ The prototype was built on top of AppRTC\footnote{https://apprtc.appspot.com/} w
 
 \subsection{Implementation}
 
-The application starts by turning on the back camera on the mobile device. It then asks the user to enter a “room number” to start the connection. Once this is entered, the application will start a call mode, waiting for other participants to enter the same the room number. Once the call is established, the mobile device will start streaming video and device orientation data to the viewing PC. 
+The application starts by turning on the back camera on the mobile device, and asking the user to enter a “room number” to start the connection. Once this is entered, the application will enter``call mode'', waiting for other participants to enter the same room number. Once the call is established, the mobile device will start streaming video and device orientation data to the viewing PC. 
 
 Both users can send comments to each other by clicking on any part of the shared video. The system then calculates the 3D position of the comment in the AR space and waits for the comment text to be entered. Once the user enters the message, the text is displayed on both the sender's and receiver's screens. The motion data of the sender's device is also shared so that the receiver will see the comment appearing at the same place as the sender turns his/her device. 
 
-Three different ways of showing comments on the live video stream were implemented (see Figure \ref{fig:mgia16:conditions} above). A list view where the comments are listed on the side of the camera feed view. An AR implementation (AR) where the comments were overlaid on top of the video feed and rotated around the user based on phone orientation, so the comments appear fixed at the location on the video where they were first entered. Finally, an AR + list implementation combined the list view with the AR view. In the next section, we report on a user study exploring these three implementations.
 
+Three different ways of showing comments on the live video stream were implemented (see Figure \ref{fig:mgia16:conditions} above). The first is a list view where the comments are listed on the side of the camera feed view. An AR view overlays comments on top of the video feed and rotated around the user based on phone orientation, so the comments appear fixed at the location on the video where they were first entered. Finally, an AR + list implementation combined the list view with the AR view. In the next section, we report on a user study exploring these three implementations.
 \begin{figure}[ht]
   \centering
   \includegraphics[width=.8\linewidth]{images/mgia16/participant2}
@@ -52,7 +52,7 @@ Three different ways of showing comments on the live video stream were implement
 
 \subsection{User Study}
 
-We conducted a controlled within-subjects user experiment to test the different user interfaces for displaying comments. There were three conditions: L) comments in a list, AR) comments on the video with AR visualization, and L+AR) comments on both. The experiment started with the participants giving consent and answering questions about demographic information. Then they went through a training session to get familiar with the application and the experimental procedures. To simulate different environments for the user, we used 180-degree panoramic images projected around the user on large screens to simulate different real spaces (see Figure \ref{fig:mgia16:participant}).
+We conducted a controlled within-subjects user experiment to test the different UIs for displaying comments, using the three approaches just explained. The experiment started with the participants giving consent and answering questions about demographic information. Then they went through a training session to get familiar with the application and the experimental procedures. To simulate different environments for the user, we used 180-degree panoramic images projected around the user on large screens to simulate different real spaces (see Figure \ref{fig:mgia16:participant}).
 
 \begin{figure}[ht]
   \centering
