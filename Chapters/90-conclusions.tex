@@ -1,0 +1,78 @@
+%Mark reviewed on May 9th 2019
+\chapter{Conclusions}
+\label{ch:conclusions}
+
+We introduced in this thesis the concept of AR Social Continuum in Chapter \ref{ch:continuum} to answer a few research questions about representing and interacting with social networks through AR wearable devices. We explored the main dimensions in representing self \& others in Chapter \ref{ch:contacts}, sharing data in Chapter \ref{ch:data} and annotation \& interactions in Chapter \ref{ch:annotation}. 
+
+The research focused on exploring how social proximity can be used to filter (i.e., show more/less details of) the representation of social contacts, shared virtual objects and the surrounding environments through wearable AR devices. In particular, we addressed four research questions about 1) the dimension and variables of the social AR continuum, 2) the representation of self and others as virtual avatars on the social continuum, 3) the representation of data and shared environments, and 4) the interactions and annotations techniques between social contacts.   
+
+To answer the research questions above, we built software prototypes to explore and validate different dimensions on the social AR continuum. We ran user studies to evaluate the user interactions with these prototypes, we statistically analysed the results and reported on the quantitative and qualitative results. 
+
+In this chapter we discuss the lessons learned from the user studies as well as summarise the general directions for future uses and developments of the AR Social Continuum. 
+
+\pagebreak
+
+\section{Lesson Learned}
+
+To answer \textit{\ref{rq:continuum}: How to represent social networks and shared social data on wearable AR devices}, we established the concept and dimensions of the social AR continuum (Chapter \ref{ch:continuum}).
+
+\begin{itemize}
+    \item{The dimensions of the social AR continuum can be used to vary the shared social experience based on social proximity. These dimensions include: 1) self and others, 2) shared data and the surrounding environments, and 3) interaction and annotations.}
+    \item{Future scenarios have been described where using the social AR continuum could help enhance the shared social AR experience. Those scenarios include: 1) collaborative home decoration, 2) sharing a home office, 3) face-2-face social drinks, and 4) social connections at a conference.}
+\end{itemize}
+
+To answering \textit{\ref{rq:interaction}: How to represent annotations/tags on wearable AR devices for shared social experiences}, we explored three concepts in sharing annotation and interaction for sharing social experiences. We ran a user study on sharing social videos (section \ref{sec:video}), and compared three conditions: List, AR, List+AR. We looked into creating and finding 3D annotations for social AR tagging (section \ref{sec:3D}). We looked into sharing 360 panoramas for sharing social experiences (section \ref{sec:pano}). 
+
+\begin{itemize}
+    \item{There was no statistical significance in usability between the List, AR and List+AR conditions for visualising comments on shared social videos. This indicates that all three conditions have equally good usability for the user.}
+    \item{There was statistical difference in Social Presence of perceived message understanding and affective understanding between the List and AR conditions. This indicates that there is higher perceived messages and affective understanding in the AR and List+AR conditions compared to the List condition}
+    \item{There was also a statistical difference in terms of ranking between the List and AR conditions, indicating that users preferred AR conditions over non-AR condition}
+    \item{We developed a prototype extending a normal 2D wearable (Google Glass) interface with a 3D sensor (Google Tango) to enable placing AR social annotations in real 3D spaces}
+    \item{We found statistical significance indicating that using our 3D tagging system was easy and natural to use and was not found to be physically or mentally challenging. We also found a previously created AR tag was statistically significant in being useful.}
+    \item{We developed a prototype connecting a wearable headset with a hand-held interface through networking protocol to share a 360 panoramic image for sharing social experiences.}
+    \item{We compared three interaction techniques (audio, pointing and drawing)}
+    \item{We found statistically significant results in using Google Glass for drawing comparing to pointing and audio}
+\end{itemize}
+
+To answer \textit{\ref{rq:data}: How to share virtual objects/data with our social network on wearable AR devices}, we explored filtering shared social 360 videos (section \ref{sec:surrounding:360}), sharing 3D captured room surroundings (section \ref{sec:surrounding:environment}), and the privacy concerns of hiding and showing parts of the shared room (section \ref{sec:surrounding:hiding}). 
+
+\begin{itemize}
+    \item{We developed several prototypes on Microsoft HoloLens for sharing and filtering social data such as 360 panorama video and 3D scanned room surroundings. The filtering is based on social proximity between social contacts.}
+    \item{We found statistical significance confirming that filtering the shared social data is more preferred in terms of Social Presence.}
+    \item{We found that perceived comfort in terms of privacy was statistically significant when a proximity filter was applied comparing to no filter.}
+    \item{We found statistical significance in co-presence and comfort between using a proximity filter and no filter}
+    \item{We found that the privacy of shared spaces was more important for the sharer than for the viewer.}
+    \item{We found that the hiding mechanism had no significant difference between 1) removing, 2) blurring and 3) overlaying. However the most preferred mechanism for hiding shared social data was to remove them completely from the viewer's view.}
+\end{itemize}
+
+To answer \textit{\ref{rq}: How to visualise our social contacts as virtual avatars on wearable AR devices}, we explored two dimensions on the social AR continuum; 1) visualising social contacts (section \ref{sec:contacts:visualising}) and placement of social contacts (section \ref{sec:contacts:placing}). 
+
+\begin{itemize}
+    \item{We built a Microsoft HoloLens prototype visualising different level of details of social contacts based on proximity. The prototype allows users to change the social relationship with others by selecting and moving them closer or further away.}
+    \item{We found statistically significant results in comparing visual fidelity with only proximity and no filter in terms of natural interaction, ease of use, and the ability to distinguish between social contacts.}
+    \item{The preferred option was to combine both visual fidelity and proximity as filter for representing social contacts}
+    \item{For placing social contacts there was no significant difference between viewing them as life-size avatars versus miniature representation. However both options scored above average in a subjective questionnaire in terms of usefulness, natural interaction and ease of use.}
+\end{itemize}
+
+%If you wanted to you could provide some overall design guideline recommendations for people building similar interfaces
+
+%It might be good to add some paragraphs about research limitations and then use this to provide some input into possible future directions for research.
+
+\pagebreak
+\section{Future Research Directions}
+
+We presented the concept of the Social AR Continuum and implementation of the main dimensions on the continuum. We tested these dimensions with user evaluation studies. However there are still many directions for future research. The following summarises some key opportunities for research in Social AR:  
+
+Extending user study evaluations to include larger number of participants. Large number of participants are important for social related research as most of our social interaction is driven and motivated by our group of social circles which was established over years of connection and trust.  In addition, it would be good to run user studies in real social scenarios with actual group of friends.
+
+In this research we had a limited number of participants to reduce the complexity of running the study, and in some cases participants were not exactly representing the circles of friends that match their own circles. We also ran controlled studies where the scenario or situation was dictated to the participants with a predetermined task that simulate a social situation. Finally, in some cases the remote participants were simulated, rather than real people, which would be expected to have very different behaviours that actual users.
+
+In the future it would be good to explore other dimensions on the social AR continuum that were not covered in this thesis or discovered due to advances in technology or the way people interact with each other. 
+Ideas for new dimensions can be inspired by new interactions methods or based on imagination or fictional books or films. 
+It is also important to be able to identify and validate any new continuum dimension with a validation method. A guideline process could be established for implementing a new dimension on the continuum and help with designing and developing applications for the new dimensions. 
+
+There is also an opportunity to explore the interactions between this social AR continuum and other design paradigm, including other devices or platforms (e.g., hand-held, projected, etc.) and for different objectives other than social sharing (e.g., collaborative, business, play, etc).
+
+Finally, an interesting future direction would be to explore how the social AR continuum would be affected in extreme environments (e.g. Antarctica, outer space, etc) with the limitations of connection bandwidth/speed and limited device availability. The exploration would need to include adaptability to various limitations of environments and interactions. 
+
+%there are other areas the could be explored as well - including, avatar representation, including audio representations of social contacts (eg - spatial audio to differential), applications based on the Social AR Continuum (e.g. new types of gaming), more complex interaction, etc.
