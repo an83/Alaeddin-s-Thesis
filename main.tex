@@ -52,7 +52,7 @@ headsepline, % Uncomment to get a line under the header
 \usepackage{verbatim} % for comments
 \usepackage{palatino} % Use the Palatino font by default
 \usepackage{enumitem}
-\usepackage[backend=bibtex,style=numeric,natbib=true,doi=false,isbn=false,url=false]{biblatex} 
+\usepackage[backend=bibtex,style=numeric,natbib=true,doi=false,isbn=false,url=false,maxbibnames=9,maxcitenames=1,sortcites=true,sorting=nyt]{biblatex} 
 
 % \addbibresource{example.bib} % The filename of the bibliography
 \addbibresource{references.bib} % mendeley
@@ -295,17 +295,11 @@ The acknowledgements and the people to thank go here, don't forget to include yo
 % Uncomment the lines as you write the chapters
 
 \input{Chapters/10-intro}
-
 \input{Chapters/20-background}
-
 \input{Chapters/30-continuum}
-
-\input{Chapters/40-annotation}
-
+\input{Chapters/60-contacts}    % note chapter 6 was moved here instead of chapter 4
 \input{Chapters/50-surrounding}
-
-\input{Chapters/60-contacts}
-
+\input{Chapters/40-annotation}
 \input{Chapters/90-conclusions}
 
 \setstretch{1} 
