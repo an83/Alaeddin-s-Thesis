@@ -5,7 +5,7 @@ This section describes a system and a user study for sharing social surrounding 
 
 In a user study with the prototype, we focused on how socially connected participants felt, as well as on how they felt knowing that they were sharing more or fewer details of their surrounding environment with their social contacts. We found that all participant preferred having a social filter when sharing a view of their environment over having no filter. We discuss the research findings and outline future directions for research in sharing social surrounding spaces on wearable AR devices. 
 
-It is easy to imagine that in the future it will be possible for wearable AR systems to be used to capture and share a 3D view of the user's surroundings with hundreds or thousands of followers on a social network. However, before this becomes commonplace, many exciting research questions should be addressed. For example, would a person be comfortable with sharing a view of their real space with relative strangers? This work aims to explore how wearable AR systems could share a user’s surrounding room environment with social contacts and to measure how comfortable the sharer and the viewer would feel regarding privacy in different interface options. 
+It is easy to imagine that in the future it will be possible for wearable AR systems to be used to capture and share a 3D view of the user's surroundings with hundreds or thousands of followers on a social network. However, before this becomes commonplace, many exciting research questions should be addressed. For example, would a person be comfortable with sharing a view of their real space with relative strangers? This work aims to explore how wearable AR systems could share a user's surrounding room environment with social contacts and to measure how comfortable the sharer and the viewer would feel regarding privacy in different interface options. 
 
 In the remainder of the section, we first report on related work that is informing our research, then describe a prototype system we have developed mocking up potential interface options. We present the design of a user study with the prototype and the results of the study. Finally, we end with a conclusion and discussion of areas for future research.
 
@@ -20,7 +20,7 @@ In the remainder of the section, we first report on related work that is informi
 
 We built an AR prototype system using a Microsoft HoloLens\footnote{https://www.microsoft.com/en-us/hololens} that connects a person (the sharer) sharing a view of their surrounding physical space to a remote person (the viewer) viewing the shared virtual room overlaid on top of their physical space. Figure \ref{fig:frontier18:system} shows the components of the system that we developed.
 
-In the future, it will be possible to scan and immediately create a 3D model of the wearable AR user’s surroundings. We emulate this by creating a virtual 3D room modelled to match the sharer’s real room as if it had been 3D scanned (see figure 2).  The 3D modelling was done on Autodesk Maya\footnote{https://www.autodesk.com/education/free-software/maya} and rendered on the HoloLens display using the Unity3D\footnote{https://unity3d.com/} game engine. The avatars representing the remote people were generated using MakeHuman\footnote{http://www.makehumancommunity.org/}.
+In the future, it will be possible to scan and immediately create a 3D model of the wearable AR user's surroundings. We emulate this by creating a virtual 3D room modelled to match the sharer's real room as if it had been 3D scanned (see figure 2).  The 3D modelling was done on Autodesk Maya\footnote{https://www.autodesk.com/education/free-software/maya} and rendered on the HoloLens display using the Unity3D\footnote{https://unity3d.com/} game engine. The avatars representing the remote people were generated using MakeHuman\footnote{http://www.makehumancommunity.org/}.
 
 We used UNET\footnote{https://docs.unity3d.com/Manual/UNet.html} as the high-level networking API from Unity to synchronise the state of the shared room and the remote person. The state of the remote person includes 1) the position and rotation of the virtual avatar representing the remote person, 2) the level of detail of the avatar based on the social relationship (i.e., stranger=half 2D image, friend=2D image, intimate=3D avatar). The synchronised state of the room involves changing the level of detail of the shared room depending on the social relationship as well as which part of the room is hidden by the user. 
 
@@ -46,7 +46,7 @@ Task 1: View/share a room with or without a social proximity filter (see Figure 
 Task 2:  The mechanism of hiding room parts for social proximity filter (see Figure \ref{fig:frontier18:hiding-mechanism}). In this task we had three conditions:
 
 \begin{itemize}
-\item T2C1: Remove – where objects are hidden by being removed from the viewer’s scene.
+\item T2C1: Remove – where objects are hidden by being removed from the viewer's scene.
 \item T2C2: Overlay – where objects are hidden by being overlaid by a white box. 
 \item T2C3: Blur – where objects are hidden by appearing blurred to the viewer. 
 \end{itemize}

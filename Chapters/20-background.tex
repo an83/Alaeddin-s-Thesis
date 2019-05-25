@@ -1,48 +1,53 @@
 \chapter{Related Work}
-\label{ch:background} 
+\label{ch:background}
+
+% \todo[inline]{Gun: Again, it feels like you need better grouping of the sections as in the current structure, many of them overlap with each other and it's a bit hard to see the logical flow of supporting why your thesis is important and how it fills in the research gap/limitation of the current state-of-the-art}
+
+% \todo[inline]{Mark: This is important but probably should be in this section since it's not about virtual avatars. Maybe you need to have a section about information management, and discuss how these techniques could be used to manage avatar representations in Social AR.}
+
 This work extends earlier work in wearable AR, AR annotation, social proximity, virtual avatars, research collaboration, telepresence and sharing social experiences. This section examines previous related work on wearable AR, AR collaboration, and sharing social experiences from the social AR perspective. 
+
 \section{Wearable AR} 
 
-AR devices can be categorised into wearable (e.g., head-mounted displays, helmet or contact lens), handheld (e.g., phone, tablet) or projected displays where AR is projected onto a larger area regardless of where the user is looking~\cite{Peddie2017}. 
+AR devices can be categorised into wearable (e.g., head-mounted displays, helmet or contact lenses), hand-held (e.g., phone, tablet) or projected displays where AR is projected onto a larger area regardless of where the user is looking~\cite{Peddie2017}. 
 
-\cite{Feiner1997a} presented the first mobile wearable AR system in 1997 called "Touring Machine" combining a head-mounted display (HMD), hand-held tablet, and a backpack carrying a computer GPS and radio for wireless access. \cite{Hollerer1999a} followed up and explored different user interfaces on a wearable see-through display. The interface allowed users to sketch pathways and annotate their world for collaborative AR systems. 
+\textcite{Feiner1997a} presented the first mobile wearable AR system in 1997 called "Touring Machine" combining a head-mounted display (HMD), hand-held tablet, and a backpack carrying a computer GPS and radio for wireless access. This work was followed up by \textcite{Hollerer1999a} and explored different user interfaces on a wearable see-through display. The interface allowed users to sketch pathways and annotate their world for collaborative AR systems. 
 
-Wearable AR has added an extra dimension to AR allowing people to collaborate hands-free. \cite{Feiner1999} talked about what impact wearable computing (and being mobile in general) has from the social perspective. These implications include personal privacy concerns, connectivity, collaboration and how it looks and feels. 
+Wearable AR has added an extra dimension to AR allowing people to collaborate hands-free. \textcite{Feiner1999} talked about what impact wearable computing (and being mobile in general) has from the social perspective. These implications include personal privacy concerns, connectivity, collaboration and how it looks and feels. 
 
-Wearable AR has been explored for social interactions. For instance, \cite{Cheok2002a} developed a wearable mixed reality experience where social interactions take place. \cite{Amores2015} used gestures to communicate social interactions via wearable devices. \cite{Lee2019} used live 360 cameras to communicate between worker and helper. \cite{Shu2018} developed a system of facial recognition to facilitate social interactions. 
+Wearable AR has been explored for social interactions. For instance, \textcite{Cheok2002a} developed a wearable mixed reality experience where social interactions take place. \textcite{Amores2015} used gestures to communicate social interactions via wearable devices. \textcite{Lee2019} used live 360 cameras to communicate between worker and helper. \textcite{Shu2018} developed a system of facial recognition to facilitate social interactions. 
 
-With wearable AR devices becoming affordable, available and ubiquitous, there is a need to understand design considerations for this new platform. Previous research has looked into using AR headsets for collaborative use. For example in enhancing face to face \cite{Billinghurst2002} or remote collaboration \cite{Gupta2016}. The research presented here explores the use of AR headsets for social interaction and shared experiences. Social interactions can be extrapolated from current social network interactions where \enquote{friends} share content and interact with another's content (i.e., placing likes and comments).
+With wearable AR devices becoming affordable, available and ubiquitous, there is a need to understand design considerations for this new platform. Previous research has looked into using AR headsets for collaborative use. For example in enhancing face-to-face \cite{Billinghurst2002} or remote collaboration \cite{Gupta2016}. The research presented here explores the use of AR headsets for social interaction and shared experiences. Social interactions can be extrapolated from current social network interactions where \enquote{friends} share content and interact with another's content (i.e., placing likes and comments).
 
-A review of AR usability studies \cite{Dey2018} ... \todo[inline]{ref} 
+\textcite{Dey2018} reviewed ten years of research in AR usability studies and highlighted the importance of user studies in AR research especially the social and environmental impact of user studies that take place in outdoor locations. Collaboration was one of main categories of AR user studies, but surprisingly  fewer than expected until 2014. They also reported on the increased availability of hand-held and wearable devices enabled for more research in this area. 
+
+AR in remote collaboration was studied in to see if AR was enhancing task completion \cite{Kim2014, Tversky2015, Gupta2016, Kim2015}.
+\textcite{hauber2008understanding} studied remote video collaboration focusing on the spatial interactions. In four experiments, the author measured social presence, awareness, physical presence, co-presence, ease of use and efficiency between different conditions including immersive and virtual environments as well as standard video conferencing. Those experiments found higher social presence in video collaborative virtual environments comparing to standard video conferencing. Also found that standard video or face to face collaboration was better than adding avatars in virtual collaboration.
+
+% \todo[inline]{Again, what did you learn from these works? Your related-work section reads more like a laundry list of previous papers, rather than a set of papers that you read and learned something from, thereby informing your own choices and work. You've (rightfully) chosen to structure your related work section around larger themes, since this makes sense in terms of your own work. Now you need to help the reader understand what the papers you cite have done to help you.}
 
 % There is a need to understand design considerations for this new platform. Previous research has looked into using wearable AR headsets for collaborative use, for example in enhancing face to face \cite{Billinghurst2002} or remote collaboration \cite{gupta2016you}. The research presented here explores the use of AR headsets for social interaction and shared experiences. 
 
 \section{AR Annotation, Collaboration and Telepresence}
 
-\todo[inline]{Add citation to \cite{Wither2009a}}
-
-\cite{Gauglitz2014}
-
-\cite{Larabi2018}
-
-\todo[inline]{Add citation to \cite{Grasset2012}}
-
-There are a number of examples of AR annotation demonstrations on mobile devices. For example, mobile AR browsers (e.g., Wikitude\footnote{https://www.wikitude.com/} or Junaio\footnote{https://en.wikipedia.org/wiki/Junaio}) can overlay AR tags in the real world using GPS and other motions sensors. While they were successful in demonstrating the concept of visualising AR annotation, the registration of virtual objects in the real world can be inaccurate and they can only be used in outdoor, large-scale environments. Mobile AR browsers usually create AR tags in advance, but  AR research projects have investigated in-situ and interactive creation of AR tags. For example, \cite{Kim2011} presented an interactive method where the user stands in a fixed position to calibrate the room model with the gyroscope data. The user can then touch and annotate locations with a rectangle where virtual content, like text, images and 3D models, can be overlaid. 
+There are a number of examples of AR annotation demonstrations on mobile devices \cite{Wither2009a, Gauglitz2014, Larabi2018, Grasset2012}. For example, mobile AR browsers (e.g., Wikitude\footnote{https://www.wikitude.com/} or Junaio\footnote{https://en.wikipedia.org/wiki/Junaio}) can overlay AR tags in the real world using GPS and other motions sensors. While they were successful in demonstrating the concept of visualising AR annotation, the registration of virtual objects in the real world can be inaccurate and they can only be used in outdoor, large-scale environments. Mobile AR browsers usually create AR tags in advance, but  AR research projects have investigated in situ and interactive creation of AR tags. For example, \cite{Kim2011} presented an interactive method where the user stands in a fixed position to calibrate the room model with the gyroscope data. The user can then touch and annotate locations with a rectangle where virtual content, like text, images and 3D models, can be overlaid. 
 
 A variety of AR annotation methods with wearable interfaces have also been presented. Sixsense \cite{Mistry2009} used a wearable gestural interface for AR annotation. It consists of a camera and a small projector mounted on a hat or in a pendant. The camera tracks user hand gestures and the projector visually augments virtual content onto the physical objects with which the user is interacting. However, the system requires planar surfaces in front of the user for accurate projection because of the lack of a depth sensor. OmniTouch \cite{Hollerer1999a} is a wearable projection system equipped with depth-sensing technology that enables interactive multi-touch applications on different surfaces. Both the depth camera and projector are mounted onto a form-fitting metal frame, which is worn on the shoulders, and secured with a chest strap. This system extends the typical scenarios supported by Sixsense to on-body surfaces or objects held in the hand for image projection. However, the system was still bulky and inconvenient to use because it needed to be connected to a desktop computer.
 
 \begin{figure}
     \centering
     \includegraphics[width=\linewidth]{images/Huang2013.PNG}
-    \caption{HandsInAir: A Wearable System for Remote Collaboration}
+    \caption{HandsInAir: A Wearable System for Remote Collaboration \cite{Huang2013}}
     \label{fig:HandsInAir}
 \end{figure}
 
-Camera-equipped mobile devices provide a quick way of capturing and sharing experiences and spaces. Wearable computers that combine HMDs and cameras provide new opportunities for collaboration. For example, the Google Glass\footnote{http://www.google.com/glass/} wearable system has a camera, mic, and head-worn display.
+Camera-equipped mobile devices provide a quick way of capturing and sharing experiences and spaces. Wearable computers that combine HMDs and cameras provide new opportunities for collaboration. For example, the Google Glass\footnote{http://www.google.com/glass/} wearable system has a camera, microphone, and head-worn display.
 
 There has been a significant amount of earlier research on remote collaboration using head-mounted cameras and displays. For example, allowing a remote user to place virtual annotations on the live camera view from a head-worn camera and showing the result in the wearers HMD, has been shown to enhance remote collaboration \cite{Fussell2003}. Other systems allow a remote user to place their hands in the local user's view \cite{Huang2013} (Figure \ref{fig:HandsInAir}). 
 
-In many wearable and mobile AR applications, remote collaboration is the main purpose for sharing a view of the user's world. For example, remote expert collaboration systems have been developed where a local worker with an AR display can share a live video view of their workspace with a remote expert \cite{Billinghurst2002}. The remote expert can provide visual feedback with AR graphical cues.  However, most of these systems have just been developed for collaboration between small numbers of users, and not for more extensive social networks. (Figure \ref{fig:Billinghurst2002})
+\todo[inline]{Add reference to \cite{Muller2017}}
+
+In many wearable and mobile AR applications, remote collaboration is the main purpose for sharing a view of the user's world. For example, remote expert collaboration systems have been developed where a local worker with an AR display can share a live video view of their workspace with a remote expert (Figure \ref{fig:Billinghurst2002}) \cite{Billinghurst2002}. The remote expert can provide visual feedback with AR graphical cues.  However, most of these systems have just been developed for collaboration between small numbers of users, and not for more extensive social networks. 
 
 \begin{figure}
     \centering
@@ -53,7 +58,7 @@ In many wearable and mobile AR applications, remote collaboration is the main pu
 
 When people connect in this way, they may also want to share different amounts of information about their surroundings with each other. For example, users who are close friends in a social network may be happy to share a 3D virtual view of their surroundings and have the remote user appear as an AR avatar in their real space, while those that are strangers may only want to have an audio connection and not show anything of their surroundings to preserve their privacy \cite{Oetzel2011}. The position on the social continuum could be used to modify how much information a person can share about themselves and their surroundings.
 
-\cite{Fuchs2014} (Figure \ref{fig:Fuchs2014}) studied telepresence via a scanned 3D environment to enable social connections with people and simulated face-to-face interactions. The remote person was scanned and reconstructed live in the local environment. They forecasted that 3D telepresence was going to be more popular when technology becomes more capable.
+\textcite{Fuchs2014} (Figure \ref{fig:Fuchs2014}) studied telepresence via a scanned 3D environment to enable social connections with people and simulated face-to-face interactions. The remote person was scanned and reconstructed live in the local environment. They forecasted that 3D telepresence was going to be more popular when technology becomes more capable.
 
 \begin{figure}
     \centering
@@ -62,7 +67,29 @@ When people connect in this way, they may also want to share different amounts o
     \label{fig:Fuchs2014}
 \end{figure}
 
-\section{Social Proximity \& Virtual Avatars}
+\section{Social Networks}
+
+AR was used to enhance social presence and create more engaging experiences in video based communications \cite{Almeida2012}. They built a prototype to segment the hand and overlay it on the video stream to create shared space experiences.
+
+A lot of previous work looked into social interactions in AR \cite{Schmalstieg_144, Xu2008, Xu2011, Faas2010}. \textcite{Schmalstieg_144} built a handheld game to test social interactions between players and found that mobility gives an advantage of making the game socially enjoyable and engaging. \textcite{Xu2011} reported on social interaction observation on a tabletop board game. The game is played through handheld AR devices. They discovered five categories of social interactions: 1) chores, 2) reflecting on gameplay, 3) deciding strategy of play, 4) game itself and 5) out of game subjects. They found that chore-based social interactions are richer interactions and help the users to be more emotionally connected with each other which increases the engagement throughout the game.
+
+Advancements in mobile phone hardware and increased network connectivity made live video streaming apps popular among smartphone users \cite{Liu2008}. Live video streaming apps have been used for sharing social experiences in various contexts. For instance, a person attending a conference or a concert could use her mobile phone to stream the event to her friends and family who could not be there. Similarly, live video streaming apps have also been used for social journalism \cite{Lenzner2014}, turning laypersons into live reporters. Consequently, these apps are now available from different sources with applications such as Periscope\footnote{https://www.periscope.tv/} and Facebook Live\footnote{https://live.fb.com/} among the most popular. These apps allow the users who are sharing to receive comments on the video they are sharing, and to receive simple graphical feedback. 
+
+Common features, such as using the phones' camera which can be either pointed outward (recording what the user sees) or inward (where the user appears in the video), allow users to send a live video stream of what they are doing to hundreds or even thousands of viewers. The purpose of sharing the video is social, so the experience is improved if the viewer can also provide feedback.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=.4\linewidth]{images/periscope.png}
+    \includegraphics[width=.4\linewidth]{images/facebook-live.png}
+    \caption{Examples of live-streaming apps}
+    \label{fig:live-streaming}
+\end{figure}
+
+In these applications, the feedback comments usually appear in a list below or beside the video being shared (Figure \ref{fig:live-streaming}), separate from the visual context of what the viewer is commenting on. This may cause problems when the person sending the video changes his or her viewpoint. For example, a viewer might send the comment "I really like that view", but by the time the comment appears, the view might already have changed from the view being commented on.
+
+Future social interactions with wearable AR can be extrapolated from current social network interactions where friends share content and interact with others' content on mobile platforms such as Facebook and Instagram. For example, Facebook live allows a person with a mobile phone to live stream to remote collaborators. Similarly, wearable AR systems have already been developed that enable people to share a view of their surroundings. For example, the Shared Sphere work of \cite{lee2017mixed} allows a user with a wearable AR display to live stream a 360-degree video of their surroundings to a remote collaborator, although only between pairs of users. 
+
+\section{Virtual Avatars}
 
 In the social AR/VR space, previous work implemented a variety of visual representations of self and others. \cite{Fanello2016} prototyped live sharing of a full scan of a person's body with remote users using 3D cameras and the HoloLens\footnote{https://www.microsoft.com/en-nz/hololens}. For representing "people" in AR space, \cite{Sousa2016} (Figure \ref{fig:Sousa2016}) studied the concept of \enquote{personal space} and \enquote{social bubbles} in terms of proxemic interactions between people in different places. They used floor projections and hand-held devices to communicate the presence of remote people. They also established a \enquote{gradual engagement model for remote proxemics} based on distance from the user which consisted of 1) personal, 2) engaged, 3) peripheral and 4) ambient.
 
@@ -77,6 +104,9 @@ Most previous work has focused on how visual representation and proximity could 
 % For example, a person may not want strangers to know what they look like, and so would prefer being represented as a stylistic icon to people that do not know them, but would be more comfortable sharing a lifelike representation to those that are close to them. 
 
 Similarly, some companies (such as High Fidelity\footnote{https://highfidelity.com/}, Sansar\footnote{https://www.sansar.com/}, Itsme3D\footnote{https://www.itsme3d.com/}) and other VR shared worlds) are building social VR experiences in which users are represented as 3D virtual avatars. In the social VR space, previous work implemented a variety of visual representations of self and others. For instance, virtual avatars have been used to share social experiences such as in Facebook Spaces\footnote{https://www.facebook.com/spaces} (Figure \ref{fig:facebook-spaces}, left) where users can meet in VR, take selfies and teleport to a 360-degree video. Virtual avatars for self and others are represented as floating face and upper body rendered in a VR background. 
+
+360 video has been studied as a medium for mixed reality enabled remote collaboration tasks \cite{Tang2017a, Lee2017, lee2017mixed, Lee2019}. Results show that by using 360 video, the remote user can have an independent view of the local person and be able to achieve higher co-presence and more effective in task completion. 
+
 
 \begin{figure}
     \centering
@@ -100,37 +130,20 @@ Saptiate\footnote{http://spatiate.com/} is another social app launched in early 
 
 However, representing social contacts in VR/AR can be cumbersome. It will be more cluttered and overwhelming to represent the data content that social avatars are trying to share. Representing social data has been imagined by futuristic concept videos (e.g., "Hyper Reality"\footnote{https://www.youtube.com/watch?v=YJg02ivYzSs} and "Merger"\footnote{https://www.youtube.com/watch?v=SqW2dEkiD-Y}) where social data can clutter the AR view of the user. It will also raise privacy and ethical concerns.
 
-\cite{Jo2016} studied the influence on co-presence of the background environment (AR vs VR) and the fidelity of the avatar representation of the remote user (photo-realistic vs pre-built). They found that more realistic avatars had a positive impact on the feeling of co-presence between remote collaborators. \cite{Volante2016} also studied the impact of the visual appearance of avatars (realistic vs. stylized) on the inter-personal emotional response of participants. They also found that more visual realism has lower negative affects on the PANAS scale, which measure the intensity of the emotion at a given time. 
-Researchers have been investigating social aspects of multi-user VR environments. \cite{Ducheneaut2006} studied massive multiplier online games in terms of social activities, and found that while users may prefer to be with other players, they do not necessarily like actively interacting with them. This led us to think that users may want to have the sense of the presence of social contacts around them, but not necessarily interact with them.
+\textcite{Greenwald2017} - studied social presence in room scale VR. They used virtual avatars for communicating and collaboration in a social setting. They found that using embodied avatars in VR interactions is practical for collaboration tasks with the benefit of social presence. One of the tasks was drawing to communicate which was challenging for participants. 
 
-\cite{Harris2009} studied the social behaviour of users of Second Life, and found that users became less active over time and go to familiar places rather than being explorative and actively teleporting/flying. This suggests that people prefer routine and to be surrounded by familiar faces/places over time, forming a social group.
+\textcite{Jo2016} studied the influence on co-presence of the background environment (AR vs VR) and the fidelity of the avatar representation of the remote user (photo-realistic vs pre-built). They found that more realistic avatars had a positive impact on the feeling of co-presence between remote collaborators. \textcite{Volante2016} also studied the impact of the visual appearance of avatars (realistic vs. stylized) on the inter-personal emotional response of participants. They also found that more visual realism has lower negative effects on the PANAS scale, which measure the intensity of the emotion at a given time. Researchers have been investigating social aspects of multi-user VR environments. \textcite{Ducheneaut2006} studied massive multiplayer online games in terms of social activities, and found that while users may prefer to be with other players, they do not necessarily like actively interacting with them. This led us to think that users may want to have the sense of the presence of social contacts around them, but not necessarily interact with them.
+
+\textcite{Harris2009} studied the social behaviour of users of Second Life, and found that users became less active over time and go to familiar places rather than being explorative and actively teleporting/flying. This suggests that people prefer routine and to be surrounded by familiar faces/places over time, forming a social group.
 
 % mark: [you should about how they handle crowds or if everyone is just represented the same] 
 However, there has been very little research into social representation in AR. The AR space is more challenging in terms of finding the best locations to fit avatars in the real world so they do not interfere with physical objects or appear suspended in mid-air. However, a social AR application can also allow people to see their friends while doing other tasks; users do not have to use an immersive VR environment to see their social contacts.
 
-Researchers have also explored different ways of managing a large amount of information tags in AR interfaces. \cite{Julier2002} showed how environmental cues, such as distance and user context, can be used to filter AR content into the most relevant information. \cite{Hollerer2001} describe how view management techniques can be used to ensure that virtual objects can be easily seen in collaborative AR interfaces. Similarly \cite{Grasset2012} show how an image-based approach can be used to ensure AR information tags don't overlap in handheld AR. 
+Researchers have also explored different ways of managing a large amount of information tags in AR interfaces. \cite{Julier2002} showed how environmental cues, such as distance and user context, can be used to filter AR content into the most relevant information. \cite{Hollerer2001} describe how view management techniques can be used to ensure that virtual objects can be easily seen in collaborative AR interfaces. Similarly \cite{Grasset2012} show how an image-based approach can be used to ensure AR information tags don't overlap in hand-held AR. 
 
 This previous research shows that visual fidelity can be used to distinguish between virtual avatars. Different visual representations and spatial cues can also be used to distinguish between information tags in an AR interface. However, there has been little or no research on how to manage social network representations in AR for large numbers of connections. In the next section, we show how visual and proximity cues could be used to organise contacts in a wearable social AR interface.
 
 % \todo[inline]{[In this section you should probably also mention how VR Virtual Avatar environments handle hundreds or more simultaneous users. For example, what tools does second life have for connecting people to hundreds of others. This is directly relevant to your thesis topic]}
-
-\section{Sharing Social Experiences \& Social Networks}
-
-Advancements in mobile phone hardware and increased network connectivity made live video streaming apps popular among smartphone users \cite{Liu2008}. Live video streaming apps have been used for sharing social experiences in various contexts. For instance, a person attending a conference or a concert could use her mobile phone to stream the event to her friends and family who could not be there. Similarly, live video streaming apps have also been used for social journalism \cite{Lenzner2014}, turning laypersons into live reporters. Consequently, these apps are now available from different sources with applications such as Periscope\footnote{https://www.periscope.tv/} and Facebook Live\footnote{https://live.fb.com/} among the most popular. These apps allow the users who are sharing to receive comments on the video they are sharing, and to receive simple graphical feedback. 
-
-Common features, such as using the phones' camera which can be either pointed outward (recording what the user sees) or inward (where the user appears in the video), allow users to send a live video stream of what they are doing to hundreds or even thousands of viewers. The purpose of sharing the video is social, so the experience is improved if the viewer can also provide feedback.
-
-\begin{figure}
-    \centering
-    \includegraphics[width=.4\linewidth]{images/periscope.png}
-    \includegraphics[width=.4\linewidth]{images/facebook-live.png}
-    \caption{Examples of live-streaming apps}
-    \label{fig:live-streaming}
-\end{figure}
-
-In these applications, the feedback comments usually appear in a list below or beside the video being shared (Figure \ref{fig:live-streaming}), separate from the visual context of what the viewer is commenting on. This may cause problems when the person sending the video changes his or her viewpoint. For example, a viewer might send the comment "I really like that view", but by the time the comment appears, the view might already have changed from the view being commented on.
-
-Future social interactions with wearable AR can be extrapolated from current social network interactions where friends share content and interact with others' content on mobile platforms such as Facebook and Instagram. For example, Facebook live allows a person with a mobile phone to live stream to remote collaborators. Similarly, wearable AR systems have already been developed that enable people to share a view of their surroundings. For example, the Shared Sphere work of \cite{lee2017mixed} allows a user with a wearable AR display to live stream a 360-degree video of their surroundings to a remote collaborator, although only between pairs of users. 
 
 
 %----------------------------------------------------------------------------------------
@@ -148,7 +161,7 @@ The summary of the trends in the past work is that
 % summary of wearable AR 
 wearable AR has been the target of many previous developments and research directions. Aiming to enable true outdoor experiences and to be untethered to physical places would allow more exploration of the surrounding world. 
 % summary of AR collaboration 
-Most of the previous work on AR focused on AR applications for remote collaboration and expert-helper situations. Very few focused on how do we use AR in connecting with our friends and family and for sharing social experiences. Most current commercial applications are focused on expert-helper situations.
+Most of the previous work on AR was focused on AR applications for remote collaboration and expert-helper situations. Very few focused on how we use AR in connecting with our friends and family and for sharing social experiences.
 % Summary of social AR
 In the social aspects of AR, previous work showed few attempts of representing social networks in AR and VR. Also, some applications looked into scanning and using human avatar representations for social connections with others.
 
@@ -160,9 +173,10 @@ The contributions to the current state-of-the-art are: 1) building software prot
 
 % \todo[inline]{Gun: You should have a paragraph summarizing the trend in the past work and what is the limitation to support why your work is important. Or you may add a section at the end of this chapter that does an overall review of the whole chapter and describe how your thesis makes contribution to the current state-of-the-art.}
 
-% \todo[inline]{You should end the chapter with a summary of the research gap that you’re going to be addressing.}
+% \todo[inline]{You should end the chapter with a summary of the research gap that you're going to be addressing.}
 
 % \todo[inline]{[At the end of the related work section you should have a sub-section that provides a summary of the research, particularly highlighting the research gaps and shortcomings of this earlier work. You can then talk about which aspects that you are going to explore further in your PhD thesis. Highlight what is the novelty of your thesis, and what will be the main contributions that your research will make, relative to the earlier related work] }
 
 % \subsection{Sharing for Collaboration}
 % \subsection{Sharing for Social}
+
