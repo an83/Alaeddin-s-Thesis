@@ -16,26 +16,20 @@ This work categorises the social AR dimensions into three areas: 1) People (self
     \label{fig:continuum:categories}
 \end{figure}
 
-
-This work aims to layout the space of the AR continuum for social sharing experiences by looking at parameters and options that can be manipulated in terms of people, objects and the environment to create a shared AR experience.
+This work aims to layout the space of the AR continuum for social sharing experiences by looking at parameters and options that can be manipulated in terms of people, objects and interactions to create a shared AR experience.
 
 \section{The Social AR continuum Dimensions}
-
-\todo[inline]{
-How have you methodologically created the AR continuum:
-Once you made clear why you need this continuum, you need to also better explain how you have created it. It sounds at the moment a bit like, we need it, and here it is. But how have you created it? Brainstorming alone, with colleagues, any well know HCI approach? A brainstorming meeting with AR professionals could be the answer here but what has driven this brainstorming and what was the overarching idea. Why are certain metrics not in the continuum and could have looked differently? Do you have earlier versions that you can share and explain why they needed more work. I think if you can demonstrate the iterative development that the model underwent, it would support you. In any case you need to explain how you have designed it. 
-}
 
 The social AR continuum varies based on the closeness of social connections that we have with others (our relationships), and we identified the following dimensions where social AR applications can fit along a continuum. The dimensions can be grouped in the categories described in Figure \ref{fig:continuum:dimensions}.
 
 \begin{figure}[h]
     \centering
     \includegraphics[width=.8\linewidth]{images/continuum4_1.eps}
-    \caption{Dimensions of the social AR continuum}
+    \caption{Dimensions of the social AR continuum.}
     \label{fig:continuum:dimensions}
 \end{figure}
 
-\textbf{Contact Representation}
+\subsection{Contact Representation}
 
 Representing social contacts can vary on the social AR continuum based on the relationship that the user has with the contact, with closer relationships having higher fidelity. For example, \textit{Intimate} contacts could be represented as full 3D animated avatars, \textit{Friends} could be represented as 2D static images, \textit{Acquaintances} could be represented as 2D busts and \textit{Strangers} could be shown as mere emojis. Each contact could choose their representation for each category.
 
@@ -49,7 +43,7 @@ Representing social contacts can vary on the social AR continuum based on the re
 % \textbf{Contact Filter}
 % Filtering social contacts to distinguish users from each other could be done using proximity or visual fidelity based on their relationship to the user. Proximity filters contacts by placing them closer or further away. Visual fidelity filters contacts by adding more level of detail to the contact for closer relationships and less detail for further away contacts. 
 
-\textbf{Contact Placement}
+\subsection{Contact Placement}
 
 Placing social contacts can be done either by displaying \textit{Intimates} as life-sized avatars on the ground around the user, and others as miniatures on a nearby surface. 
 
@@ -60,7 +54,7 @@ Placing social contacts can be done either by displaying \textit{Intimates} as l
     \label{fig:continuum:contact-placement}
 \end{figure}
 
-\textbf{Data Type}
+\subsection{Data Type}
 
 The type of data shared between social contacts in AR could be categorised as 1D (e.g., text or audio), 2D (e.g., images, panorama or video), or 3D (e.g., 3D model or scanned-room environment). Based on the relationship between the user and their social contacts, the type of data available could be filtered. For instance, 3D data could be shared with \textit{Intimate} relationships, while \textit{Acquaintances} could see only 2D data.  
 
@@ -71,7 +65,7 @@ The type of data shared between social contacts in AR could be categorised as 1D
     \label{fig:continuum:data-type}
 \end{figure}
 
-\textbf{Data Interactivity}
+\subsection{Data Interactivity}
 
 In terms of user interactions with shared data, the continuum here ranges from viewing the contents, annotating or adding comments on the content, through to manipulating the content. Levels of manipulation include changing the position, rotation or scale of the shared content, or even modifying the content itself.
 
@@ -82,10 +76,10 @@ In terms of user interactions with shared data, the continuum here ranges from v
     \label{fig:continuum:data-interaction}
 \end{figure}
 
-% \textbf{Data Privacy}
-% Based on the relationship with other users, shared data can be made private to the user, shared with specific groups of people (e.g., friends, acquaintances), or shared with everyone. 
+\textbf{Data Privacy}
+Based on the relationship with other users, shared data can be made private to the user, shared with specific groups of people (e.g., friends, acquaintances), or shared with everyone. This will allow users to choose the privacy levels of the shared data based on their social relationship with others. 
 
-\textbf{Synchronous/Asynchronous Data}
+\subsection{Synchronous/Asynchronous Data}
 
 The data shared with contact could be shared in a synchronous way, where both sharing and interaction happen at the same time. In contrast, data could also be shared asynchronously \cite{Smith2016}, i.e., interaction happens at a different time. 
 
@@ -96,9 +90,9 @@ The data shared with contact could be shared in a synchronous way, where both sh
     \label{fig:continuum:data-connection}
 \end{figure}
 
-\textbf{Co-location}
+\subsection{Co-location}
 
-Social contacts can either be remote (i.e., in a different place than the user) or face-to-face (i.e., physically in the same location as the user). When social contacts are remote, they are represented as virtual avatars based on their relationship with the user. An example of face-to-face interaction was described in a Black Mirror\footnote{http://www.imdb.com/title/tt2085059/} episode where a person could 'block' another co-located person by blurring them out in their AR view of the real world.
+Social contacts can either be remote (i.e., in a different place than the user) or face-to-face (i.e., physically in the same location as the user). When social contacts are remote, they are represented as virtual avatars based on their relationship with the user. An example of face-to-face interaction was described in a Black Mirror\footnote{http://www.imdb.com/title/tt2085059/} episode "White Christmas" where a person could 'block' another co-located person by blurring them out in their AR view of the real world.
 
 \begin{figure}[h]
     \centering
@@ -108,15 +102,17 @@ Social contacts can either be remote (i.e., in a different place than the user) 
 \end{figure}
 
 
-\textbf{Text Annotation}
+\subsection{Text Annotation}
+
+placing AR annotation or information attached to an AR object can be described as body-stabilised or head-stabilised.
 
 When adding text to describe an object or a place, the text can be placed as a list (lower fidelity) on the side of the screen or can be placed on the related object as an AR annotation (higher fidelity) that ``sticks'' to the scene and disappears if the user looks away. This dimension can be used with social contacts, and if the contact is a close friend, they would see the annotation in higher fidelity, while a stranger would see the text annotation in lower fidelity. 
 
-\textbf{Collaboration}
+\subsection{Collaboration}
 
 When collaborating with social contacts, the user could use a pointer (e.g. arrow, indicator) to direct the conversation to a particular place or use a drawing tool (e.g. pencil) to highlight the area of the conversation. The availability of these options could depend on the social proximity between social contacts. If closer to each other, higher fidelity tools are available, and if strangers then the collaboration is limited to lower fidelity tools.
 
-\textbf{Awareness}
+\subsection{Awareness}
 
 It is possible during a session of sharing social experiences, that social contacts are looking in different directions. Awareness tools help users to know where the other user is looking. This can be achieved by showing a rectangle or a circle pointing to where the user is looking, or by using a context compass view which provides higher fidelity for closer connections.
 
@@ -124,13 +120,13 @@ It is possible during a session of sharing social experiences, that social conta
 
 \todo[inline]{
 Scenarios: 
-First of all I like the graphics etc. I was even thinking if you should start with the scenarios before coming to the AR continuum. Basically, if you could use your scenarios to better motivate the need for an AR continuu?! Later you can use them again to explain some of the dimensions. In any case they are under-utilised at the moment. They need a better explanation and a better integration. For example: I would not start with the decoration one because it is the weakest one in my opinion. Maybe better start with the working from home and the social meeting. You could start with that there is increasingly support for working from home (reference needed) and AR/MR could be a key technology here to connect remote teams and people (references needed here). However, when sharing information (could be this or this or this) with remote parties we should consider also their social proximity when deciding on what to share and how to share it. Lets consider the following example where user A is working from home. He is using an AR system to share ….. blabla bla… explain all the things no just what is depicted in the picture…. later explain the other scenarios but similarly motivate for each scenario why this is a valid and important scenario. 
+First of all I like the graphics etc. I was even thinking if you should start with the scenarios before coming to the AR continuum. Basically, if you could use your scenarios to better motivate the need for an AR continuum?! Later you can use them again to explain some of the dimensions. In any case they are under-utilised at the moment. They need a better explanation and a better integration. For example: I would not start with the decoration one because it is the weakest one in my opinion. Maybe better start with the working from home and the social meeting. You could start with that there is increasingly support for working from home (reference needed) and AR/MR could be a key technology here to connect remote teams and people (references needed here). However, when sharing information (could be this or this or this) with remote parties we should consider also their social proximity when deciding on what to share and how to share it. Lets consider the following example where user A is working from home. He is using an AR system to share ….. blabla bla… explain all the things no just what is depicted in the picture…. later explain the other scenarios but similarly motivate for each scenario why this is a valid and important scenario. 
 }
 \todo[inline]{
-Again these are all recommendations and you can take it or leave it (or take parts of it). In any case you need to integrate more references. I only put in the last part some examples on where they are needed but basically every big statement should be supported. I think this is all important because when the reader is not buying in into your scenarios, you will have a hard time selling your conceptual solutions for each scenario. The reader will simply say: The scenario is not a real scenario or is to unrelevant to be addressed by a PhD thesis as it is not solving a real problem (current and future). This is a bit the issue with the decoration scenario which is a bit random. Keep it but do not put it first.
+Again these are all recommendations and you can take it or leave it (or take parts of it). In any case you need to integrate more references. I only put in the last part some examples on where they are needed but basically every big statement should be supported. I think this is all important because when the reader is not buying in into your scenarios, you will have a hard time selling your conceptual solutions for each scenario. The reader will simply say: The scenario is not a real scenario or is to irrelevant to be addressed by a PhD thesis as it is not solving a real problem (current and future). This is a bit the issue with the decoration scenario which is a bit random. Keep it but do not put it first.
 }
 \todo[inline]{
-Finally, please be more verbose in your figure captions. I have the tendency to be very long (see my PhD thesis and most of my papers) but really take the space to explain what is going on in the figure and do not only provide a “figure name”. It is ok if parts are replicated in the body text. But the figure should work without the body text and the body text should work without the figure caption.
+Finally, please be more verbose in your figure captions. I have the tendency to be very long (see my PhD thesis and most of my papers) but really take the space to explain what is going on in the figure and do not only provide a “figure name”. It is OK if parts are replicated in the body text. But the figure should work without the body text and the body text should work without the figure caption.
 }
 
 The following scenarios give a few examples where the AR social continuum can be used in the future. 
