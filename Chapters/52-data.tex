@@ -54,7 +54,7 @@ To explore using the social AR continuum metaphor for sharing data between socia
 The prototype places social contacts around the user (viewer) in 3 concentric circles which are controlled by the \textit{Circles Manager}. The social contacts have different visual fidelity and proximity based on their initial relationship to the viewer rendered using the \textit{Avatar Controller}. The avatars were randomly pre-generated without any resemblance to actual contacts. We used MakeHuman\footnote{http://www.makehuman.org/} to generate the 3D avatars. The viewer (the HoloLens user) can turn their head to face different social contacts and then use gestures (air taps) to interact with the contact (viewing their data or changing their position which represents the social relationship). The interactions with HoloLens are enabled using the open source library \textit{HoloToolkit}\footnote{https://github.com/Microsoft/MixedRealityToolkit-Unity}. The data content shared by the social contacts are controlled by the \textit{Data Controller} which determines which fidelity needs to be displayed based on the social relationship between the avatar and the viewer. The top-level \textit{Scenario Manager} defines the implementation needed for different conditions in the user study, including interaction with avatars, shared data and the concentric circles. 
 
 % =============================================================================
-\subsection{Pilot User Study}
+\subsection{User Study}
 % =============================================================================
 
 \begin{figure}[ht]
@@ -64,7 +64,7 @@ The prototype places social contacts around the user (viewer) in 3 concentric ci
       \label{tbl:questions}
 \end{figure}
 
-We conducted a pilot user study to test the system usability and its effect on social presence comparing the following conditions: 
+We conducted a user study to test the system usability and its effect on social presence comparing the following conditions: 
 
 \begin{itemize}
     \item C1-Baseline: Shows the shared 360 videos from all social contacts.
@@ -90,7 +90,7 @@ We asked participants to answer the 5-point Likert-scale questions shown in Tabl
   \label{fig:data:results}
 \end{figure}
 
-We ran a pilot user study with 8 participants (4 female) aged 26-35 (SD=3.03). All participants used social networking platforms on a regular basis, and most of them were familiar with AR/VR displays. 
+We ran a user study with 8 participants (4 female) aged 26-35 (SD=3.03). All participants used social networking platforms on a regular basis, and most of them were familiar with AR/VR displays. 
 
 After filling in a demographic questionnaire, we asked the participants to experience the three conditions in random order. Then they filled in a social presence questionnaire and SMEQ about the condition they just tried. After finishing all three conditions, we asked them to fill in a post-experiment questionnaire where we asked about the overall experience and if they have any suggestions to improve it. 
 
@@ -130,6 +130,6 @@ Additionally, we will conduct a full quantitative and qualitative user study to 
 
 We presented a mechanism for presenting shared data content through filtering the content type based on the social relationships between the user and the social contacts. 
 
-We implemented a HoloLens prototype applying the proposed method in an asynchronous collaboration scenario and conducted a pilot user study using the prototype. The study compared three conditions: viewing 360 without filtering, filtering based on the social relationship, and filtering based on distance. 
+We implemented a HoloLens prototype applying the proposed method in an asynchronous collaboration scenario and conducted a user study using the prototype. The study compared three conditions: viewing 360 without filtering, filtering based on the social relationship, and filtering based on distance. 
 
 Initial results showed a trend of participants favouring having an option to filter data over no-filter. We reported on participants' qualitative feedback that provides insight for future directions. 
