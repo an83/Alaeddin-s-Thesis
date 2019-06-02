@@ -42,16 +42,16 @@ In addition to this operation, here we propose that the viewers can also see the
 \subsection{Prototype}
 % =============================================================================
 
+To explore using the social AR continuum metaphor for sharing data between social contacts, we built a prototype using the Microsoft HoloLens. The prototype software was built using Unity 3D game engine, and it allows users to view their social contacts on a wearable AR interface. Figure \ref{fig:data:system} shows the structure of the prototype system. 
+
 \begin{figure}[ht]
     \centering
     \includegraphics[width=3in]{images/chi/images-03.eps}
-    \caption{   System components.}
-      \label{fig:data:system}
+    \caption{System components.}
+    \label{fig:data:system}
 \end{figure}
 
-To explore using the social AR continuum metaphor for sharing data between social contacts, we built a prototype using the Microsoft HoloLens. The prototype software is built using Unity 3D game engine, and it allows users to view their social contacts in a wearable AR . Figure \ref{fig:data:system} shows the structure of the prototype system. 
-
-The prototype places social contacts around the user (viewer) in 3 concentric circles which are controlled by the \textit{Circles Manager}. The social contacts have different visual fidelity and proximity based on their initial relationship to the viewer rendered using the \textit{Avatar Controller}. The avatars were randomly pre-generated without any resemblance to actual contacts. We used MakeHuman\footnote{http://www.makehuman.org/} to generate the 3D avatars. The viewer (the HoloLens user) can turn their head to face different social contacts and then use gestures (air taps) to interact with the contact (viewing their data or changing their position which represents the social relationship). The interactions with HoloLens are enabled using the open source library \textit{HoloToolkit}\footnote{https://github.com/Microsoft/MixedRealityToolkit-Unity}. The data content shared by the social contacts are controlled by the \textit{Data Controller} which determines which fidelity needs to be displayed based on the social relationship between the avatar and the viewer. The top-level \textit{Scenario Manager} defines the implementation needed for different conditions in the user study, including interaction with avatars, shared data and the concentric circles. 
+The prototype places social contacts around the user (viewer) in three concentric circles which are controlled by the \textit{Circles Manager}. The social contacts have different visual fidelity and proximity based on their initial relationship to the viewer rendered using the \textit{Avatar Controller}. The avatars were randomly pre-generated without any resemblance to actual contacts. We used MakeHuman\footnote{http://www.makehuman.org/} to generate the 3D avatars. The viewer (the HoloLens user) can turn their head to face different social contacts and then use gestures (air taps) to interact with the contact (viewing their data or changing their position which represents the social relationship). The interactions with HoloLens are enabled using the open source library \textit{HoloToolkit}\footnote{https://github.com/Microsoft/MixedRealityToolkit-Unity}. The data content shared by the social contacts are controlled by the \textit{Data Controller} which determines which fidelity needs to be displayed based on the social relationship between the avatar and the viewer. The top-level \textit{Scenario Manager} defines the implementation needed for different conditions in the user study, including interaction with avatars, shared data and the concentric circles. 
 
 % =============================================================================
 \subsection{User Study}
