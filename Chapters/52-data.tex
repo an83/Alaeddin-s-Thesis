@@ -25,16 +25,16 @@ An example use-case scenario for filtering by sharer is where the sharer is goin
 \subsection{Viewing Shared Social Data}
 % =============================================================================
 
+The user viewing the shared data (the viewer) uses a wearable AR interface to see content from their social network superimposed over the real world, based on proxemics. For example, the viewer may be interested in seeing what their social contacts (followers) are up to and the places they have been to. In this scenario the viewer can look around through the AR display to see their social contacts placed around their in 3 circles ordered by relationship. On top of each social contact, the viewer can see the content they are sharing which is filtered based on the social relationship between the social contact and the viewer.
+
+Based on our earlier work \cite{Nassani2017a}, the people who are socially closer will appear in the AR view visually closer and have a more realistic representation. The content shared by each social contact will appear above their avatar (see Figure \ref{fig:data:viewer}), and to view the content more clearly, the user can select it (e.g. using the HoloLens air-tap gesture) to bring the content closer or walk to move inside the 360 video sphere. The user can then tap again to bring back the content to its original place to see other social contacts. 
+
 \begin{figure}[ht]
     \centering
     \includegraphics[width=3in]{images/chi/3_levels_of_data.png}
     \caption{Social contact sharing in different relationships with the viewer. (Left to right: intimate, friend, stranger). The shared data content (top of avatar) is filtered out (360 videos, 2D video, 2D image) based on social relationship.}
       \label{fig:data:viewer}
 \end{figure}
-
-The user viewing the shared data (the viewer) uses a wearable AR interface to see content from their social network superimposed over the real world, based on proxemics. For example, the viewer may be interested in seeing what their social contacts (followers) are up to and the places they have been to. In this scenario the viewer can look around through the AR display to see their social contacts placed around their in 3 circles ordered by relationship. On top of each social contact, the viewer can see the content they are sharing which is filtered based on the social relationship between the social contact and the viewer.
-
-Based on our earlier work \cite{Nassani2017a}, the people who are socially closer will appear in the AR view visually closer and have a more realistic representation. The content shared by each social contact will appear above their avatar (see Figure \ref{fig:data:viewer}), and to view the content more clearly, the user can select it (e.g. using the HoloLens air-tap gesture) to bring the content closer or walk to move inside the 360 video sphere. The user can then tap again to bring back the content to its original place to see other social contacts. 
 
 In addition to this operation, here we propose that the viewers could also see the shared content in different fidelity (360 videos, 2D videos or images) based on the social relationship with the sharer (intimate, friend or stranger). While the sharer could restrict the fidelity of the shared content based on the social relationship as mentioned earlier, the viewer could also filter the content based on their preference. In order to avoid getting mentally overloaded by seeing too much content in high fidelity, the viewer should be able to choose the preferred fidelity for the shared content from each social contact. This could be achieved either explicitly by choosing a fidelity for each social contact, or implicitly by moving closer to or further from the avatar representing the contact.      
 
