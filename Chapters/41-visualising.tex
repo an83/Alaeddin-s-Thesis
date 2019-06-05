@@ -56,7 +56,7 @@ The combination of using Visual Fidelity and Visual Proximity to categorise peop
 
 \subsection{Implementation}
 
-Using the AR Social Continuum metaphor from the previous section, we developed a prototype on the Microsoft HoloLens to represent a user's social contacts in an AR environment. The prototype was built using Unity3D\footnote{https://unity3d.com/} 5.6, HoloToolkit-Unity\footnote{https://github.com/Microsoft/HoloToolkit-Unity}, and 3D avatars from Morph3D\footnote{https://www.morph3d.com/}. 
+Using the Social AR Continuum metaphor from the previous section, we developed a prototype on the Microsoft HoloLens to represent a user's social contacts in an AR environment. The prototype was built using Unity3D\footnote{https://unity3d.com/} 5.6, HoloToolkit-Unity\footnote{https://github.com/Microsoft/HoloToolkit-Unity}, and 3D avatars from Morph3D\footnote{https://www.morph3d.com/}. 
 
 Figure \ref{fig:contacts:system-diagram} shows an overview of the system components. The prototype uses the HoloLens Spatial Mapping feature to place virtual concentric circles (Circle Manager) on the ground around the user's initial position. On these circles, the social contacts are represented (Friend Manager) by either: a generic person silhouette, a 3D avatar, a 2D image, a bust image, or an emoji. The Scenario Manager controls the overall application, while the Friend Manager controls how friends are rendered. The Circle Manager controls the initial placement of the circles around the user. Spatial Mapping is used to place circles and social contacts on the floor. Morph3D is used for rendering 3D avatars. Figure \ref{fig:contacts:overview} shows the AR view of the user's social network.
 
