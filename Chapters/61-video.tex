@@ -2,9 +2,9 @@
 \section{AR Annotation on Social Video Sharing}
 \label{sec:video}
 
-In this work we investigate an AR interface displaying comments directly on streamed live video. Our prototype allows remote spectators to perceive the streamed live video with different interfaces for displaying the comments, including an interface which puts AR annotation feedback directly on the shared video, and another interface that provides feedback in a separate window \cite{Nassani2016}. We conducted a user study to compare different ways of visualising comments and found that users prefer having comments directly in the AR view rather than in a separate list. We discuss the implications of this research and directions for future work.
+This section investigates an AR interface displaying comments directly on streamed live video. Our prototype allows remote spectators to perceive the streamed live video with different interfaces for displaying the comments, including an interface which puts AR annotation feedback directly on the shared video, and another interface that provides feedback in a separate window \cite{Nassani2016}. This works run a user study to compare different ways of visualising comments and found that users prefer having comments directly in the AR view rather than in a separate list. This section discusses the implications of this research and directions for future work.
 
-We implemented three different interfaces to display comments: (1) List, (2) Augmented Reality (AR), and (3) List + AR (see Figure \ref{fig:mgia16:conditions}). In the rest of the chapter, we first describe earlier research, then our prototype implementations, and finally a user evaluation comparing the three different methods.
+Thin work includes implementing three different interfaces to display comments: (1) List, (2) Augmented Reality (AR), and (3) List + AR (see Figure \ref{fig:mgia16:conditions}).
 
 \begin{figure}
   \includegraphics[width=\columnwidth]{images/mgia16/screenshots-enhanced-02}
@@ -12,11 +12,11 @@ We implemented three different interfaces to display comments: (1) List, (2) Aug
   \label{fig:mgia16:conditions}
 \end{figure}
 
-Previous work has demonstrated live video sharing on a mobile platform and support for viewer feedback. However, there has been little evaluation of different methods for providing feedback. In this section, we report on investigations into different user interface (UI) options for viewing comments left by multiple users on a shared live video stream. Thus, the main contribution is investigating if comment placement on live video sharing improves the user experience. Then we describe the prototype developed to explore this question.
+Previous work has demonstrated live video sharing on a mobile platform and support for viewer feedback. However, there has been little evaluation of different methods for providing feedback. This section reports on investigations into different user interface (UI) options for viewing comments left by multiple users on a shared live video stream. Thus, the main contribution is investigating if comment placement on live video sharing improves the user experience. Then this work describes the prototype developed to explore this question.
 
 \subsection{System Design}
 
-In order to explore different ways to share AR comments from remote collaborators, we developed a prototype that enables a user to share a live video stream with others and receive comments from multiple users who are watching. Our system consists of a WebRTC\footnote{https://webrtc.org} application running on AppEngine\footnote{https://appengine.google.com/} on Google Cloud servers, which offers a fast peer-to-peer connection between devices. Being built on a web platform, this solution can run on multiple hardware specifications including desktop, hand-held, and wearable devices. Figure \ref{fig:mgia16:system} shows the overall design of the prototype system.
+In order to explore different ways to share AR comments from remote collaborators, a prototype was developed that enables a user to share a live video stream with others and receive comments from multiple users who are watching. Our system consists of a WebRTC\footnote{https://webrtc.org} application running on AppEngine\footnote{https://appengine.google.com/} on Google Cloud servers, which offers a fast peer-to-peer connection between devices. Being built on a web platform, this solution can run on multiple hardware specifications including desktop, hand-held, and wearable devices. Figure \ref{fig:mgia16:system} shows the overall design of the prototype system.
 
 \begin{figure}[ht]
   \centering
@@ -25,7 +25,7 @@ In order to explore different ways to share AR comments from remote collaborator
 	\label{fig:mgia16:system}
 \end{figure}
 
-The prototype was built on top of AppRTC\footnote{https://apprtc.appspot.com/} which hosts a website that enables people to start a video conferencing session on the web. To support AR visualization of comments, we utilized the AppRTC code to track device orientation by listening to the device sensors, and transferring the data to the receivers' devices via DataChannel. The AppRTC application is written in Python for the backend and Javascript for the front-end. It takes advantage of being hosted on AppSpot so that it complies with the WebRTC requirements for HTTPS. The AppRTC system allows users to communicate with each other over the Internet. To render comments in the AR visualization, we used the Three.js library\footnote{http://threejs.org/}. The AR visualization is implemented with two graphical layers (see Figure \ref{fig:mgia16:layers}). The background layer shows the video stream captured by the camera on the mobile device. On top of the background, comments are drawn on the front layer using orientation tracking information to show them in a body-stabilized manner. 
+The prototype was built on top of AppRTC\footnote{https://apprtc.appspot.com/} which hosts a website that enables people to start a video conferencing session on the web. To support AR visualization of comments, AppRTC base code was utilised to track device orientation by listening to the device sensors, and transferring the data to the receivers' devices via DataChannel. The AppRTC application is written in Python for the backend and Javascript for the front-end. It takes advantage of being hosted on AppSpot so that it complies with the WebRTC requirements for HTTPS. The AppRTC system allows users to communicate with each other over the Internet. To render comments in the AR visualization, the Three.js library\footnote{http://threejs.org/} was used. The AR visualization is implemented with two graphical layers (see Figure \ref{fig:mgia16:layers}). The background layer shows the video stream captured by the camera on the mobile device. On top of the background, comments are drawn on the front layer using orientation tracking information to show them in a body-stabilized manner. 
 
 \begin{figure}[h]
   \centering
@@ -41,7 +41,7 @@ The application starts by turning on the back camera on the mobile device, and a
 Both users can send comments to each other by clicking on any part of the shared video. The system then calculates the 3D position of the comment in the AR space and waits for the comment text to be entered. Once the user enters the message, the text is displayed on both the sender's and receiver's screens. The motion data of the sender's device is also shared so that the receiver will see the comment appearing at the same place as the sender turns their device. 
 
 
-Three different ways of showing comments on the live video stream were implemented (see Figure \ref{fig:mgia16:conditions} above). The first is a list view where the comments are listed on the side of the camera feed view. An AR view overlays comments on top of the video feed and rotated around the user based on phone orientation, so the comments appear fixed at the location on the video where they were first entered. Finally, an AR + list implementation combined the list view with the AR view. In the next section, we report on a user study exploring these three implementations.
+Three different ways of showing comments on the live video stream were implemented (see Figure \ref{fig:mgia16:conditions} above). The first is a list view where the comments are listed on the side of the camera feed view. An AR view overlays comments on top of the video feed and rotated around the user based on phone orientation, so the comments appear fixed at the location on the video where they were first entered. Finally, an AR + list implementation combined the list view with the AR view. The next section reports on a user study exploring these three implementations.
 \begin{figure}[ht]
   \centering
   \includegraphics[width=0.8\linewidth]{images/mgia16/participant2}
@@ -52,7 +52,7 @@ Three different ways of showing comments on the live video stream were implement
 
 \subsection{User Study}
 
-We conducted a controlled within-subjects user experiment to test the different UIs for displaying comments, using the three approaches just explained. The experiment started with the participants giving consent and answering questions about demographic information. Then they went through a training session to get familiar with the application and the experimental procedures. To simulate different environments for the user, we used 180-degree panoramic images projected around the user on large screens to simulate different real spaces (see Figure \ref{fig:mgia16:participant}).
+A controlled within-subjects user experiment was conducted to test the different UIs for displaying comments, using the three approaches just explained. The experiment started with the participants giving consent and answering questions about demographic information. Then they went through a training session to get familiar with the application and the experimental procedures. To simulate different environments for the user, a 180-degree panoramic images projected around the user on large screens was used to simulate different real spaces (see Figure \ref{fig:mgia16:participant}).
 
 \begin{figure}[ht]
   \centering
@@ -61,7 +61,7 @@ We conducted a controlled within-subjects user experiment to test the different 
 	\label{fig:mgia16:participant}
 \end{figure}
 
-We selected four different images where the user might be interested in sharing their surroundings, varying in terms of indoors/outdoors and busy/quietness (see Figure \ref{fig:mgia16:backgrounds}). A different background was randomly assigned for each condition between subjects. 
+Four different images were selected where the user might be interested in sharing their surroundings, varying in terms of indoors/outdoors and busy/quietness (see Figure \ref{fig:mgia16:backgrounds}). A different background was randomly assigned for each condition between subjects. 
 
 \begin{figure}[b]
   \centering
@@ -115,7 +115,7 @@ After finishing all three conditions, participants answered a post-experiment qu
 
 \subsection{Results}
 
-We recruited 20 participants (11 female, aged between 19 and 35 years old, Median=27.5, SD=4.55). Most (95\%) of them had experience with live video streaming a few times a week to a few times per month and 80\% were familiar with AR applications. We used a non-parametric Friedman test for all the results with alpha=0.05, and post-hoc tests using Wilcoxon signed-rank tests with the Bonferroni correction ($alpha=0.017$).
+20 participants (11 female, aged between 19 and 35 years old, Median=27.5, SD=4.55) were recruited to participate in the user study. Most (95\%) of them had experience with live video streaming a few times a week to a few times per month and 80\% were familiar with AR applications. A non-parametric Friedman test was run for all the results with alpha=0.05, and post-hoc tests using Wilcoxon signed-rank tests with the Bonferroni correction ($alpha=0.017$).
 
 The average SUS scores for each condition are shown in Figure \ref{fig:mgia16:questions_sus}. There was a statistically significant difference between the average SUS scores for each condition ($X^2(2)=9.658, p=0.008$). Post-hoc analysis showed significant differences between L and AR ($Z=-2.638, p=0.008$) and between L and L+AR ($Z=-2.559, p=0.010$). However, there was no statistically significant difference between AR and L+AR ($Z=-0.197, p=0.844$). This shows that the list condition on its own was considered considerably less usable than the other two conditions.
 
@@ -127,7 +127,7 @@ The average SUS scores for each condition are shown in Figure \ref{fig:mgia16:qu
   \label{fig:mgia16:questions_sus}
 \end{figure}
 
-As for the social presence questions (see Figure \ref{fig:mgia16:social_presence}), we inverted the responses on the negative questions, Q3 and Q5, to allow all questions to be aggregated, combining the answers for both perceived message understanding and affective understanding. There was a statistically significant difference in perceived social presence ($X^2(2)=16.892, p<0.001$). Post-hoc analysis found there were significant differences between L and AR ($Z=-3.459, p=0.001$) and between L and L+AR ($Z=-3.311, p=0.001$) while there was no statistically significant difference between AR and L+AR ($Z=-0.427, p=0.670$). This shows that the list condition (L) was perceived as being less easy to understand and therefore creating less social presence, and that viewer comments in this condition were less clear.
+As for the social presence questions (see Figure \ref{fig:mgia16:social_presence}), the responses were inverted on the negative questions, Q3 and Q5, to allow all questions to be aggregated, combining the answers for both perceived message understanding and affective understanding. There was a statistically significant difference in perceived social presence ($X^2(2)=16.892, p<0.001$). Post-hoc analysis found there were significant differences between L and AR ($Z=-3.459, p=0.001$) and between L and L+AR ($Z=-3.311, p=0.001$) while there was no statistically significant difference between AR and L+AR ($Z=-0.427, p=0.670$). This shows that the list condition (L) was perceived as being less easy to understand and therefore creating less social presence, and that viewer comments in this condition were less clear.
 
 \begin{figure}[ht]
   \centering
@@ -137,7 +137,7 @@ As for the social presence questions (see Figure \ref{fig:mgia16:social_presence
 	\label{fig:mgia16:social_presence}
 \end{figure}
 
-As for the ranking results (see Figure \ref{fig:mgia16:ranking}), we calculated the average of the answers (where 3=highest ranking, 1=lowest ranking). The results show a statistically significant difference between conditions ($X^2(2)=9.100, p=0.011$). Post-hoc analysis showed a significance level set at $alpha$=0.017. There were significant differences between L and AR ($Z=-2.766, p=0.006$) and between L and L+AR ($Z=-2.502, p=0.012$). However, there was no statistically significant difference between AR and L+AR ($Z=-0.039, p=0.969$). This shows that the list condition (L) was ranked the worst out of the three conditions, and the two AR conditions were ranked the same.
+As for the ranking results (see Figure \ref{fig:mgia16:ranking}), the average of the answers (where 3=highest ranking, 1=lowest ranking) was calculated. The results show a statistically significant difference between conditions ($X^2(2)=9.100, p=0.011$). Post-hoc analysis showed a significance level set at $alpha$=0.017. There were significant differences between L and AR ($Z=-2.766, p=0.006$) and between L and L+AR ($Z=-2.502, p=0.012$). However, there was no statistically significant difference between AR and L+AR ($Z=-0.039, p=0.969$). This shows that the list condition (L) was ranked the worst out of the three conditions, and the two AR conditions were ranked the same.
 
 \begin{figure}[ht]
   \centering
@@ -146,7 +146,7 @@ As for the ranking results (see Figure \ref{fig:mgia16:ranking}), we calculated 
 	\label{fig:mgia16:ranking}
 \end{figure}
 
-For the task of matching the position and colour of the comments (see Figure \ref{fig:mgia16:questions_matching}) we asked participants to remember who wrote which comment (indicated by colour of the comment) and the position of the comment (indicating which part of the scene the comment was about). The results show that there was a statistically significant difference ($X^2(2)=22.030, p<0.001$). Post-hoc analysis showed that there was no significant difference between the L and AR conditions ($Z=-1.016, p=0.310$). However, there was a statistically significant difference between L and L+AR ($Z=-3.628, p<0.001$) and between AR and L+AR ($Z=-3.447, p=0.001$).
+For the task of matching the position and colour of the comments (see Figure \ref{fig:mgia16:questions_matching}) participants were asked to remember who wrote which comment (indicated by colour of the comment) and the position of the comment (indicating which part of the scene the comment was about). The results show that there was a statistically significant difference ($X^2(2)=22.030, p<0.001$). Post-hoc analysis showed that there was no significant difference between the L and AR conditions ($Z=-1.016, p=0.310$). However, there was a statistically significant difference between L and L+AR ($Z=-3.628, p<0.001$) and between AR and L+AR ($Z=-3.447, p=0.001$).
 
 \begin{figure}[ht]
   \centering
@@ -161,24 +161,24 @@ In the AR and L+AR conditions, participants felt that the comments were contextu
 
 However, users felt that comments in the L+AR condition could clutter the UI and partially block the background. One participant said \textit{"The screen just became too busy with comments that I don't have the time to actually sort out the comments and associate them on the video"}. Some suggested this could be resolved by making the comments not in the centre of view more transparent.
  
-We asked the participants what they would like to improve. Most reported that they would like to use a head-mounted display to view comments in the AR mode.  It was also suggested that we use a profile image instead of colours on comments to distinguish remote users.
+Participants were asked what they would like to improve. Most reported that they would like to use a head-mounted display to view comments in the AR mode.  It was also suggested to use a profile image instead of colours on comments to distinguish remote users.
  
 Overall users felt that the AR and L+AR conditions were fun and cool to use, providing comments such as \textit{"It's pretty awesome. I love the experience and I would really like to use this app with my social network."}.
 
 
 \subsection{Discussion}
 
-From the user study, we found that subjects preferred the conditions that contained an AR view, compared to showing comments only displayed in a list format. They thought these conditions were more usable, provided a higher degree of social presence, and enabled them to better remember the comment layout. This is probably because the spatial association of comments increases the likelihood of the message being understood and being attended to.
+The user study results found that subjects preferred the conditions that contained an AR view, compared to showing comments only displayed in a list format. They thought these conditions were more usable, provided a higher degree of social presence, and enabled them to better remember the comment layout. This is probably because the spatial association of comments increases the likelihood of the message being understood and being attended to.
 
-We expected that one of the AR conditions (AR or L+AR) would have been more popular than the other, however this was not the case. Some users preferred L+AR over the AR as the former provided an overall list of comments even if they were not visible in the current user viewpoint, making the user more aware of new comments without needing to look around to find them. Other users preferred the AR only condition, as the screen was less crowded. One solution to this might be hiding the comments on the list that are visible on the AR view, removing any duplication. Alternatively we could use a radar view that shows dots to represent comments. 
+It was expected that one of the AR conditions (AR or L+AR) would have been more popular than the other, however this was not the case. Some users preferred L+AR over the AR as the former provided an overall list of comments even if they were not visible in the current user viewpoint, making the user more aware of new comments without needing to look around to find them. Other users preferred the AR only condition, as the screen was less crowded. One solution to this might be hiding the comments on the list that are visible on the AR view, removing any duplication. Alternatively a radar view could be used to show dots to represent comments. 
 
-We learned more about how to make the live streaming a better experience for the user. Some users found the one-minute timeout for the comments fading away to be too fast. Associating the comments with colour to represent different users may not be the best option. An alternative approach would be to use an avatar or name of the person to identify the comment source. 
+It was learned that more about how to make the live streaming a better experience for the user. Some users found the one-minute timeout for the comments fading away to be too fast. Associating the comments with colour to represent different users may not be the best option. An alternative approach would be to use an avatar or name of the person to identify the comment source. 
 
-The study has a number of limitations that we will have to address in the future. The experiment was conducted in a simulated environment rather than outdoors. We also used a static background image to simplify the conditions. However, in real life, things will be moving in the background (e.g., people walking, cars passing by). In such scenarios, the comments in the AR condition may not stick to the moving objects. However, this could be solved by using image processing techniques to track objects that will allow the comment to be moved with them. Finally, all of the comments were generated by an experimenter and were fixed, rather than coming from real people who could write whatever they liked.    
+The study has a number of limitations that have to be addressed in the future. The experiment was conducted in a simulated environment rather than outdoors. A static background image was used to simplify the conditions. However, in real life, things will be moving in the background (e.g., people walking, cars passing by). In such scenarios, the comments in the AR condition may not stick to the moving objects. However, this could be solved by using image processing techniques to track objects that will allow the comment to be moved with them. Finally, all of the comments were generated by an experimenter and were fixed, rather than coming from real people who could write whatever they liked.    
 
 \subsection{Conclusions}
 
-In this section, we investigated AR annotations for social live video streaming. We conducted a user study testing three variations of the interface for showing comments: 1) a List view, 2) an AR view and 3) a combined List + AR view. Participants felt that the AR and the List + AR conditions were significantly better than the List condition in terms of system usability and social presence. This was probably because the spatial alignment of comments increases the likelihood of them being understood and attended to.
+This section investigated AR annotations for social live video streaming. The work included conducting a user study testing three variations of the interface for showing comments: 1) a List view, 2) an AR view and 3) a combined List + AR view. Participants felt that the AR and the List + AR conditions were significantly better than the List condition in terms of system usability and social presence. This was probably because the spatial alignment of comments increases the likelihood of them being understood and attended to.
 
 % In the future, we plan to investigate alternative mechanisms for communicating in a social live video sharing sessions, such as using sketching or emojis. We will also explore how depth cameras could be integrated into the system to enrich the social sharing experience by providing improved tracking and environment recognition. Finally, we would like to conduct more extensive user studies that test various user interface designs for using AR for sharing social experiences. This could include being able to navigate back in time to see comments before. 
 
