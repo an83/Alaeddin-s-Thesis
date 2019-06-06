@@ -11,13 +11,6 @@ In a user study with the prototype, this work focuses on how socially connected 
 
 It is easy to imagine that in the future it will be possible for wearable AR systems to be used to capture and share a 3D view of the user's surroundings with hundreds or thousands of followers on a social network. However, before this becomes commonplace, many exciting research questions should be addressed. For example, would a person be comfortable with sharing a view of their real space with relative strangers? This work aims to explore how wearable AR systems could share a user's surrounding room environment with social contacts and to measure how comfortable the sharer and the viewer would feel regarding privacy in different interface options. 
 
-\begin{figure}
-    \begin{center}
-    \includegraphics[width=\linewidth]{images/frontier18/images-02.png}
-    \caption{A social filter applied to the shared room. a) In an Intimate relationship, everything is shared. b) For a Friend relationship, some sensitive items are hidden (e.g., family photo, stock market). c) While for a Stranger relationship almost everything is hidden in the room.}\label{fig:frontier18:social-filter}
-    \end{center}
-\end{figure}
-
 \subsection{Prototype System}
 
 An AR prototype system was built using a Microsoft HoloLens\footnote{https://www.microsoft.com/en-us/hololens} that connects a person (the sharer) sharing a view of their surrounding physical space to a remote person (the viewer) viewing the shared virtual room overlaid on top of their physical space. Figure \ref{fig:frontier18:system} shows the components of the system.
@@ -27,10 +20,10 @@ In the future, it will be possible to scan and immediately create a 3D model of 
 UNet\footnote{https://docs.unity3d.com/Manual/UNet.html} was used as the high-level networking API from Unity to synchronise the state of the shared room and the remote person. The state of the remote person includes 1) the position and orientation of the virtual avatar representing the remote person, and 2) the level of detail of the avatar based on the social relationship (i.e., Stranger=half 2D image, Friend=2D image, Intimate=3D avatar). The synchronised state of the room involves changing the level of detail of the shared room depending on the social relationship as well as which part of the room is hidden by the user. 
 
 \begin{figure}
-\begin{center}
-\includegraphics[width=\linewidth]{images/frontier18/system.jpg}
-\caption{The system components representing the sharer server-side (left) sharing with the viewer client-side (right) via WiFi: 1) the avatar position and orientation, 2) the social relationship data and 3) room and hidden components data. The system is built on Unity and runs on the HoloLens.}\label{fig:frontier18:system}
-\end{center}
+    \begin{center}
+    \includegraphics[width=\linewidth]{images/frontier18/system.jpg}
+    \caption{The system components representing the sharer server-side (left) sharing with the viewer client-side (right) via WiFi: 1) the avatar position and orientation, 2) the social relationship data and 3) room and hidden components data. The system is built on Unity and runs on the HoloLens.}\label{fig:frontier18:system}
+    \end{center}
 \end{figure}
 
 \subsection{User Study}
@@ -39,9 +32,17 @@ The prototype system explored sharing different views depending on the social re
 
 Task 1: View/share a room with or without a social proximity filter (Figure \ref{fig:frontier18:social-filter}). This task had two conditions: 
 
+\begin{figure}[H]
+    \begin{center}
+    \includegraphics[width=\linewidth]{images/frontier18/images-02.png}
+    \caption{A social filter applied to the shared room. a) In an Intimate relationship, everything is shared. b) For a Friend relationship, some sensitive items are hidden (e.g., family photo, stock market). c) While for a Stranger relationship almost everything is hidden in the room.}\label{fig:frontier18:social-filter}
+    \end{center}
+\end{figure}
+
+
 \begin{itemize}
-\item T1C1: Shared room without a social proximity filter where the level of detail of the shared room is not affected by the social relationship between the users.
-\item T1C2: Shared room with a social proximity filter where the level of detail of the shared room is changed based on the social relationship between the users. 
+    \item T1C1: Shared room without a social proximity filter where the level of detail of the shared room is not affected by the social relationship between the users.
+    \item T1C2: Shared room with a social proximity filter where the level of detail of the shared room is changed based on the social relationship between the users. 
 \end{itemize}
 
 Task 2: The mechanism of hiding/showing room parts for social proximity filter (Figure \ref{fig:frontier18:hiding-mechanism}). This task had three conditions:
