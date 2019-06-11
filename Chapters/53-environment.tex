@@ -26,20 +26,20 @@ The user can air-tap on the environment above an avatar to expand it to life-siz
 \end{figure}
 
 
-The prototype was built using the Microsoft HoloLens\footnote{https://www.microsoft.com/en-us/hololens} and the Mixed Reality Toolkit\footnote{https://github.com/Microsoft/MixedRealityToolkit-Unity}. The avatars representing the social contacts were generated using MakeHuman\footnote{http://www.makehumancommunity.org/}. The 3D representation of the remote sharer's room was modelled in AutoDesk Maya\footnote{https://www.autodesk.com/products/maya/overview} to simulate 3D scanning of the user's surrounding environment. To test if users preferred to have a proximity filter applied on the shared surrounding environment, the prototype offers to turn the filter on or off in two conditions; a base-line () and a proximity filter applied (C2: proximity-filter).
+The prototype was built using the Microsoft HoloLens\footnote{https://www.microsoft.com/en-us/hololens} and the Mixed Reality Toolkit\footnote{https://github.com/Microsoft/MixedRealityToolkit-Unity}. The avatars representing the social contacts were generated using MakeHuman\footnote{http://www.makehumancommunity.org/}. The 3D representation of the remote sharer's room was modelled in AutoDesk Maya\footnote{https://www.autodesk.com/products/maya/overview} to simulate 3D scanning of the user's surrounding environment. To test if users preferred to have a proximity filter applied on the shared surrounding environment, the prototype offers to turn the filter on or off in two conditions: 
 
 \begin{itemize}
     \item C1-B) no-filter (baseline)
-    \item C2-F) proximity-filter
+    \item C2-F) proximity-filter (proximity filter applied)
 \end{itemize}{}
 
 \subsection{User Study}
 
-Feedback was collected from 10 participants (five female) with an average age of 28.8 ($SD=3.65$). The participants tried demonstrations of the two conditions: C1 (no filter), where all social contacts are sharing the full view of their surrounding environments, and C2 (proximity filter), where the shared surrounding environments are filtered based on three levels of social proximity (Intimate, Friend and Stranger) mapped to the level of detail of the shared surrounding environment (Full, Partial and Limited). The order of the conditions was randomised based on a Latin square. 
+Feedback was collected from 10 participants (five female) with an average age of 28.8 ($SD=3.65$). The participants tried demonstrations of the two conditions: C1-B (no filter), where all social contacts are sharing the full view of their surrounding environments, and C2-F (proximity filter), where the shared surrounding environments are filtered based on three levels of social proximity (Intimate, Friend and Stranger) mapped to the level of detail of the shared surrounding environment (Full, Partial and Limited). The order of the conditions was randomised based on a Latin square. 
 
 \begin{figure}[H]
   \centering
-  \includegraphics[width=.6\linewidth]{images/ismar18/images-04.eps}
+  \includegraphics[width=.7\linewidth]{images/ismar18/images-04.eps}
   \caption{Top: the average results of subjective comfort questions. Middle: the percentage results of ranking the best condition. Bottom: the percentage results of voting for the best method to hide part of the environment. Whiskers indicate the standard error.}
   \label{fig:environment:results}
 \end{figure}
@@ -47,11 +47,11 @@ Feedback was collected from 10 participants (five female) with an average age of
 
 For each condition, participants were asked to rate how comfortable they felt (on a five-point Likert scale: 1=not very comfortable, 5=very comfortable) about the sharing environment from the perspective of a sharer (person sharing) and the viewer (the person viewing) of the surrounding environment. Participants were asked to rank which condition they preferred (and to state why) from both perspectives. Finally, participants asked about which method of hiding sensitive items in the shared environment the user preferred by selecting an option from 1) remove/hide the item as if it did not exist, 2) block/overlay a black box on the item so it will be hidden, 3) blur out the item, 4) other. 
 
-A Wilcoxon signed-rank test was run on the subjective perceived comfort in terms of privacy. The test showed that having a proximity filter (C2) applied on the shared surrounding environment did elicit a statistically significant improvement in perceived comfort in terms of privacy for both sharers ($Z=-2.831$, $p=0.005$) and viewers ($Z=-2.588$, $p=0.01$). 
+A Wilcoxon signed-rank test was run on the subjective perceived comfort in terms of privacy. The test showed that having a proximity filter (C2-F) applied on the shared surrounding environment did elicit a statistically significant improvement in perceived comfort in terms of privacy for both sharers ($Z=-2.831$, $p=0.005$) and viewers ($Z=-2.588$, $p=0.01$). 
 
-As for the ranking results, C2 (proximity filter) was preferred by both sharers (100\%) and viewers (70\%) over C1 (no filter). C1 (no filter) was ranked 30\% for viewers. In terms of the preferred way of hiding sensitive items in the shared environment, blurring sensitive items (60\%) was preferred followed by removing/hiding sensitive items as if they did not exist (40\%) and the lowest was overlay (10\%). 
+As for the ranking results, C2-F (proximity filter) was preferred by both sharers (100\%) and viewers (70\%) over C1-B (no filter). C1-B (no filter) was ranked 30\% for viewers. In terms of the preferred way of hiding sensitive items in the shared environment, blurring sensitive items (60\%) was preferred followed by removing/hiding sensitive items as if they did not exist (40\%) and the lowest was overlay (10\%). 
 
-In the open-ended questions, C1 (no filter) was reported stronger in terms of the curiosity for the viewer. "\textit{... would suit supervisors who are interested in knowing details about their social network}", one participant mentioned. The most reported strength of C2 (proximity filter) was around privacy and the sense of being comfortable in sharing levels based on social proximity. 
+In the open-ended questions, C1-B (no filter) was reported stronger in terms of the curiosity for the viewer. "\textit{... would suit supervisors who are interested in knowing details about their social network}", one participant mentioned. The most reported strength of C2-F (proximity filter) was around privacy and the sense of being comfortable in sharing levels based on social proximity. 
 
 Overall, the results confirm our hypothesis of the value of social proximity-based filtering for sharing the surrounding environment. An interesting observation is that the sharer perspective may be different from the viewer perspective in terms of privacy. 
 
