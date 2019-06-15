@@ -2,7 +2,11 @@
 \section{AR Annotation on Social Video Sharing}
 \label{sec:video}
 
-This section investigates an AR interface displaying comments directly on streamed live video. Our prototype allows remote spectators to perceive the streamed live video with different interfaces for displaying the comments, including an interface which puts AR annotation feedback directly on the shared video, and another interface that provides feedback in a separate window \cite{Nassani2016}. This works run a user study to compare different ways of visualising comments and found that users prefer having comments directly in the AR view rather than in a separate list. This section discusses the implications of this research and directions for future work.
+\todo[inline]{Check grammar}
+\todo[inline]{justify choices}
+
+
+This section investigates an AR interface displaying comments directly on streamed live video. Our prototype allows remote spectators to perceive the streamed live video with different interfaces for displaying the comments, including an interface which puts AR annotation feedback directly on the shared video, and another interface that provides feedback in a separate window \cite{Nassani2016}. This work run a user study to compare different ways of visualising comments and found that users prefer having comments directly in the AR view rather than in a separate list. This section discusses the implications of this research and directions for future work.
 
 Thin work includes implementing three different interfaces to display comments: (1) List, (2) Augmented Reality (AR), and (3) List + AR (see Figure \ref{fig:mgia16:conditions}).
 
@@ -41,12 +45,13 @@ The application starts by turning on the back camera on the mobile device, and a
 Both users can send comments to each other by clicking on any part of the shared video. The system then calculates the 3D position of the comment in the AR space and waits for the comment text to be entered. Once the user enters the message, the text is displayed on both the sender's and receiver's screens. The motion data of the sender's device is also shared so that the receiver will see the comment appearing at the same place as the sender turns their device. 
 
 
-Three different ways of showing comments on the live video stream were implemented (see Figure \ref{fig:mgia16:conditions} above). The first is a list view where the comments are listed on the side of the camera feed view. An AR view overlays comments on top of the video feed and rotated around the user based on phone orientation, so the comments appear fixed at the location on the video where they were first entered. Finally, an AR + list implementation combined the list view with the AR view. The next section reports on a user study exploring these three implementations.
+Three different ways of showing comments on the live video stream were implemented (see Figure \ref{fig:mgia16:conditions} above). The first is a list view where the comments are listed on the side of the camera feed view. An AR view overlays comments on top of the video feed and rotated around the user based on phone orientation, so the comments appear fixed at the location on the video where they were first entered (Figure \ref{fig:mgia16:user-experience}). Finally, an AR + list implementation combined the list view with the AR view. The next section reports on a user study exploring these three implementations.
+
 \begin{figure}[ht]
   \centering
   \includegraphics[width=0.8\linewidth]{images/mgia16/participant2}
   \caption{Comment appearing on top of the shared video}
-	\label{comments}
+	\label{fig:mgia16:user-experience}
 \end{figure}
 
 
