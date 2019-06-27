@@ -1,7 +1,9 @@
 \section{Social Panoramas Using Wearable Computers}
 \label{sec:pano}
 
-This section discusses using panorama images to share social experiences. In particular, it explores awareness and annotation cues between users sharing a social experience through a shared panoramic image.
+A third example of annotation as interaction dimension on the Social AR Continuum is annotation on 360-degree panoramic images. The level of annotation can be described as drawing or adding text, which then can be mapped into social proximity. This section discusses using panorama images to share social experiences. In particular, it explores awareness and annotation cues between users sharing a social experience through a shared panoramic image.
+
+This work describe the concept of Social Panoramas that combine panorama images, Mixed Reality, and wearable computers to support remote collaboration \cite{Reichherzer2014, Billinghurst2014} (Figure \ref{fig:ismar14:concept}). A prototype was developed that allows panorama images to be explored in real time between a Google Glass user and a remote tablet user. This uses a variety of cues for supporting awareness, and enabling pointing and drawing. A user study was conducted to explore if these cues can increase Social Presence. The results suggest that increased interaction does not increase Social Presence, but tools with a higher perceived usability show an improved sense of presence.
 
 \begin{figure}[ht]
 	\centering
@@ -10,14 +12,13 @@ This section discusses using panorama images to share social experiences. In par
 	\label{fig:ismar14:concept}
 \end{figure}
 
-This work describe the concept of Social Panoramas that combine panorama images, Mixed Reality, and wearable computers to support remote collaboration \cite{Reichherzer2014, Billinghurst2014}. A prototype was developed that allows panorama images to be explored in real time between a Google Glass user and a remote tablet user. This uses a variety of cues for supporting awareness, and enabling pointing and drawing. A user study was conducted to explore if these cues can increase Social Presence. The results suggest that increased interaction does not increase Social Presence, but tools with a higher perceived usability show an improved sense of presence.
-
 Camera-equipped mobile devices provide a quick way of capturing and sharing experiences and spaces. Wearable computers that combine head mounted displays (HMDs) and cameras provide new opportunities for collaboration. For example, Google Glass\footnote{http://www.google.com/glass/} has a camera, mic, and head-worn display.
 
 
 \subsection{Prototype Development}
 
-In order to explore the concept of social panoramas, a prototype was developed that allowed a user with Google Glass to collaborate with a user on a tablet, both viewing and interacting with the same panorama via a WiFi network. A Context Compass interface \cite{Suomela2000} (Figure \ref{fig:ismar14:context-compass}) was implemented to provide awareness of the remote user's viewpoint. The prototype was developed using Processing \footnote{http://www.processing.org/} with the Ketai library for sensor support \footnote{https://code.google.com/p/ketai/} and the oscP5 networking library \footnote{http://www.sojamo.de/libraries/oscP5/}. The panorama was mapped onto a cylinder, viewed by the user rotating the tablet or their head with Glass. Using this prototype, a within-subjectw experiment was conducted to compare if interaction possibilities such as drawing and pointing within a panorama can increase Social Presence, or "\textit{the sense of togetherness}" \cite{Basdogan2001}. This experiment addresses the questions: (1) Can increased interaction through drawing and pointing cues increase Social Presence? (2) Does higher perceived usability result in a deeper sense of Presence? 
+In order to explore the concept of social panoramas, a prototype was developed that allowed a user with Google Glass to collaborate with a user on a tablet, both viewing and interacting with the same panorama via a WiFi network. A Context Compass interface \cite{Suomela2000} (Figure \ref{fig:ismar14:context-compass}) was implemented to provide awareness of the remote user's viewpoint. The prototype was developed using Processing \footnote{http://www.processing.org/} with the Ketai library for sensor support \footnote{https://code.google.com/p/ketai/} and the oscP5 networking library \footnote{http://www.sojamo.de/libraries/oscP5/}. The panorama was mapped onto a cylinder, viewed by the user rotating the tablet or their head with Glass. Using this prototype, a within-subjectw experiment was conducted to compare if interaction possibilities such as drawing and pointing within a panorama can increase Social Presence, or "\textit{the sense of togetherness}" \cite{Basdogan2001}. 
+% This experiment addresses the questions: (1) Can increased interaction through drawing and pointing cues increase Social Presence? (2) Does higher perceived usability result in a deeper sense of Presence? 
 
 \begin{figure}[ht]
 	\centering
@@ -26,7 +27,7 @@ In order to explore the concept of social panoramas, a prototype was developed t
 	\label{fig:ismar14:context-compass}
 \end{figure}
 
-\todo[inline]{[You should add more explanation about how the context compass, annotation and viewpoint monitoring cues]}
+% \todo[inline]{[You should add more explanation about how the context compass, annotation and viewpoint monitoring cues]}
 
 \subsection{Experiment}
 
@@ -48,7 +49,7 @@ Pointing and Drawing was performed by using touchpad input on the side of Google
 	\label{fig:ismar14:pointing-drawing}
 \end{figure}
 
-The subjects were given a list of furniture objects. Both of them could see the name of the object (e.g., "Mirror"), but only one could see the picture attached to it. The subject without the accompanying picture was asked to find a suitable place inside the panorama room (Figure \ref{fig:ismar14:envrionment-setup}), while the other would give a description and confirm or deny if the location was deemed realistic. Once both participants had agreed on a location, they would move on to the next object. They were given a maximum of three minutes.
+The subjects were given a list of furniture objects printed on a paper to describe to the other user the shape and discuss where to place this furniture item. Both of them could see the name of the object (e.g., "Mirror"), but only one could see the picture attached to it. The subject without the accompanying picture was asked to find a suitable place inside the panorama room (Figure \ref{fig:ismar14:envrionment-setup}), while the other would give a description and confirm or deny if the location was deemed realistic. Once both participants had agreed on a location, they would move on to the next object. They were given a maximum of three minutes.
 
 \begin{figure}[ht]
 	\centering
@@ -77,7 +78,7 @@ There were 24 subjects aged between 18 and 45, divided into groups of two. Subje
 
 The SUS survey was used to measure the usability of the interfaces, and both the Glass and tablet conditions were found to have good usability. The tablet Audio scored the highest with an average of $77.1\pm18.9$, which indicates a "good" usability \cite{Bangor2008}. Furthermore, the Drawing and Pointing conditions scored $70.4\pm21.4$ and $74.2\pm21.5$ respectively, also rated "good". However, the Dual condition scored merely $62.9\pm24$ reflecting the observation that users preferred to stay on one interaction tool during the Dual condition.
 
-On Glass, the Audio usability was highest ($75.6\pm10.8$) followed by Pointing ($72.1\pm17.1$). The Dual mode was ranked as unacceptable ($58.1\pm18.6$) together with Drawing ($53.8\pm19.2$), showing the Glass touchpad was perceived as too difficult for drawing. A repeated measures ANOVA determined that mean SUS scores differed statistically significantly between the conditions ($F(3, 33)=5,625025, P=0.003$). There was a significant difference between Audio and the Drawing ($p<0.05$). A number of observations of user behaviour can be made. Drawings were more commonly made to explain shape and dimensions, and pointing gestures were usually used to reference a location or an exact object. Tablet users generally preferred drawing to pointing and tried to draw the object shape (Figure \ref{fig:ismar14:tablet-drawing}). Due to difficulties with the touchpad, Glass users ended up using more abstract representations, such as rectangles or circles.
+On Glass, the Audio usability was highest ($75.6\pm10.8$) followed by Pointing ($72.1\pm17.1$). The Dual mode was ranked as unacceptable ($58.1\pm18.6$) together with Drawing ($53.8\pm19.2$), showing the Glass touchpad was perceived as too difficult for drawing. A repeated measures ANOVA determined that mean SUS scores differed statistically significantly between the conditions ($F(3, 33)=5,625025, P=0.003$) for Glass. There was a significant difference between Audio and the Drawing ($p<0.05$). A number of observations of user behaviour can be made. Drawings were more commonly made to explain shape and dimensions, and pointing gestures were usually used to reference a location or an exact object. Tablet users generally preferred drawing to pointing and tried to draw the object shape (Figure \ref{fig:ismar14:tablet-drawing}). Due to difficulties with the touchpad, Glass users ended up using more abstract representations, such as rectangles or circles.
 
 \begin{figure}[ht]
 	\centering
@@ -88,7 +89,7 @@ On Glass, the Audio usability was highest ($75.6\pm10.8$) followed by Pointing (
 
 \subsection{Observations}
 
-Drawings were more commonly made to explain object shape and dimensions, and pointing gestures were usually used to reference a location or an exact object.
+Drawings were more commonly made to explain object shape and dimensions, and pointing gestures were usually used to reference a location or an exact object Audio was lowest score in social presence due to lower level of interactivity between subjects and potential misunderstanding during conversation when relying on Audio only to communicate. 
 
 Local (glass) users seemed to be engaged with the remote (tablet) user by: 1) following the orientation cues and being aware of their orientation comparing to the remote user's orientation, 2) being able to annotate (draw and point) on the image to improve their communication. The benefit of panorama to see the surrounding environment of the remote user, and have mirrored experiences.
 

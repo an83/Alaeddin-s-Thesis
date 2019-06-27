@@ -1,7 +1,7 @@
 \section{Filtering Shared Social Data}
 \label{sec:surrounding:360}
 
-The social data of the surrounding scene can be described in different levels of detail. A different ways of describing a surrounding scene include: a 2D image, a panoramic image, a video, a 360-degree video, a 3D depth image, or a VR 3D model. These different ways of describing the same scene represent the levels of details that can be varied based on the Social AR Continuum and the social proximity between the social contacts. 
+The social data of the surrounding scene can be described in different levels of detail. A different ways of describing a surrounding scene include: a 2D image, a 360-degree panoramic image, a video, a 360-degree video or a 3D depth image. These different ways of describing the same scene represent the levels of details that can be varied based on the Social AR Continuum and the social proximity between the social contacts. 
 
 This section describes a method and a prototype implementation for filtering shared social data (e.g., 360-degree videos) using wearable AR devices (e.g., HoloLens) \cite{Nassani2018a}. The data filtering is based on the sharer-viewer relationships in order to preserve privacy. For example, when sharing a 360-degrees video, if the sharer has an intimate relationship with the viewer, then the full fidelity (i.e., the whole 360-degree video) of the sharer's environment is visible. However, if the two are strangers, then only a snapshot image is shared, and the viewer cannot get more information about the sharer's environment. By varying the fidelity of the shared content, the viewer can focus more on the data shared by their close (in terms of social proximity) relations and differentiate this from other content. Also, this approach enables the sharer to have more control over the fidelity of the content shared with their contacts for privacy.
 
@@ -66,8 +66,7 @@ The prototype places social contacts around the user (viewer) in three concentri
 % =============================================================================
 \subsection{User Study}
 % =============================================================================
-
-A user study was conducted to test the system usability and effects on social presence, comparing the following conditions: 
+This user study includeed a semi-structured interview and measure three related questions from the Social Presence questionnaire in addition to the Subjective Mental Effort Questionnaire (SMEQ). The study compared the following conditions: 
 
 \begin{itemize}
     \item C1-B) Baseline: Shows the shared 360-degree videos from all social contacts.
@@ -79,7 +78,7 @@ The task was for participants to wear the headset and observe 12 social contacts
 
 The participant could view the data content by performing the air-tap gesture on it. Once tapped, the content moved closer to the viewer. For instance, if the viewer tapped on the sphere of a 360-degree video, then the sphere immersed the participant to experience it, while for a 2D video, it was moved closer to the user so they could see it at full-screen resolution.
 
-Participants were asked to answer the 5-point Likert-scale questions shown in Table \ref{tbl:questions} which are based on prior work \cite{Biocca2003}. Participants were asked to rate their experience on the Subjective Mental Effort Questionnaire (SMEQ) \cite{Sauro2009}. 
+Participants were asked to answer the 5-point Likert-scale questions shown in Table \ref{tbl:questions} which are based on prior work in measuring social presence \cite{Biocca2003}. Participants were asked to rate their experience on the Subjective Mental Effort Questionnaire (SMEQ) \cite{Sauro2009}. 
 
 \begin{table}[ht]
 	\centering
@@ -108,16 +107,18 @@ A user study was run with eight participants (four female) aged 26-35 (SD=3.03).
 
 After filling in a demographic questionnaire, the participants were asked to experience the three conditions in random order. Then they filled in a social presence questionnaire and SMEQ about the condition they just tried. After finishing all three conditions, participants then filled in a post-experiment questionnaire where they were asked about the overall experience and if they had any suggestions to improve it. 
 
-From the questionnaire results (Figure \ref{fig:data:results}), indicates that C2-T was rated (3.6) better in terms of social presence compared to C1-B (3.3) on average, while C3-W (3.5) was relatively close compared to C2-T. The SMEQ results show that all three conditions were rated low in terms of mental effort, while both C2-T (M=16.875) and C3-W (M=16.875) were rated lower than C1-B (M=21).
+A Shapiro-Wilk Normality Test on the results (Figure \ref{fig:data:results}) showed that the data is not normally distributed ($p<0.05$). Running Friedman test showed that there was no statistically significant difference between the three conditions in SMEQ ($χ^2(2)=0.320, p=0.852$), or CoP ($χ^2(2)=7.193, p=0.516$), or Atn ($χ^2(2)=12.091, p=0.147$), or MsgU ($χ^2(2)=0.320, p=0.852$), 
+
+% From the questionnaire results , indicates that C2-T was rated (3.6) better in terms of social presence compared to C1-B (3.3) on average, while C3-W (3.5) was relatively close compared to C2-T. The SMEQ results show that all three conditions were rated low in terms of mental effort, while both C2-T (M=16.875) and C3-W (M=16.875) were rated lower than C1-B (M=21).
 
 \begin{figure}[h]
   \centering
   \includegraphics[width=\columnwidth]{images/chi/images-01.eps}
-  \caption{Results of social presence (top) and SMEQ (bottom). *=reversed rating scale (lower=better). Whiskers=standard error}
+  \caption{Results of social presence (top) and SMEQ (bottom). *= values are reversed (6-x) so that higher is better. Whiskers=standard error}
   \label{fig:data:results}
 \end{figure}
 
-As part of the post-questionnaire, participants were asked to rate the three conditions (1=least preferred, 3=most preferred). The ranking results (see Figure \ref{fig:data:ranking}) show that C1-B was least preferred (1.3) while C2-T (2.25) and C3-W (2.375) were similar. There was a statistically significant difference in ranking conditions $\chi^2(2)=7, p=0.05$. A post-hoc analysis with Wilcoxon signed-rank tests was conducted, finding a statistically significant difference between C1-B and C3-W. ($Z=-2.081, p=0.037$), and no difference between the other conditions.
+As part of the post-questionnaire, participants were asked to rate the three conditions (1=least preferred, 3=most preferred). The ranking results (see Figure \ref{fig:data:ranking}) show that there was a statistically significant difference in ranking conditions $X^2(2)=7, p=0.05$. A post-hoc analysis with Wilcoxon signed-rank tests was conducted, finding a statistically significant difference between C1-B and C3-W. ($Z=-2.081, p=0.037$), and no difference between the other conditions.
 
 \begin{figure}[h]
   \centering
@@ -137,10 +138,12 @@ On the downside, participants mentioned some weakness for condition C2 (tap to c
 Overall, participants expressed their interest in using such a system to manage and view their social contacts and shared content in AR, and that it would be useful and easy to use. 
 
 % =============================================================================
-\subsection{Limitations and Future Work}
+\subsection{Limitations}
 % =============================================================================
 
-This prototype used asynchronous sharing, where social contacts were not online at the same time, sharing live data; the shared content was previously prepared, and the 360-degree videos were previously processed to extract 2D video and a 2D image. However, the method was applied for filtering could be applied to synchronous sharing as well. In the future, the plan is to add live video streaming from social contacts and live scaling down of the content based on social relationships. 
+This prototype used asynchronous sharing, where social contacts were not online at the same time, sharing live data; the shared content was previously prepared, and the 360-degree videos were previously processed to extract 2D video and a 2D image. However, the method was applied for filtering could be applied to synchronous sharing as well. Ideal scenario is to add live video streaming from social contacts and live scaling down of the content based on social relationships. Another limitation of this study is that it reports on one side of social presence questions; the viewer side. Another study later in Section \ref{sec:surrounding:hiding} reports on both sides; the sharer and the viewer. 
+
+% Tobias: When you talked about the limitations, you show some limitations but you do not explain how these might have influenced the results. Where there any learning effects.
 
 % The concept does apply to synchronous sharing where social contacts are online at the same time. Future plans includes extending this prototype for synchronous sharing experiences. We can expand the implementation to include spatial audio as a fidelity option on which to filter based on social relationship. 
 

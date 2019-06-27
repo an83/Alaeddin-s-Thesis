@@ -1,4 +1,4 @@
-\section{Hiding Mechanisms of the Shared Surrounding Environments in AR}
+\section{Hiding Mechanisms of Filtering 3D Shared Surrounding Environments}
 \label{sec:surrounding:hiding}
 
 This section describes a system and a user study for hiding and showing parts of the shared social surrounding spaces on wearable AR devices. Unlike sharing for collaborative purposes, the focus of this section is on sharing between social contacts. This work extends the previous work of the Social AR Continuum by exploring how sharing the surrounding environment can vary based on the social proximity between social contacts. This work includes building a prototype for sharing a 3D captured room on a HoloLens, which enables the user to display three levels of social relationships: Intimate, Friend and Stranger, and maps them to three levels of the surrounding environment.
@@ -15,7 +15,7 @@ This work aims to explore how wearable AR systems could share a user's surroundi
 
 \subsection{Prototype System}
 
-\begin{figure}[H]
+\begin{figure}[h]
     \begin{center}
     \includegraphics[width=\linewidth]{images/frontier18/system.jpg}
     \caption{The system components representing the sharer server-side (left) sharing with the viewer client-side (right) via WiFi: 1) the avatar position and orientation, 2) the social relationship data and 3) room and hidden components data. The system is built on Unity and runs on the HoloLens.}\label{fig:frontier18:system}
@@ -39,7 +39,7 @@ The prototype system explored sharing different views depending on the social re
     \item T1C2: Shared room with a social proximity filter where the level of detail of the shared room is changed based on the social relationship between the users. 
 \end{itemize}
 
-\begin{figure}[H]
+\begin{figure}[h]
     \begin{center}
     \includegraphics[width=\linewidth]{images/frontier18/images-02.png}
     \caption{A social filter applied to the shared room. a) In an Intimate relationship, everything is shared. b) For a Friend relationship, some sensitive items are hidden (e.g., family photo, stock market). c) While for a Stranger relationship almost everything is hidden in the room.}\label{fig:frontier18:social-filter}
@@ -54,7 +54,7 @@ The prototype system explored sharing different views depending on the social re
     \item T2C3: Blur, where objects are hidden by appearing blurred to the viewer. 
 \end{itemize}
 
-\begin{figure}[H]
+\begin{figure}[h]
     \begin{center}
     \includegraphics[width=\linewidth]{images/frontier18/images-01.png}
     \caption{Hiding mechanism applied on the TV screen. a) Remove, b) Overlay, c) Blur.}\label{fig:frontier18:hiding-mechanism}
@@ -65,7 +65,7 @@ Each participant tried the conditions from both perspectives, a viewer and a sha
 
 Figure \ref{fig:frontier18:setup} shows that the experiment was set up in two similar rooms so that the sharer was sharing their room with a remote viewer. The relative position and rotation of each user were synchronised and represented as a virtual avatar in the remote person view. The sharer could change the social relationship with the viewer (Intimate, Friend, Stranger) by using 3-buttons situated in the middle of the room. The viewer could request the relationship to change by clicking on one of the relationship buttons. Once this happened, the sharer saw the relationship request in a different colour, which they then could approve and change the social relationship.
 
-\begin{figure}[H]
+\begin{figure}[h]
     \begin{center}
     \includegraphics[width=\linewidth]{images/frontier18/experiment-setup.jpg}
     \caption{The experiment setup. The sharer (right) is sharing their 3D room with the viewer (left). The viewer sees the virtual room of the sharer overlaid on top of their physical room. Each user is seeing the remote person as a virtual avatar in their environment that has the position and orientation mapped to the remote person.}\label{fig:frontier18:setup}
@@ -102,7 +102,9 @@ The participants were asked open-ended questions about the strengths and weaknes
 
 \subsection{Results}
 
-\begin{figure}[H]
+For Task 1, Figure \ref{fig:frontier18:result-filter} shows the Likert scale results for the viewer and the sharer. A Wilcoxon signed-rank test on the results of \textit{Task 1} comparing no social filter (T1C1) and social filter (T1C2) showed that as a viewer having a social filter (T1C2) did elicit a statistically significant difference in BP5-Open ($Z=-2.323, p=0.02$) and CoP1-I noticed my partner ($Z=-2.066, p=0.039$). While as a sharer, having a social filter (T1C2) did elicit a statistically significant difference in CoP3-My partner's presence was obvious to me ($Z=-1.993, p=0.046$) and CoP5-My partner caught my attention ($Z=-2.164, p=0.030$) and S1-Comfortable ($Z=-2.503, p=0.012$) and S2-Secure ($Z=-2.816, p=0.004$). There was no difference in response to the other questions.
+
+\begin{figure}[h]
     \begin{center}
     \includegraphics[width=0.8\linewidth]{images/frontier18/images-03.eps}
     \includegraphics[width=0.8\linewidth]{images/frontier18/images-04.eps}
@@ -110,12 +112,9 @@ The participants were asked open-ended questions about the strengths and weaknes
     \end{center}
 \end{figure}
 
-For Task 1, Figure \ref{fig:frontier18:result-filter} shows the Likert scale results for the viewer and the sharer. A Wilcoxon signed-rank test on the results of \textit{Task 1} comparing no social filter (T1C1) and social filter (T1C2) showed that as a viewer having a social filter (T1C2) did elicit a statistically significant difference in BP5-Open ($Z=-2.323, p=0.02$) and CoP1-I noticed my partner ($Z=-2.066, p=0.039$). While as a sharer, having a social filter (T1C2) did elicit a statistically significant difference in CoP3-My partner's presence was obvious to me ($Z=-1.993, p=0.046$) and CoP5-My partner caught my attention ($Z=-2.164, p=0.030$) and S1-Comfortable ($Z=-2.503, p=0.012$) and S2-Secure ($Z=-2.816, p=0.004$). There was no difference in response to the other questions.
-
 For Task 2, Figure \ref{fig:frontier18:result-hiding} shows the Likert scale results for the viewer and the sharer comparing three hiding mechanisms. A Wilcoxon signed-rank test on the results of \textit{Task 2} comparing hiding mechanism of 1) remove (T2C1), 2) overlay (T2C2) and 3) blur (T2C3) showed that as a sharer there was a statistically significant difference between blur (T2C3) and remove (T2C1) in BP4-Sociable ($Z=-2.050, p=0.040$) and in CoP1-I noticed my partner ($Z=-2.000, p=0.046$). There was no difference in response to the other questions.
 
-
-\begin{figure}[H]
+\begin{figure}[h]
     \begin{center}
     \includegraphics[width=0.9\linewidth]{images/frontier18/images-05.eps}
     \includegraphics[width=0.9\linewidth]{images/frontier18/images-06.eps}
@@ -133,7 +132,9 @@ In response to the ranking questions (Figure \ref{fig:frontier18:result-ranking}
 
 Participants were asked if there was a different mechanism of hiding objects in their shared room that they would prefer (such as replacing the hidden object with a similar but less sensitive one). About 42\% thought that replacing the object was a good idea; however, most of them raised concerns about how they may not like the additional effort needed for selecting a similar object to replace.
 
-\subsection{Discussion and Future Work}
+\subsection{Discussion}
+
+The results show statically significant difference when comparing social filter over no filter in a few bi-polar questions for the viewer side and in a few co-presences questions for the sharer side.
 
 The ranking results show that having the social filter was preferred over no social filter. However, in the Likert questions, a statistical differences was found in only 5 questions out of 15. Participants with the sharer point of view had more statistical differences than those with the viewer point of view. This indicates that having a social filter is essential for people to feel comfortable regarding privacy when they have to choose, but not as much when they have to go through the effort of selecting which objects to hide for each social relationship.  
 
