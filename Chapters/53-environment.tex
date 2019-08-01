@@ -1,15 +1,16 @@
+\pagebreak
 \section{Filtering 3D Shared Surrounding Environments}
 \label{sec:surrounding:environment}
 
-As part of the Social AR Continuum for sharing social data, the previous section looked into filtering 360-degrees images and videos based the social proximity with viewers. Sharing social data include sharing the surrounding environment with social contacts. This section explores the social sharing of surrounding environments on wearable AR devices \cite{Nassani2018b}. In particular, it proposes filtering the level of detail of sharing the surrounding environment based on the social proximity between the viewer and the sharer. This work test the effect of having the filter (varying the levels of detail) on the shared surrounding environment, to preserve the sense of privacy from both viewer and sharer perspectives, and conducted a study using the HoloLens. This section reports on semi-structured questionnaire results and suggest future directions in the social sharing of surrounding environments.
+As part of the Social AR Continuum for sharing social data, the previous section looked into filtering 360-degrees images and videos based on the social proximity with viewers. Sharing social data includes sharing the surrounding environment with social contacts. This section explores the social sharing of surrounding environments on wearable AR devices \cite{Nassani2018b}. In particular, it proposes filtering the level of detail of sharing the surrounding environment based on the social proximity between the viewer and the sharer. This work tests the effect of having the filter (varying the levels of detail) on the shared surrounding environment, to preserve the sense of privacy from both viewer and sharer perspectives, and conducted a study using the HoloLens. This section reports on semi-structured questionnaire results and suggests future directions in the social sharing of surrounding environments.
 
-This work explores new ways of sharing the remote environment of social contacts in a wearable AR interface. This section builds on top of the work in the previous section \ref{sec:surrounding:360}  that looked into sharing surrounding environments based on social proximity. Previously, three levels of representing surrounding environments were tested: 360-degree video, 2d Video and 2D Image. This work focuses on sharing 3D captured rooms and levels of detail that can be used based on social proximity. 
+This work explores new ways of sharing the remote environment of social contacts in a wearable AR interface and builds on top of the work in the previous section \ref{sec:surrounding:360}  that looked into sharing surrounding environments based on social proximity. Previously, three levels of representing surrounding environments were tested: 360-degree video, 2d Video and 2D Image. This work focuses on sharing 3D captured rooms and levels of detail that can be used based on social proximity. 
 
 \subsection{Prototype System}
 
-This section describes a HoloLens prototype that was built to test different levels of details of sharing surrounding environments. When the user puts on the HoloLens, he/she sees an AR user interface (UI) showing simulated social contacts (see Figure~\ref{fig:environment:setup}). The UI displays the social contacts around the viewer. Above each social contact avatar, the viewer can see a representation of the shared remote surrounding environment. The level of detail of the shared surrounding environment is determined by the social proximity to the viewer.
+This section describes a HoloLens prototype that was built to test different levels of detail of sharing surrounding environments. When the user puts on the HoloLens, he/she sees an AR user interface (UI) showing simulated social contacts (see Figure~\ref{fig:environment:setup}). The UI displays the social contacts around the viewer. Above each social contact avatar, the viewer can see a representation of the shared remote surrounding environment. The level of detail of the shared surrounding environment is determined by the social proximity to the viewer.
 
-\begin{figure}[H]
+\begin{figure}
     \centering
     \includegraphics[width=\columnwidth]{images/ismar18/images-06.eps}
     \caption{The viewer uses the HoloLens to view social contacts and proximity-filtered shared environments.}
@@ -18,30 +19,29 @@ This section describes a HoloLens prototype that was built to test different lev
 
 The user can air-tap on the environment above an avatar to expand it to life-size around the avatar (Figure~\ref{fig:environment:environment-levels}). The user can walk inside and explore the shared surrounding environment.
 
-\begin{figure}[H]
+\begin{figure}
   \centering
-  \includegraphics[width=3in]{images/ismar18/images-05.eps}
-  \caption{Levels of detail of the shared surrounding environment. 1) full details for Intimate contact: including family picture, bank balance and computer monitor. 2) partial details for Friend contact: hiding the family picture, bank balance, but keeping work-related items such as computer monitor. 3) limited details for Stranger contact: hidden personal and work related items.}
+  \includegraphics[width=.8\linewidth]{images/ismar18/images-05.eps}
+  \caption{Levels of detail of the shared surrounding environment. 1) full details for Intimate contact: including family pictures, bank balance and computer monitor. 2) partial details for Friend contact: hiding the family picture, bank balance, but keeping work-related items such as computer monitor. 3) limited details for Stranger contact: hidden personal and work-related items.}
   \label{fig:environment:environment-levels}
 \end{figure}
-
 
 The prototype was built using the Microsoft HoloLens\footnote{https://www.microsoft.com/en-us/hololens} and the Mixed Reality Toolkit\footnote{https://github.com/Microsoft/MixedRealityToolkit-Unity}. The avatars representing the social contacts were generated using MakeHuman\footnote{http://www.makehumancommunity.org/}. The 3D representation of the remote sharer's room was modelled in AutoDesk Maya\footnote{https://www.autodesk.com/products/maya/overview} to simulate 3D scanning of the user's surrounding environment. 
 
 \subsection{User Study}
 
-The user study aimed to explore the perceived comfort as a sharer and as a viewer comparing the effect of social proximity applied on sharing 3D surrounding environment over no filter. The study also included a semi-structured interview and asked participants about their preferred condition and hiding mechanism. To test if users preferred to have a proximity filter applied on the shared surrounding environment, the prototype offers to turn the filter on or off in two conditions: 
+The user study aimed to explore the perceived comfort as a sharer and as a viewer comparing the effect of social proximity applied on sharing 3D surrounding environment over no filter. The study also included a semi-structured interview and asked participants about their preferred condition and hiding mechanism. To test if users preferred to have a proximity filter applied to the shared surrounding environment, the prototype offers to turn the filter on or off in two conditions: 
 
 \begin{itemize}
     \item C1-B) no-filter (baseline)
     \item C2-F) proximity-filter (proximity filter applied)
 \end{itemize}
 
-Participant wore the HoloLens to visualise three levels of their social contacts sharing their surrounding 3D environments. Each participant tried each condition in counter balanced order, and answered a questionnaire after each condition. At the end of the study, participants answered a few comparison questions about the preferred condition. 
+Participants wore the HoloLens to visualise three levels of their social contacts sharing their surrounding 3D environments. Each participant tried each condition in counter-balanced order and answered a questionnaire after each condition. At the end of the study, participants answered a few comparison questions about the preferred condition. 
 
 \begin{itemize}
     \item Q1: As a Sharer (person sharing the surrounding environment), how do you feel about sharing the contents with others in terms of privacy? 
-    \item Q2: As a Viewer (person viewing the surrounding environment), how do you feel about sharing the contents with others in terms of privacy? 
+    \item Q2: As a Viewer (the person viewing the surrounding environment), how do you feel about sharing the contents with others in terms of privacy? 
 \end{itemize}
 
 For each condition, participants were asked to rate how comfortable they felt (on a five-point Likert scale: 1=not very comfortable, 5=very comfortable) about the sharing environment from the perspective of a sharer (person sharing) and the viewer (the person viewing) of the surrounding environment. Participants were asked to rank which condition they preferred (and to state why) from both perspectives. Finally, participants asked about which method of hiding sensitive items in the shared environment the user preferred by selecting an option from 1) remove/hide the item as if it did not exist, 2) block/overlay a black box on the item so it will be hidden, 3) blur out the item, 4) other. 
@@ -57,13 +57,13 @@ Feedback was collected from 10 participants (five female) with an average age of
   \label{fig:environment:results}
 \end{figure}
 
-A Wilcoxon signed-rank test was run on the subjective perceived comfort in terms of privacy. The test showed that having a proximity filter (C2-F) applied on the shared surrounding environment did elicit a statistically significant improvement in perceived comfort in terms of privacy for both sharers ($Z=-2.831$, $p=0.005$) and viewers ($Z=-2.588$, $p=0.01$). 
+A Wilcoxon signed-rank test was run on the subjectively perceived comfort in terms of privacy. The test showed that having a proximity filter (C2-F) applied on the shared surrounding environment did elicit a statistically significant improvement in perceived comfort in terms of privacy for both sharers ($Z=-2.831$, $p=0.005$) and viewers ($Z=-2.588$, $p=0.01$). 
 
 As for the ranking results, C2-F (proximity filter) was preferred by both sharers (100\%) and viewers (70\%) over C1-B (no filter). C1-B (no filter) was ranked 30\% for viewers. In terms of the preferred way of hiding sensitive items in the shared environment, blurring sensitive items (60\%) was preferred followed by removing/hiding sensitive items as if they did not exist (40\%) and the lowest was overlay (10\%). 
 
 \subsection{Discussion}
 
-In the open-ended questions, C1-B (no filter) was reported stronger in terms of the curiosity for the viewer. "\textit{... would suit supervisors who are interested in knowing details about their social network}", one participant mentioned. The most reported strength of C2-F (proximity filter) was around privacy and the sense of being comfortable in sharing levels based on social proximity. 
+In the open-ended questions, C1-B (no filter) was reported stronger in terms of the curiosity for the viewer. "\textit{... would suit supervisors who are interested in knowing details about their social network}", one participant mentioned. The most-reported strength of C2-F (proximity filter) was around privacy and the sense of being comfortable in sharing levels based on social proximity. 
 
 Overall, the results confirm our hypothesis of the value of social proximity-based filtering for sharing the surrounding environment. An interesting observation is that the sharer perspective may be different from the viewer perspective in terms of privacy. 
 
@@ -73,4 +73,4 @@ Overall, the results confirm our hypothesis of the value of social proximity-bas
 
 This section explored implementing the Social AR Continuum on sharing surrounding environments between social contacts as one of the dimensions on the social data category. A user study was run to test the effects of applying a filter on levels of detail on how comfortable the participants were in terms of privacy. Results found that most participants are more comfortable when the social filter was applied to their shared surrounding environment.
 
-The next section looks into sharing the social surrounding environments from both the sharer and the viewer perspectives. Also, it examines different mechanisms of hiding/showing part(s) of the shared surrounding environments. 
+The next section looks into sharing the social surrounding-environments from both the sharer and the viewer perspectives. Also, it examines different mechanisms of hiding/showing part(s) of the shared surrounding environments. 

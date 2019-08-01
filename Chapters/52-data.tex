@@ -1,9 +1,9 @@
 \section{Filtering Shared Social Data}
 \label{sec:surrounding:360}
 
-The social data of the surrounding scene can be described in different levels of detail. A different ways of describing a surrounding scene include: a 2D image, a 360-degree panoramic image, a video, a 360-degree video or a 3D depth image. These different ways of describing the same scene represent the levels of details that can be varied based on the Social AR Continuum and the social proximity between the social contacts. 
+The social data of the surrounding scene can be described in different levels of detail. Different ways of describing a surrounding scene include a 2D image, a 360-degree panoramic image, a video, a 360-degree video or a 3D depth image. These different ways of describing the same scene represent the levels of detail that can be varied based on the Social AR Continuum and the social proximity between the social contacts. 
 
-This section describes a method and a prototype implementation for filtering shared social data (e.g., 360-degree videos) using wearable AR devices (e.g., HoloLens) \cite{Nassani2018a}. The data filtering is based on the sharer-viewer relationships in order to preserve privacy. For example, when sharing a 360-degrees video, if the sharer has an intimate relationship with the viewer, then the full fidelity (i.e., the whole 360-degree video) of the sharer's environment is visible. However, if the two are strangers, then only a snapshot image is shared, and the viewer cannot get more information about the sharer's environment. By varying the fidelity of the shared content, the viewer can focus more on the data shared by their close (in terms of social proximity) relations and differentiate this from other content. Also, this approach enables the sharer to have more control over the fidelity of the content shared with their contacts for privacy.
+This section describes a method and a prototype implementation for filtering shared social data (e.g., 360-degree videos) using wearable AR devices (e.g., HoloLens) \cite{Nassani2018a}. The data filtering is based on sharer-viewer relationships in order to preserve privacy. For example, when sharing a 360-degree video, if the sharer has an intimate relationship with the viewer, then the full fidelity (i.e., the whole 360-degree video) of the sharer's environment is visible. However, if the two are strangers, then only a snapshot image is shared, and the viewer cannot get more information about the sharer's environment. By varying the fidelity of the shared content, the viewer can focus more on the data shared by their close (in terms of social proximity) relations and differentiate this from other content. Also, this approach enables the sharer to have more control over the fidelity of the content shared with their contacts for privacy.
 
 % In this work, we are trying to answer the question, what would be the best way to share rich data (such as 360 videos) within a large social network? The hypothesis is that filtering data based on the user-viewer relationship or proximity will increase the feeling of being together or inter-connectedness. 
 
@@ -12,7 +12,7 @@ This section describes a method and a prototype implementation for filtering sha
 \subsection{Sharing Social Data}
 % =============================================================================
 
-From the perspective of the person who is sharing the data (the sharer) with their social contacts (Figure \ref{fig:data:sharer}), the data is collected in its highest fidelity (e.g., a fully spherical 360-degree view) which will be shared with those viewers with the closest (most intimate) social relationships. For less-intimate friends, a 2D video, extracted from the 360 videos based on the sharer's view direction over time, will be shared. For Strangers, the sharer can select which snapshot image from the 2D video sequence to display. The central metaphor is that the closer the relationship that the sharer has to the viewer, the richer data that they can share from their point of view (360-degree videos, 2D videos, still images).
+From the perspective of the person who is sharing the data (the sharer) with their social contacts (Figure \ref{fig:data:sharer}), the data is collected in its highest fidelity (e.g., a fully spherical 360-degree view) which will be shared with those viewers with the closest (most intimate) social relationships. For less-intimate Friends, a 2D video, extracted from the 360-degree videos based on the sharer's view direction over time, will be shared. For Strangers, the sharer can select which snapshot image from the 2D video sequence to display. The central metaphor is that the closer the relationship that the sharer has to the viewer, the richer data that they can share from their point of view (360-degree videos, 2D videos, still images).
 
 \begin{figure}[H]
     \centering
@@ -21,15 +21,15 @@ From the perspective of the person who is sharing the data (the sharer) with the
     \label{fig:data:sharer}
 \end{figure}
 
-An example use-case scenario for filtering by sharer is where the sharer is going on a hike and wanting to share the experience of being in an interesting place such as near a river. The sharer takes a live 360-degree video of the surrounding environment and shares it with her followers. The sharer then gets to see how the followers are able to see the shared data based on their social relationship to her. The sharer's intimate friends and family will see the live 360-degree video, other friends the 2D video, and strangers still images of the scene, all automatically created from the 360-degree video recording.
+An example use-case scenario for filtering by sharer is where the sharer is going on a hike and wanting to share the experience of being in an interesting place such as near a river. The sharer takes a live 360-degree video of the surrounding environment and shares it with her followers. The sharer then gets to see how the followers are able to see the shared data based on their social relationship with her. The sharer's intimate friends and family will see the live 360-degree video, other friends the 2D video, and strangers still images of the scene, all automatically created from the 360-degree video recording.
 
 % =============================================================================
 \subsection{Viewing Shared Social Data}
 % =============================================================================
 
-The user viewing the shared data (the viewer) uses a wearable AR interface to see content from their social network superimposed over the real world, based on proxemics. For example, the viewer may be interested in seeing what their social contacts (followers) are up to and the places they have been. In this scenario the viewer can look around through the AR display to see their social contacts placed around them in three circles ordered by relationship. On top of each social contact, the viewer can see the content they are sharing, filtered based on the social relationship between the social contact and the viewer.
+The user viewing the shared data (the viewer) uses a wearable AR interface to see content from their social network superimposed over the real world, based on proxemics. For example, the viewer may be interested in seeing what their social contacts (followers) are up to and the places they have been. In this scenario, the viewer can look around through the AR display to see their social contacts placed around them in three circles ordered by relationship. On top of each social contact, the viewer can see the content they are sharing, filtered based on the social relationship between social contact and the viewer.
 
-Based on a previous work of representing social contacts as avatars \cite{Nassani2017a}, the people who are socially closer will appear in the AR view visually closer and have a more realistic representation. The placement of social contacts was tested in life-size avatar around the viewer and as miniatures on a surface nearby. For the purpose of sharing social data, this section continues to place social contacts as life-size avatars around the viewer. 
+Based on previous work of representing social contacts as avatars \cite{Nassani2017a}, the people who are socially closer will appear in the AR view visually closer and have a more realistic representation. The placement of social contacts was tested in life-size avatar around the viewer and as miniatures on a surface nearby. For the purpose of sharing social data, this section continues to place social contacts as life-size avatars around the viewer. 
 
 The data content shared by each social contact will appear above their avatar (see Figure \ref{fig:data:viewer}), and to view the content more clearly, the viewer can select it (e.g., using the HoloLens air-tap gesture) to bring the content closer to the viewer or walk to move inside the 360-degree video sphere. The viewer can then tap again to bring back the content to its original place to see other social contacts. 
 
@@ -43,25 +43,25 @@ The data content shared by each social contact will appear above their avatar (s
 In addition to this operation, this section proposes that the viewers can also see the shared content in different fidelity (360-degree videos, 2D videos or images) based on the social relationship with the sharer (Intimate, Friend or Stranger). While the sharer could restrict the fidelity of the shared content based on the social relationship as mentioned earlier, the viewer could also filter the content based on their preference. In order to avoid getting mentally overloaded by seeing too much content in high fidelity, the viewer should be able to choose the preferred fidelity for the shared content from each social contact. This could be achieved either explicitly by choosing a fidelity for each social contact, or implicitly by moving closer to or further from the avatar representing the contact.
 
 % Mark Billinghurst: You might want to add a case study example to explain this paragraph more clearly.
-% gogo: And, this now sounds very complex! Person 1 (P1) can decide how to share things with P2. But P2 can also decide how she wants to see the content from P1. This brings up several questions. For example, now P1 needs some way of knowing if how they are viewing P2's data is P2's choice, or P1's choice, and they need to be able to switch back and forth. Also, P2 might have the expectation that P1 is viewing P2's content in the way P2 intended, when in fact P1 may have chosen otherwise. Will there be any indication to P2 how P1 is viewing the data? All very confusing....
+% gogo: And, this now sounds very complex! Person 1 (P1) can decide how to share things with P2. But P2 can also decide how she wants to see the content from P1. This brings up several questions. For example, now P1 needs some way of knowing if how they are viewing P2's data is P2's choice or P1's choice, and they need to be able to switch back and forth. Also, P2 might have the expectation that P1 is viewing P2's content in the way P2 intended, when in fact P1 may have chosen otherwise. Will there be any indication to P2 how P1 is viewing the data? All very confusing...
 
-For instance, a sharer S1 has \textit{a friend} relationship with a viewer V1, and therefore can decides to share a 360 image of the surrounding environment instead of a full 3D depth captured room. However, for the viewer V1, the social relationship with S1 is just \textit{an acquaintance} (less then a friend), hence, the viewer could decided to reduce the visual fidelity of the shared social data from a 360 image to just a 2D image. This way both the viewer and the sharer can use decide on the fidelity of the shared data based on the Social AR Continuum.  
+For instance, a sharer S1 has a Friend relationship with a viewer V1 and therefore can decide to share a 360-degree image of the surrounding environment instead of a full 3D depth captured room. However, for the viewer V1, the social relationship with S1 is just an Acquaintance (less a friend); hence, the viewer could decide to reduce the visual fidelity of the shared social data from a 360-degree image to just a 2D image. This way, both the viewer and the sharer can decide on the fidelity of the shared data based on the Social AR Continuum.  
 
 
 % =============================================================================
 \subsection{Prototype}
 % =============================================================================
 
-To explore using the Social AR Continuum metaphor for sharing data between social contacts, a prototype was built using the Microsoft HoloLens. The prototype software was built using Unity 3D game engine, and it allows users to view their social contacts on a wearable AR interface. Figure \ref{fig:data:system} shows the structure of the prototype system. 
+To explore using the Social AR Continuum metaphor for sharing data between social contacts, a prototype was built using the Microsoft HoloLens. The prototype software was built using Unity3D game engine, and it allows users to view their social contacts on a wearable AR interface. Figure \ref{fig:data:system} shows the structure of the prototype system. 
 
 \begin{figure}[ht]
     \centering
-    \includegraphics[width=3in]{images/chi/images-03.eps}
+    \includegraphics[width=\linewidth]{images/chi/chi18-system.jpg}
     \caption{System components of sharing social data implemented in Unity and running on HoloLens}
     \label{fig:data:system}
 \end{figure}
 
-The prototype places social contacts around the user (viewer) in three concentric circles which are controlled by the \textit{Circles Manager}. The social contacts have different visual fidelity and proximity based on their initial relationship to the viewer, and are rendered using the \textit{Avatar Controller}. The avatars were randomly pre-generated without any resemblance to actual contacts. MakeHuman\footnote{http://www.makehuman.org/} was used to generate the 3D avatars. The viewer (HoloLens user) can turn their head to face different social contacts and then use gestures (air taps) to interact with the contact (view their data or change their position which represents the social relationship). The interactions with HoloLens are enabled using the open-source library \textit{HoloToolkit}\footnote{https://github.com/Microsoft/MixedRealityToolkit-Unity}. The data content shared by the social contacts are controlled by the \textit{Data Controller} which determines which fidelity needs to be displayed based on the social relationship between the avatar and the viewer. The top-level \textit{Scenario Manager} defines the implementation needed for different conditions in the user study, including interaction with avatars, shared data and the concentric circles. 
+The prototype places social contacts around the user (viewer) in three concentric circles which are controlled by the \textit{Circles Manager}. The social contacts have different visual fidelity and proximity based on their initial relationship to the viewer and are rendered using the \textit{Avatar Controller}. The avatars were randomly pre-generated without any resemblance to actual contacts. MakeHuman\footnote{http://www.makehuman.org/} was used to generate the 3D avatars. The viewer (HoloLens user) can turn their head to face different social contacts and then use gestures (air taps) to interact with the contact (view their data or change their position which represents the social relationship). The interactions with HoloLens are enabled using the open-source library \textit{HoloToolkit}\footnote{https://github.com/Microsoft/MixedRealityToolkit-Unity}. The data content shared by the social contacts is controlled by the \textit{Data Controller}, which determines which fidelity needs to be displayed based on the social relationship between the avatar and the viewer. The top-level \textit{Scenario Manager} defines the implementation needed for different conditions in the user study, including interaction with avatars, shared data and the concentric circles. 
 
 % =============================================================================
 \subsection{User Study}
@@ -74,29 +74,29 @@ This user study includeed a semi-structured interview and measure three related 
     \item C3-W) Walk-to-change: Filter the fidelity of the shared 360-degree videos based on the physical distance between the viewer and the social contact.
 \end{itemize}
 
-The task was for participants to wear the headset and observe 12 social contacts (mocked up, not reflecting the participant's real social contacts) placed around the user at equal angles from each other to complete a circle (360 degrees) around the viewer, and at different distances to the viewer (centre) based on the social relationship. Each social contact had shared content floating above their head, filtered depending on the type of social relationship that the social contact had with the viewer. 
+The task was for participants to wear the headset and observe 12 social contacts (mocked up, not reflecting the participant's real social contacts) placed around the user at equal angles from each other to complete a circle (360-degree) around the viewer, and at different distances to the viewer (centre) based on the social relationship. Each social contact had shared content floating above their head, filtered depending on the type of social relationship that the social contact had with the viewer. 
 
-The participant could view the data content by performing the air-tap gesture on it. Once tapped, the content moved closer to the viewer. For instance, if the viewer tapped on the sphere of a 360-degree video, then the sphere immersed the participant to experience it, while for a 2D video, it was moved closer to the user so they could see it at full-screen resolution.
+The participant could view the data content by performing the air-tap gesture on it. Once tapped, the content moved closer to the viewer. For instance, if the viewer tapped on the sphere of a 360-degree video, then the sphere immersed the participant in experiencing it, while for a 2D video, it was moved closer to the user so they could see it at full-screen resolution.
 
-Participants were asked to answer the 5-point Likert-scale questions shown in Table \ref{tbl:questions} which are based on prior work in measuring social presence \cite{Biocca2003}. Participants were asked to rate their experience on the Subjective Mental Effort Questionnaire (SMEQ) \cite{Sauro2009}. 
+Participants were asked to answer the 5-point Likert-scale questions shown in Table \ref{tbl:chi18:questions} which are based on prior work in measuring social presence \cite{Biocca2003}. Participants were asked to rate their experience on the Subjective Mental Effort Questionnaire (SMEQ) \cite{Sauro2009}. 
 
 \begin{table}[ht]
-	\centering
-	\begin{tabular}{l p{10cm}}
-		\hline
-		#  & Question \\ \hline
-		CoP1 & I noticed the other social contacts.  \\
-		CoP2 & The other social contacts' presence was obvious to me. \\
-		CoP3 & The other social contacts caught my attention. \\ \hline
-		Atn1* & I was easily distracted from the other social contacts when other things were going on. \\
-		Atn2 & I remained focused on the other social contacts throughout our interaction. \\
-		Atn3 & The other social contacts did not receive my full attention.  \\ \hline
-		MsgU1 & The social contacts shared data (360, video, photo) were clear to me.  \\
-		MsgU2 & It was easy to understand the social contacts shared data (360, video, photo).  \\
-		MsgU3* & Understanding the social contacts' shared data (360, video, photo) was difficult.  \\ \hline
-	\end{tabular}
+    \centering
+    \begin{tabular}{l p{10cm}}
+        \hline
+        #  & Question \\ \hline
+        CoP1 & I noticed the other social contacts.  \\
+        CoP2 & The other social contacts' presence was obvious to me. \\
+        CoP3 & The other social contacts caught my attention. \\ \hline
+        Atn1* & I was easily distracted from the other social contacts when other things were going on. \\
+        Atn2 & I remained focused on the other social contacts throughout our interaction. \\
+        Atn3 & The other social contacts did not receive my full attention.  \\ \hline
+        MsgU1 & The social contacts shared data (360, video, photo) were clear to me.  \\
+        MsgU2 & It was easy to understand the social contacts shared data (360, video, photo).  \\
+        MsgU3* & Understanding the social contacts' shared data (360, video, photo) was difficult.  \\ \hline
+    \end{tabular}
     \caption{5-point Likert-scale questions for Social Presence including the following dimensions: CoPresence (CoP), Attentional Allocation (Atn), Perceived Message Understanding (MsgU). *=negative} 
-      \label{tbl:questions}
+      \label{tbl:chi18:questions}
 \end{table}
 
 % =============================================================================
@@ -109,7 +109,7 @@ After filling in a demographic questionnaire, the participants were asked to exp
 
 A Shapiro-Wilk Normality Test on the results (Figure \ref{fig:data:results}) showed that the data is not normally distributed ($p<0.05$). Running Friedman test showed that there was no statistically significant difference between the three conditions in SMEQ ($χ^2(2)=0.320, p=0.852$), or CoP ($χ^2(2)=7.193, p=0.516$), or Atn ($χ^2(2)=12.091, p=0.147$), or MsgU ($χ^2(2)=0.320, p=0.852$), 
 
-% From the questionnaire results , indicates that C2-T was rated (3.6) better in terms of social presence compared to C1-B (3.3) on average, while C3-W (3.5) was relatively close compared to C2-T. The SMEQ results show that all three conditions were rated low in terms of mental effort, while both C2-T (M=16.875) and C3-W (M=16.875) were rated lower than C1-B (M=21).
+% From the questionnaire results indicates that C2-T was rated (3.6) better in terms of social presence compared to C1-B (3.3) on average, while C3-W (3.5) was relatively close compared to C2-T. The SMEQ results show that all three conditions were rated low in terms of mental effort, while both C2-T (M=16.875) and C3-W (M=16.875) were rated lower than C1-B (M=21).
 
 \begin{figure}[h]
   \centering
@@ -118,11 +118,11 @@ A Shapiro-Wilk Normality Test on the results (Figure \ref{fig:data:results}) sho
   \label{fig:data:results}
 \end{figure}
 
-As part of the post-questionnaire, participants were asked to rate the three conditions (1=least preferred, 3=most preferred). The ranking results (see Figure \ref{fig:data:ranking}) show that there was a statistically significant difference in ranking conditions $X^2(2)=7, p=0.05$. A post-hoc analysis with Wilcoxon signed-rank tests was conducted, finding a statistically significant difference between C1-B and C3-W. ($Z=-2.081, p=0.037$), and no difference between the other conditions.
+As part of the post-questionnaire, participants were asked to rate the three conditions (1=least preferred, 3=most preferred). The ranking results (see Figure \ref{fig:data:ranking}) show that there was a statistically significant difference in ranking conditions $X^2(2)=7, p=0.05$. Post-Hoc analysis with Wilcoxon signed-rank tests was conducted, finding a statistically significant difference between C1-B and C3-W. ($Z=-2.081, p=0.037$), and no difference between the other conditions.
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=1.5in]{images/chi/images-05.eps}
+  \includegraphics[width=.8\linewidth]{images/chi/images-05.eps}
   \caption{Condition ranking results. Reverse rating scale: 1=least preferred, 3=most preferred. Whiskers=standard error. $*=$ statistically significant difference (Friedman test: $X^2(2)=7, p<0.05$).}  
       \label{fig:data:ranking}
 \end{figure}
@@ -133,7 +133,7 @@ As part of the post-questionnaire, participants were asked to rate the three con
 
 From a semi-structured interview after the experiment, most users found that condition C3 (walk to change) was a more fun and natural way to view shared data from social contacts. "\textit{I feel it is more real and fun to view the 360 videos by walking toward the avatar}". Also, other subjects found that the walking condition was more suitable for an outdoor or open area to avoid running into obstacles while walking. The condition C2 (tap to change) was found more convenient for changing the relationship rather than requiring more physical effort, such as walking. The Baseline condition (C1) was the least favourite for participants, as it was too overwhelming having all 360-degree videos shown all around. 
 
-On the downside, participants mentioned some weakness for condition C2 (tap to change), such as potential clutter by being able to bring all social contacts into a small area of the intimate circle. While condition C3 (walk to change) did not have that issue, it was mentioned that by walking one might accidentally change the relationship with other social contacts that the user was not focusing on. For example, the avatars behind or on either side of the user would be affected by user movement, even if the user did not intend to get close to them. Viewing 360-degree videos through an optical see-through display was considered not as ideal, as the 360-degree videos appear to be semi-transparent on top of the real environment.
+On the downside, participants mentioned some weakness for condition C2 (tap to change), such as potential clutter by being able to bring all social contacts into a small area of the intimate circle. While condition C3 (walk to change) did not have that issue, it was mentioned that by walking, one might accidentally change the relationship with other social contacts that the user was not focusing on. For example, the avatars behind or on either side of the user would be affected by user movement, even if the user did not intend to get close to them. Viewing 360-degree videos through an optical see-through display was considered not as ideal, as the 360-degree videos appear to be semi-transparent on top of the real environment.
 
 Overall, participants expressed their interest in using such a system to manage and view their social contacts and shared content in AR, and that it would be useful and easy to use. 
 
@@ -141,11 +141,11 @@ Overall, participants expressed their interest in using such a system to manage 
 \subsection{Limitations}
 % =============================================================================
 
-This prototype used asynchronous sharing, where social contacts were not online at the same time, sharing live data; the shared content was previously prepared, and the 360-degree videos were previously processed to extract 2D video and a 2D image. However, the method was applied for filtering could be applied to synchronous sharing as well. Ideal scenario is to add live video streaming from social contacts and live scaling down of the content based on social relationships. Another limitation of this study is that it reports on one side of social presence questions; the viewer side. Another study later in Section \ref{sec:surrounding:hiding} reports on both sides; the sharer and the viewer. 
+This prototype used asynchronous sharing, where social contacts were not online at the same time, sharing live data; the shared content was previously prepared, and the 360-degree videos were previously processed to extract 2D video and a 2D image. However, the method was applied for filtering could be applied to synchronous sharing as well. The ideal scenario is to add live video streaming from social contacts and live scaling down of the content based on social relationships. Another limitation of this study is that it reports on one side (the viewer side) of social presence questions. Another study later in Section \ref{sec:surrounding:hiding} reports on both sides; the sharer and the viewer. 
 
-% Tobias: When you talked about the limitations, you show some limitations but you do not explain how these might have influenced the results. Where there any learning effects.
+% Tobias: When you talked about the limitations, you show some limitations, but you do not explain how these might have influenced the results. Where there any learning effects.
 
-% The concept does apply to synchronous sharing where social contacts are online at the same time. Future plans includes extending this prototype for synchronous sharing experiences. We can expand the implementation to include spatial audio as a fidelity option on which to filter based on social relationship. 
+% The concept does apply to synchronous sharing, where social contacts are online at the same time. Future plans include extending this prototype for synchronous sharing experiences. We can expand the implementation to include spatial audio as a fidelity option on which to filter based on social relationship. 
 
 % Additionally, we will conduct a full quantitative and qualitative user study to measure the effects of filtering content type on social presence and user experience. 
 
@@ -153,6 +153,6 @@ This prototype used asynchronous sharing, where social contacts were not online 
 \subsection{Conclusions}
 % =============================================================================
 
-This section presented a mechanism for presenting shared data content by filtering the content type based on the social relationships between the user and the social contacts. This work includes an implementation on HoloLens prototype for applying the proposed method in an asynchronous collaboration scenario and conducted a user study using the prototype. The study compared three conditions: viewing 360-degree video without filtering, filtering based on the social relationship, and filtering based on distance. Results showed a trend of participants favouring having the option to filter social data and walk to change over not social data filtering. 
+This section presented a mechanism for presenting shared data content by filtering the content-type based on the social relationships between the user and the social contacts. This work includes an implementation on HoloLens prototype for applying the proposed method in an asynchronous collaboration scenario and conducted a user study using the prototype. The study compared three conditions: viewing a 360-degree video without filtering, filtering based on the social relationship, and filtering based on distance. Results showed a trend of participants favouring having the option to filter social data and walk to change over not social data filtering. 
 
 The next section looks into giving control of the sharer on which part of the shared social surroundings that they would show/hide when sharing with their social contacts. 

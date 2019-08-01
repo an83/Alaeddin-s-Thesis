@@ -58,6 +58,7 @@ headsepline, % Uncomment to get a line under the header
 \usepackage[colorinlistoftodos,prependcaption,textsize=tiny]{todonotes}
 \usepackage{tabularx}
 \usepackage{hyperref}
+\usepackage{multirow}
 
 \addbibresource{references2.bib} % mendeley
 
@@ -195,7 +196,14 @@ Assoc. Prof. Tobias \textsc{Langlotz}
 
 \vspace*{0.2\textheight}
 
-\noindent\enquote{\itshape Thanks to my solid academic training, today I can write hundreds of words on virtually any topic without possessing a shred of information, which is how I got a good job in journalism.}\bigbreak
+\noindent\enquote{\itshapeIf ever there is a tomorrow when we're not together... there is something you must always remember. \\
+You are braver than you believe, \\
+stronger than you seem, \\ 
+and smarter than you think.\\
+But the most important thing is, even if we're apart... I'll always be with you.
+}
+~ Winnie the Pooh
+\bigbreak
 
 %----------------------------------------------------------------------------------------
 %	ABSTRACT PAGE
@@ -207,10 +215,7 @@ Assoc. Prof. Tobias \textsc{Langlotz}
 %	ACKNOWLEDGEMENTS
 %----------------------------------------------------------------------------------------
 
-\begin{acknowledgements}
-\addchaptertocentry{\acknowledgementname} % Add the acknowledgements to the table of contents
-The acknowledgements and the people to thank go here, don't forget to include your project advisor\ldots
-\end{acknowledgements}
+\input{Chapters/02-acknowledgement.tex}
 
 
 %----------------------------------------------------------------------------------------
@@ -281,8 +286,7 @@ The acknowledgements and the people to thank go here, don't forget to include yo
 %----------------------------------------------------------------------------------------
 
 \dedicatory{
-    To Bee, and the lost 10 years... \\
-    To Momen, because you asked...
+    To Bee, and the 10 years...
 } 
 
 %----------------------------------------------------------------------------------------

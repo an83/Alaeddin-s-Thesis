@@ -1,8 +1,9 @@
 %checked by mark May 9th 2019
+\pagebreak
 \section{Placement of Social Contacts}
 \label{sec:contacts:placing}
 
-This section looks into options of where to place social contacts relative to the user \cite{Nassani2017a} by testing two options (Figure \ref{fig:continuum:conditions}): 1) life-sized, where social contacts are presented as human-size virtual avatars displayed around the viewer, and 2) miniature, where the social contacts are displayed on a table-top nearby the viewer. 
+This section looks into options of where to place social contacts relative to the user \cite{Nassani2017a} by testing two options (Figure \ref{fig:continuum:conditions}): 1) Life-sized, where social contacts are presented as human-size virtual avatars displayed around the viewer, and 2) Miniature, where the social contacts are displayed on a table-top nearby the viewer. 
 
 \begin{figure}[h]
     \centering
@@ -13,8 +14,14 @@ This section looks into options of where to place social contacts relative to th
 
 \subsection{Implementation}
 
-A prototype was implemented on the Microsoft HoloLens to test the two conditions on the contact placement dimension, one viewing avatars. The prototype also allowed the user (as a viewer) to select and move an avatar closer to or further away from the viewer position by using air-tap gestures of the HoloLens. The air-tap gesture\footnote{https://docs.microsoft.com/en-us/windows/mixed-reality/gestures} is recognised by touching the index and thumb fingers to select. The purpose of the selection and movement process was to change the social relationship between the viewer and their social contacts. 
+A prototype was implemented (Figure \ref{fig:placement:system}) on the Microsoft HoloLens to test the two conditions on the contact placement dimension, one viewing avatars. The prototype also allowed the user (as a viewer) to select and move an avatar closer to or further away from the viewer position by using air-tap gestures of the HoloLens. The air-tap gesture\footnote{https://docs.microsoft.com/en-us/windows/mixed-reality/gestures} is recognised by touching the index and thumb fingers to select. The purpose of the selection and movement process was to change the social relationship between the viewer and their social contacts. 
 
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\linewidth]{images/ismar17/placement-system.jpg}   
+    \caption{System implementation of social contacts placement on a HoloLens device} 
+    \label{fig:placement:system}
+\end{figure}
 \subsection{User Study}
 
 Feedback was collected from potential users during an open day at our lab as the participants tried demonstrations of the two conditions: C1-Life-sized (L) and C2-Miniature (M) representations of avatars. Twenty-seven participants tried the system prototype. On trying a demonstration of each condition, participants were asked to rate their experience on a 7-point Likert scale (where 1=not very and 7=very) for three subjective questions on: 
@@ -29,7 +36,7 @@ Participants were asked to think of situations where it would be positive and ne
 
 \subsection{Results}
 
-Wilcoxon signed-rank tests were run on the results of the questions (Figure \ref{fig:continuum:results}) but did not show any statistically significant differences between C1-Life-sized and C2-Miniature and it did not elicit a statistically significant change in Ease of Use ($Z=-.529, p=0.597$), Natural Interaction ($Z=-1.616, p=0.106$), nor Usefulness ($Z=-1.664, p=0.096$). Participants were asked to rank the two conditions in terms of preference. The ranking results did not show any statistically significant change in ranking between conditions ($Z=-.577, p=0.564$) in a Wilcoxon signed-rank test.
+A Shapiro-Wilk Normality Test on the results (Figure \ref{fig:continuum:results}) showed that the data is normally distributed ($p=0.13$). Wilcoxon signed-rank tests were run on the results of the questions but did not show any statistically significant differences between C1-Life-sized and C2-Miniature and it did not elicit a statistically significant change in Ease of Use ($Z=-.529, p=0.597$), Natural Interaction ($Z=-1.616, p=0.106$), nor Usefulness ($Z=-1.664, p=0.096$). Participants were asked to rank the two conditions in terms of preference. The ranking results did not show any statistically significant change in ranking between conditions ($Z=-.577, p=0.564$) in a Wilcoxon signed-rank test.
 
 \begin{figure}[h]
     \centering
@@ -38,23 +45,61 @@ Wilcoxon signed-rank tests were run on the results of the questions (Figure \ref
     \label{fig:continuum:results}
 \end{figure}
 
-Participants answered open-ended questions about the positives and negatives of each condition. Participants reported the most useful scenarios for the C1-Life-sized condition as "\textit{face-to-face conversations with a social contact}" or \enquote{when zooming into a subset group of friends}. One of the positive feedback of C1-Life-sized "\textit{Felt very personal and I felt more engaged because I was actually in the situation}" while one of the negative comments on C1-Life-sized "\textit{Hard to see people in the context of each other}".
+Participants answered open-ended questions about the positives and negatives of each condition. Participants reported the most useful scenarios for the C1-Life-sized condition as:
 
-For the Miniature condition, participants reported \enquote{seeing the overall picture of social contacts} or \enquote{moving contacts between different social circles} as being useful. As positive feedback on C2-Miniature, a participant mentioned "\textit{I prefer the miniature version because I can see the whole "play space" at once}", while others mentioned "\textit{It felt more disconnected compared to the life-size due to my position feeling further away}" as negative feedback.
+\begin{itemize}
+    \item \enquote{face-to-face conversations with a social contact}
+    \item \enquote{when zooming into a subset group of friends}. 
+\end{itemize}
+
+Some of the positive feedback of C1-Life-sized include:
+
+\begin{itemize}
+    \item \enquote{Felt very personal, and I felt more engaged because I was actually in the situation}
+    \item \enquote{Very satisfying seeing friends further out in lower fidelity. Give a real sense of good friends vs acquaintances}
+\end{itemize}
+
+While some of the negative comments on C1-Life-sized include:
+
+\begin{itemize}
+    \item \enquote{Hard to see people in the context of each other}
+    \item \enquote{It was hard to get an overall perspective of all friends}
+\end{itemize}
+ 
+For the Miniature condition, participants reported this condition as useful for: 
+
+\begin{itemize}
+    \item \enquote{seeing the overall picture of social contacts} 
+    \item \enquote{moving contacts between different social circles} 
+\end{itemize}
+
+Some of the positive feedback of C1-Life-sized include:
+
+\begin{itemize}
+    \item \enquote{I prefer the miniature version because I can see the whole "play space" at once}
+    \item \enquote{Much better than life size to be able to see them all at once, see the big picture. Context of people relative to each other}
+\end{itemize}
+
+While others mentioned the followings as negative feedback: 
+
+\begin{itemize}
+    \item \enquote{It felt more disconnected compared to the life-size due to my position feeling further away}
+    \item \enquote{Hard to select characters. Difficult to see [who is who]}
+\end{itemize}
 
 \subsection{Discussion}
 % It would be good to include more discussion about the results from this user test
 
 % Mark: It would be good to include more discussion about the results from this pilot test
 
-% gogo: I agree. This section seems very short compared to the previous one. Also, what is the takeaway message from this section? As far as I can tell, user preferred the miniature one, if any. Is that the one you decided to explore further? If not, why not?
+% gogo: I agree. This section seems very short compared to the previous one. Also, what is the takeaway message from this section? As far as I can tell, the user preferred the miniature one, if any. Is that the one you decided to explore further? If not, why not?
 
 % Tobias: I am missing the discussion of the insights and the directions for future work. In particular, I am missing discussions on relevance. All this should come after the results. Normally, a longer paper/thesis would have a results section which focuses on the statistical analysis but not discussion/interpretation. This is usually followed up with a discussion section which expands then on the results by offering a discussion and interpretation of these results. What do these results mean? What is the practical meaning and relevance? This section and this detailed interpretation are missing even though it is the most important. Similarly, the relevance for future work and the field of AR is missing.
 
-The results did not show any significant results between C1-Life-sized and C2-Miniature representation of avatars. This indicates that both representations are valid options and depending on the use-case scenario, viewers could either see their social contacts in C1-Life-sized or C2-Miniature. There are both advantages and disadvantages for each condition drawn from the positive and negative feedback by participants. This indicates that it might be ideal if the system allows for easy switching between life-sized and miniature placement based on the required scenarios. 
+The Likert scale results did not show any significant results between C1-Life-sized and C2-Miniature representation of avatars in terms of usefulness, natural or easy interactions. This indicates that both representations are valid options and depending on the use-case scenario, viewers could either see their social contacts in C1-Life-sized or C2-Miniature. There are both advantages and disadvantages for each condition drawn from the positive and negative feedback by participants. The semi-structured interview highlighted some of the positive and negative sides of each condition. This indicates that it might be ideal if the system allows for easy switching between Life-sized and Miniature placement based on the required scenarios. 
 
 
 \subsection{Conclusion}
 
-Results (Figure \ref{fig:continuum:results}) showed that participants did not have any preference between the life-size condition and the Miniature condition, and it is a matter of user preference. Therefore, in the next chapters, we focus on displaying social contact as Life Sized.
+This section investigated different options of placing the social contacts; either as Life-sized avatars or as Miniature avatars. Results (Figure \ref{fig:continuum:results}) showed that participants did not have any preference between the life-size condition and the Miniature condition, and it is a matter of user preference. Therefore, in the next chapters, we focus on displaying social contact as Life-Sized.
 
