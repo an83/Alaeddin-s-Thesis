@@ -32,7 +32,7 @@ In order to explore different ways to share AR comments from remote collaborator
 
 The prototype was built as a fork from AppRTC\footnote{https://apprtc.appspot.com/} code base which hosts a website that enables people to start a video conferencing session on the web. The solution was built using an AppRTC base code was utilised to track device orientation by listening to the device sensors, and transferring the data to the receivers' devices via DataChannel. The AppRTC application is written in Python for the backend and Javascript for the front-end. It takes advantage of being hosted on AppSpot so that it complies with the WebRTC requirements for HTTPS. The AppRTC system allows users to communicate with each other over the Internet. The Three.js library\footnote{http://threejs.org/} was used. The AR visualization is implemented with two graphical layers (see Figure \ref{fig:mgia16:layers}). The background layer shows the video stream captured by the camera on the mobile device. On top of the background, comments are drawn on the front layer using orientation tracking information to show them in a body-stabilised manner. 
 
-\begin{figure}[h]
+\begin{figure}[ht]
   \centering
   \includegraphics[width=0.8\linewidth]{images/61-video-mgia16/layers.png}
   \caption{UI of the system showing: 1) video layer (yellow) and 2) annotation layer (red)}
@@ -52,7 +52,7 @@ Three different ways of showing comments on the live video stream are implemente
 
 A controlled within-subjects user experiment was conducted to test the different UIs for displaying comments, using the three approaches just explained. The experiment was approved by the Human Ethics Committee (HEC) and started with the participants giving consent and answering questions about demographic information. Then they went through a training session to get familiar with the application and the experimental procedures. The tasks during the training were designed to try to look around and read the comments appearing on the UI. A 180-degree panoramic image projected around the user on large screens was used to simulate different real spaces for the user (see Figure \ref{fig:mgia16:participant}). 
 
-\begin{figure}[h]
+\begin{figure}[ht]
   \centering
   \includegraphics[width=0.45\linewidth]{images/61-video-mgia16/participant1}
   \includegraphics[width=0.45\linewidth]{images/61-video-mgia16/participant2}
@@ -62,7 +62,7 @@ A controlled within-subjects user experiment was conducted to test the different
 
 Four different images were selected where the user might be interested in sharing their surroundings, varying in terms of indoors/outdoors and busy/quietness (see Figure \ref{fig:mgia16:backgrounds}). A different background was randomly assigned for each condition between subjects. 
 
-\begin{figure}[h]
+\begin{figure}[ht]
   \centering
   \includegraphics[width=\linewidth]{images/61-video-mgia16/backgrounds-legend.png}
   \caption{180-degree images used during the experiment. a) A park: outdoors and quiet, b) A museum: indoors and quiet, c) Intersection: outdoors and busy, d) A classroom: outdoors and busy.}

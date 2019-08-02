@@ -54,7 +54,7 @@ The combination of using Visual Fidelity and Visual Proximity to categorise peop
 
 Using the Social AR Continuum metaphor from the previous section, this work developed a prototype on the Microsoft HoloLens to represent a user's social contacts in an AR environment. The prototype was built using Unity3D\footnote{https://unity3d.com/} 5.6, HoloToolkit-Unity\footnote{https://github.com/Microsoft/HoloToolkit-Unity}, and 3D avatars from Morph3D\footnote{https://www.morph3d.com/}. Figure \ref{fig:contacts:overview} shows the AR view of the user's social network.
 
-\begin{figure}[h]
+\begin{figure}[ht]
   \includegraphics[width=\linewidth]{images/41-visualising-mgia17/20170618_031128_HoloLens_cropped.jpg}
   \caption{Representing social contacts in AR with different levels of proximity and visual fidelity}
   \label{fig:contacts:overview}
@@ -62,7 +62,7 @@ Using the Social AR Continuum metaphor from the previous section, this work deve
 
 Figure \ref{fig:contacts:system-diagram} shows an overview of the system components. The prototype uses the HoloLens Spatial Mapping feature to place virtual concentric circles (Circle Manager) on the ground around the user's initial position. On these circles, the social contacts are represented (Friend Manager) by either: a generic person silhouette, a 3D avatar, a 2D image, a bust image, or an emoji. The Scenario Manager controls the overall application, while the Friend Manager controls how friends are rendered. The Circle Manager controls the initial placement of the circles around the user. Spatial mapping is used to place circles and social contacts on the floor. Morph3D is used for rendering 3D avatars. 
 
-\begin{figure}[h]
+\begin{figure}[ht]
   \centering
   \includegraphics[width=0.8\linewidth]{images/41-visualising-mgia17/system-diagram.eps}
   \caption{System components}
@@ -71,16 +71,16 @@ Figure \ref{fig:contacts:system-diagram} shows an overview of the system compone
 
 To arrange the social network, the user can use hand gestures (e.g., tap and drag) (Table \ref{tbl:contacts:gestures}) to move a virtual avatar closer or further away from the centre of the circles or change the social group the contact belongs to. The representation of the avatar automatically updates to match the selected social group. For instance, if the user selects a 3D avatar from the Intimate circle and moves it to the Friends circle, then their representation will turn into a bust image to reflect the target social group.
 
-\begin{table}[]
-\caption{Hand gestures used for interacting with social contacts through the HoloLens}
-\label{tbl:contacts:gestures}
-\centering
-\begin{tabular}{@{}lll@{}}
-\toprule
-Gesture      & Action                                       &  \\ \midrule
-Tap          & Select avatar                                &  \\
-Tap and hold & Move avatar between social proximity circles &  \\ \bottomrule
-\end{tabular}
+\begin{table}
+    \caption{Hand gestures used for interacting with social contacts through the HoloLens}
+    \label{tbl:contacts:gestures}
+    \centering
+    \begin{tabular}{@{}lll@{}}
+    \toprule
+    Gesture      & Action                                       &  \\ \midrule
+    Tap          & Select avatar                                &  \\
+    Tap and hold & Move avatar between social proximity circles &  \\ \bottomrule
+    \end{tabular}
 \end{table}
 
 \subsection{Focus Group Evaluation}
@@ -94,7 +94,7 @@ The focus group began with a discussion and brainstorming session on how to visu
     }
     
     \item {Task 2: Map social groups in terms of physical distance The participants were asked to order four different social groups (Intimate, Friend, Acquaintance, Stranger) in terms of physical distance from the user. Participants were given four silhouettes (Figure \ref{fig:contacts:silhouettes}) on paper that had one of the social groups written on the top and asked them to place them on an arrow that had four positions; closest, close, far and farthest.
-\begin{figure}[h]
+\begin{figure}[ht]
     \centering
     \includegraphics[width=\linewidth]{images/41-visualising-mgia17/silhouettes.PNG}
     \caption{Four placeholder for identifying the proximity of social relationships of a Friend, Strangers, Intimate, and Acquaintance}
@@ -103,7 +103,7 @@ The focus group began with a discussion and brainstorming session on how to visu
     }
     
     \item {Task 3: Map social groups in terms of visual fidelity. The participants were asked to match four different types of visual fidelity (3D avatar, 2D image, Bust image, Emoji) to four social groups (Intimate, Friend, Acquaintance, Stranger). This task included two sets of avatars, male and female.
-\begin{figure}[h]
+\begin{figure}[ht]
     \centering
     \includegraphics[width=\linewidth]{images/41-visualising-mgia17/avatars.PNG}
     \caption{Four placeholder for identifying the social relationships by an avatar representation of 3D avatar, 2D image, Bust image, Emoji}
@@ -113,7 +113,7 @@ The focus group began with a discussion and brainstorming session on how to visu
 \end{itemize}
 
 In the second session, the usability test, a demonstration was given of the prototype implementation, and the participants were asked for feedback on the following four conditions (see Figure \ref{fig:contacts:conditions}): 
-\begin{figure}[h]
+\begin{figure}[ht]
     \centering
     \includegraphics[width=\linewidth]{images/41-visualising-mgia17/conditions-transparent-background}
     \caption{Four conditions for representing social contacts as seen through the HoloLens. Baseline (B): fixed Visual Proximity and Visual Fidelity; Visual Proximity (P): variable Visual Proximity, but fixed Visual Fidelity; Visual Fidelity (V): same Visual Proximity, variable Visual Fidelity, and Combined (C): variable Visual Proximity and Visual Fidelity}
