@@ -24,7 +24,7 @@ The main application scenario for our prototype system is around sharing message
 
 Traditionally AR annotation tracking uses two different approaches at different ends of the technology spectrum (see Figure\ref{fig:mgia15:spectrum}) based on the level of detailed information required. At one end, there is GPS location-based tracking that can be implemented in a light-weight HMD such as Glass. On the other end, 3D depth-sensing cameras incorporated into a hand-held device (HHD) are capable of indoor tracking and localisation. The aim of this system is to combine the benefits of a light-weight HMD with self-contained mobile 3D depth tracking, offering not only the outdoor GPS based tracking but also vision-based indoor tracking for AR annotation applications. 
 
-\begin{figure}
+\begin{figure}[ht]
   \centering
   \includegraphics[width=0.8\linewidth]{images/mgia15/tango_paper_continuum.png}
   \caption{The spectrum of AR annotation tracking. A head-mounted display with GPS is ideal for outdoor tracking. Hand-held devices (3D camera) can be used for indoor tracking. Glass+Tango enables indoor AR annotation tracking on a light HMD.}
@@ -32,7 +32,6 @@ Traditionally AR annotation tracking uses two different approaches at different 
 \end{figure}
 
 \subsection{Implementation}
-
 
 The system consists of two wearable devices, a Google Glass HMD and a Google Tango chest-mounted 3D depth and sensor (see Figure~\ref{fig:mgia15:framework}). The two devices communicate with each other wirelessly. The Tango extends Glass' sensing ability by sharing the location and pose of the user as well as the annotated target position in the real world. The Glass dynamically overlays AR annotation based on the spatial information received from the Tango, and the background of the Glass display is set to black to act as an optical see-through display (see Figure~\ref{fig:mgia15:ui}). A white square is displayed on the Glass screen to indicate the centre point at which the tango depth camera is facing. The user can initiate the wireless connection by using a three-finger touch gesture on the Glass touchpad, and the AllJoyn\footnote{https://en.wikipedia.org/wiki/AllJoyn} library is used for networking.
 
