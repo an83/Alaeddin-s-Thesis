@@ -54,7 +54,7 @@ The combination of using Visual Fidelity and Visual Proximity to categorise peop
 
 Using the Social AR Continuum metaphor from the previous section, this work developed a prototype on the Microsoft HoloLens to represent a user's social contacts in an AR environment. The prototype was built using Unity3D\footnote{https://unity3d.com/} 5.6, HoloToolkit-Unity\footnote{https://github.com/Microsoft/HoloToolkit-Unity}, and 3D avatars from Morph3D\footnote{https://www.morph3d.com/}. Figure \ref{fig:contacts:overview} shows the AR view of the user's social network.
 
-\begin{figure}[ht]
+\begin{figure}
   \includegraphics[width=\linewidth]{images/41-visualising-mgia17/20170618_031128_HoloLens_cropped.jpg}
   \caption{Representing social contacts in AR with different levels of proximity and visual fidelity}
   \label{fig:contacts:overview}
@@ -62,7 +62,7 @@ Using the Social AR Continuum metaphor from the previous section, this work deve
 
 Figure \ref{fig:contacts:system-diagram} shows an overview of the system components. The prototype uses the HoloLens Spatial Mapping feature to place virtual concentric circles (Circle Manager) on the ground around the user's initial position. On these circles, the social contacts are represented (Friend Manager) by either: a generic person silhouette, a 3D avatar, a 2D image, a bust image, or an emoji. The Scenario Manager controls the overall application, while the Friend Manager controls how friends are rendered. The Circle Manager controls the initial placement of the circles around the user. Spatial mapping is used to place circles and social contacts on the floor. Morph3D is used for rendering 3D avatars. 
 
-\begin{figure}[ht]
+\begin{figure}[h]
   \centering
   \includegraphics[width=0.8\linewidth]{images/41-visualising-mgia17/system-diagram.eps}
   \caption{System components}
@@ -71,7 +71,7 @@ Figure \ref{fig:contacts:system-diagram} shows an overview of the system compone
 
 To arrange the social network, the user can use hand gestures (e.g., tap and drag) (Table \ref{tbl:contacts:gestures}) to move a virtual avatar closer or further away from the centre of the circles or change the social group the contact belongs to. The representation of the avatar automatically updates to match the selected social group. For instance, if the user selects a 3D avatar from the Intimate circle and moves it to the Friends circle, then their representation will turn into a bust image to reflect the target social group.
 
-\begin{table}
+\begin{table}[h]
     \caption{Hand gestures used for interacting with social contacts through the HoloLens}
     \label{tbl:contacts:gestures}
     \centering
