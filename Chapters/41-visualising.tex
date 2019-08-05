@@ -12,7 +12,7 @@ The focus of this research is on how to represent a social network with hundreds
 
 Allowing users to view and interact with a large number of social contacts requires filtering and categorising information. One way to filter/categorise contacts could be to arrange them along a social continuum, depending on how close (in terms of social proximity) they are to the user. For example, grouping people into Intimate Family, Friends, Colleagues, and Strangers (see Table \ref{tbl:visual-fidelity-proximity}), or more categories. Contacts from these categories could then be shown as virtual avatars with different levels of visual fidelity and visual proximity, enabling the user to identify people in their social network quickly.
 
-\begin{table}
+\begin{table}[h]
     \centering
     \caption{Using Visual Fidelity and Visual Proximity to Categorise Friends}
     \label{tbl:visual-fidelity-proximity}
@@ -29,7 +29,7 @@ Allowing users to view and interact with a large number of social contacts requi
 
 In terms of Visual Fidelity, the representations of people in each of these categories could be increasingly more realistic as the categories changed from Stranger to Intimate Family (see Figure \ref{fig:contacts:visual-fidelity-continuum}). For example, a user may see their spouse as a realistic 3D virtual human superimposed over the real world, but a distant acquaintance would be a simple 2D icon.
 
-\begin{figure}
+\begin{figure}[h]
     \centering
     \includegraphics[width=0.8\linewidth]{images/41-visualising-mgia17/writing-images-07.eps}
     \caption{Changing Visual Fidelity across the social continuum}
@@ -40,7 +40,7 @@ In terms of proximity, previous studies have shown that the distance between peo
 
 The combination of using Visual Fidelity and Visual Proximity to categorise people from a user's social network could make it significantly easier for the viewer to pay attention to the people that they want to. For example, close Friends are represented as life-like virtual avatars near to the user, and so are easily distinguished from Strangers that are emoji icons further away.
 
-\begin{figure}
+\begin{figure}[h]
   \centering
   \includegraphics[width=0.8\linewidth]{images/41-visualising-mgia17/writing-images-11.eps}
   \caption{Visual Proxemic \& Visual Fidelity Filtering of Avatars}
@@ -54,7 +54,7 @@ The combination of using Visual Fidelity and Visual Proximity to categorise peop
 
 Using the Social AR Continuum metaphor from the previous section, this work developed a prototype on the Microsoft HoloLens to represent a user's social contacts in an AR environment. The prototype was built using Unity3D\footnote{https://unity3d.com/} 5.6, HoloToolkit-Unity\footnote{https://github.com/Microsoft/HoloToolkit-Unity}, and 3D avatars from Morph3D\footnote{https://www.morph3d.com/}. Figure \ref{fig:contacts:overview} shows the AR view of the user's social network.
 
-\begin{figure}
+\begin{figure}[h]
   \includegraphics[width=\linewidth]{images/41-visualising-mgia17/20170618_031128_HoloLens_cropped.jpg}
   \caption{Representing social contacts in AR with different levels of proximity and visual fidelity}
   \label{fig:contacts:overview}
@@ -87,7 +87,7 @@ To arrange the social network, the user can use hand gestures (e.g., tap and dra
 
 To evaluate the interface concept and collect feedback from potential users, this research conducted two focus group sessions with a total of 11 participants. The first group consisted of six post-graduate students working on AR/VR research. The second group was a mix of five professional visual graphics and user experience designers who have not worked on AR/VR before. Each session was divided into two activities: (1) user participatory design and (2) a usability test with the prototype. 
 
-The focus group began with a discussion and brainstorming session on how to visualise social network contacts in an AR environment. The concept of social networking in AR was briefly introduced. Few challenges were observed, such as visual clutter, but no demonstration of the prototype system was given to avoid priming. This activity included three tasks: 
+The focus group began with a discussion and brainstorming session on how to visualise social network contacts in an AR environment. The concept of social networking in AR was briefly introduced. A few challenges were observed, such as visual clutter, but no demonstration of the prototype system was given to avoid priming. This activity included three tasks: 
 
 \begin{itemize}
     \item {Task 1: Imagine the future of social networks in AR. The participants were asked to draw or describe their vision of the future of how to represent social networks in AR. They then presented their ideas to the group and exchanged feedback.
