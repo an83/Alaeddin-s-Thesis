@@ -103,20 +103,25 @@ The study was in a within-subject design; hence, each participant tried all of t
 
 
 % Gun Lee: Not sure if this is necessary/meaningful as they are recruited in pairs, and randomly assigned to which role they are going to do first anyway.
-Participants were recruited in pairs simulating a synchronous sharing experience. Participants were randomly assigned to play one of the roles (sharer or viewer) and then played the other role. The protocol of the experiment was that each participant read an information sheet and then tried a demo of the system. Each participant went through two tasks and was asked to spend five minutes walking around the room and talking to each other over an audio link about the shared surrounding environment and to notice what is shared and what is hidden in each social relationship level. 
+Participants were recruited in pairs simulating a synchronous sharing experience. Participants were randomly assigned to play one of the roles (sharer or viewer) and then played the other role (Figure \ref{fig:frontier18:setup}). The protocol of the experiment was that each participant read an information sheet and then tried a demo of the system. Each participant went through two tasks and was asked to spend five minutes walking around the room and talking to each other over an audio link about the shared surrounding environment and to notice what is shared and what is hidden in each social relationship level. 
 % Gun Lee: This paragraph is redundant, as most of the study design and procedure is already described in the previous section. Better remove, or merge into the previous section?
 
-Figure \ref{fig:frontier18:setup} shows the experiment set up in two similar rooms. The sharer was sharing his/her room with a remote viewer. The relative position and rotation of each user were synchronised and represented as a virtual avatar in the remote person's view. 
+\begin{figure}
+    \begin{center}
+    \includegraphics[width=\linewidth]{images/54-hiding-frontier18/images-23.eps}
+    \caption{Experiment setup. The sharer (left) is sharing her room with the viewer (right). Both wear AR headset and see the other as avatar in their physical space. The viewer sees the sharer's room as a virtual overlay on top of the viewer's physical space. (Original icons from the Noun Project \cite{TheNounProjectInc.})}
+    \label{fig:frontier18:setup}
+    \end{center}
+\end{figure}
+
+Figure \ref{fig:frontier18:user-study} shows the experiment set up in two similar rooms. The sharer was sharing his/her room with a remote viewer. The relative position and rotation of each user were synchronised and represented as a virtual avatar in the remote person's view. 
 Both the viewer and the sharer were asked to explore different levels of social relationships. Both the sharer and the viewer were able to set the current social relationship using 3-buttons (intimate, friend, stranger) situated in the middle of the room. The current relationship level is highlighted using a green colour. The viewer could request the relationship to change by clicking on one of the relationship buttons. Once this happens, the sharer sees the relationship request as the button changing colour to a yellow colour, which then they could approve and change the social relationship.
 
 \begin{figure}
     \begin{center}
-    % \includegraphics[width=\linewidth]{images/54-hiding-frontier18/experiment-setup.jpg}
-    % \includegraphics[width=.8\linewidth]{images/54-hiding-frontier18/sharing-room.jpg}
-    % \includegraphics[width=.8\linewidth]{images/54-hiding-frontier18/sharing-avatar.jpg}
-    \includegraphics[width=.8\linewidth]{images/54-hiding-frontier18/synced.png}
-    \caption{Experiment setup. The sharer (right) is sharing her room with the viewer (left). The viewer sees the virtual room of the sharer overlaid on top of his physical room. Each user sees the other person as a virtual avatar in their environment that has its position and orientation mapped to movements of the remote person.}
-    \label{fig:frontier18:setup}
+    \includegraphics[width=\linewidth]{images/54-hiding-frontier18/user-study-setup.jpg}
+    \caption{User study. The sharer (left) is sharing her room with the viewer (right). The viewer sees the virtual room of the sharer overlaid on top of his physical room. Each user sees the other person as a virtual avatar in their environment that has its position and orientation mapped to movements of the remote person.}
+    \label{fig:frontier18:user-study}
     \end{center}
 \end{figure}
 
@@ -234,8 +239,8 @@ In response to the ranking questions (Figure \ref{fig:frontier18:result-ranking}
 
 \begin{figure}[h]
     \begin{center}
-    \includegraphics[width=.8\linewidth]{images/54-hiding-frontier18/images-19.eps}
-    \caption{The results of the ranking conditions. Top: comparing no social filter to having social social filter in terms of choice preference. Bottom: comparing hiding mechanisms in terms of choice preference.}
+    \includegraphics[width=.8\linewidth]{images/54-hiding-frontier18/images-22.eps}
+    \caption{The results of the ranking conditions. Left: comparing no social filter to having social social filter in terms of choice preference. Right: comparing hiding mechanisms in terms of choice preference.}
     \label{fig:frontier18:result-ranking}
     \end{center}
 \end{figure}
@@ -270,3 +275,6 @@ Future work includes allowing users to customise their room so that they feel mo
 This work described a prototype of AR social sharing experience built on a HoloLens to share a user's 3D surrounding environment with social contacts. The prototype simulates a future wearable AR social networking application. The goal of the prototype was to explore how users would be willing to share views of their surroundings with remote people with different social relationships. 
 
 Users were allowed to choose which part of the room to hide or show to different social groups (intimate, friends, strangers). A user study was run to test the effect of using a social filter on co-presence and the feeling of privacy from both sides as a sharer and a viewer. Results showed that all participants preferred having a social filter, although it causes the feeling of being less open on the viewer side, and of lower co-presence on the sharer side. However, having a social filter had a positive effect on feeling more comfort and security on the sharer side. Results also showed that participants felt being more open when using the blur hiding mechanism compared to others, such as remove or overlay. 
+
+The user study could have used for a the viewer a VR headset such as HTC Vive. However an AR device was used instead for 2 reasons: 1) to allow the Viewer to navigate their way inside the shared remote environment while still being aware of their physical environment. This will open questions for future research directions addressing issues of non-similar environments (between Sharer and Viewer) – which is closer to real scenarios for social sharing purposes. 
+2) the focus of this study is to look at hiding mechanisms. In VR setup, the physical world is not visible, therefore when an item is hidden, the Viewer will see a blank (in the Remove case). However in AR setup, the Viewer will see the physical world instead.

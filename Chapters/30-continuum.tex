@@ -6,25 +6,11 @@ This chapter describes The Social AR Continuum, a space for shared social experi
 
 Mixed and Augmented Reality allows us to visualise information in place. This information can have a specific relationship with that place (e.g., textual labels providing additional information with respect to the place) but their relation can also be that the place is just a good "position" to visualise this information (e.g., a physical wall in a room being a good position to visualise/augment pictorial information that has otherwise no immediate connection to this wall). In particular, the latter can also be used to visualise information created within the social networks of the user. This is of relevance because social networks (private and professional) are nowadays probably one of the most significant data sources/content generators for digital information. Given the sheer amount of information, intuitive and useful visualisation of this information may support the user when AR interfaces are more ubiquitous. Special care has to be taken when visualising information, not only on where to place it but also on how to visualise the information. Besides the question of where to place the digital information, a key question is also how this information can be represented depending on the social proximity between the users and their social graph. This is the motivation for defining a continuum that identifies the main dimensions that can be manipulated when exploring the sharing of experiences and information using an AR interface. 
 
-This work categorises the social AR dimensions into three areas: 
-\begin{enumerate}
-    \item People (self and others),
-    \item Data (including virtual objects and the surrounding environment), and
-    \item Interactions between people and data (including annotation)
-\end{enumerate}
-
-Representing self and others as avatars is described in more detail in Chapter \ref{ch:contacts}. The surrounding environment and sharing different types of data are described in more detail in Chapter \ref{ch:data}, while the interactions between people, in the form of annotation of the surrounding environment, are described in Chapter \ref{ch:annotation}.
 
 % Tobias: Again, this is just some sentences that just came out of my head. You can use or not use at your own risk and will. However, it has to be expanded (your story but also my draft above) as there is way more to say about. At occasions, you will have the feeling that you will repeat things that you mentioned earlier (e.g. introduction and related work). That is normal, and the repeating of information is often needed for the reader to follow your motivation and argumentation. Remember: Your reviewers are likely reading your thesis late after work and will be tired. An occasional reminder of what this is all about will be appreciated as long as it is coherent and you do not start to contradict yourself.
 
-% \begin{figure}[ht]
-%     \centering
-%     \includegraphics[width=0.8\linewidth]{images/30-continuum/continuum_categories5.png}
-%     \caption{The Social AR Continuum categories: 1) People (self and others), 2) Objects (surrounding environment), 3) Interactions (e.g., annotations)}
-%     \label{fig:continuum:categories}
-% \end{figure}
-
-This work aims to layout the space of the Social AR Continuum for social sharing experiences by looking at parameters and options that can be manipulated in terms of people, objects and interactions to create a shared social AR experience. Before diving into the parameters of shared social experiences, the next section explores potential future scenarios where people would want to share social experiences through AR.
+% This work aims to layout the space of the Social AR Continuum for social sharing experiences by looking at parameters and options that can be manipulated in terms of people, objects and interactions to create a shared social AR experience. Before diving into the parameters of shared social experiences, 
+The next section explores potential future scenarios where people would want to share social experiences through AR.
 
 \pagebreak
 \section{Scenarios}
@@ -36,18 +22,16 @@ This work aims to layout the space of the Social AR Continuum for social sharing
 
 % Finally, please be more verbose in your figure captions. I have the tendency to be very long (see my PhD thesis and most of my papers) but really take the space to explain what is going on in the figure and do not only provide a "figure name". It is OK if parts are replicated in the body text. But the figure should work without the body text, and the body text should work without the figure caption.
 
-Let us consider the following future scenarios of sharing social AR experiences:
+% Let us consider the following future scenarios of sharing social AR experiences:
 
 \subsection{Working from home}
 
-There is increasing support for working from home \cite{Bloom2015, Crosbie2004, Olson1984} and AR/MR could be a key technology here to connect remote teams and people \cite{Koehne2012, Maarouf2012}. However, when sharing information with remote parties, we should also consider their social proximity when deciding on what to share and how to share it. Let us consider the following example where user A is working from home and is using an AR system to share.
-
-The user is working from home (Figure \ref{fig:illustration:group-meeting}) and sharing their surroundings with 1) a close colleague with a few messy objects hidden/blocked, 2) a colleague who sees a clean and tidy room with projection on the wall as additional augmentation, and 3) a group meeting with other workers where nothing is visible in the background. 
+There is increasing support for working from home \cite{Bloom2015, Crosbie2004, Olson1984} and AR/MR could be a key technology here to connect remote teams and people \cite{Koehne2012, Maarouf2012}. However, when sharing information with remote parties, we should also consider their social proximity when deciding on what to share and how to share it. Let us consider the following example where user A is working from home and is using an AR system to share. The user is working from home (Figure \ref{fig:illustration:group-meeting}) and sharing their surroundings with 1) a close colleague with a few messy objects hidden/blocked, 2) a colleague who sees a clean and tidy room with projection on the wall as additional augmentation, and 3) a group meeting with other workers where nothing is visible in the background. 
 
 \begin{figure}[ht]
     \centering
     \includegraphics[width=\linewidth]{images/30-continuum/illustrations/2_Group_Meeting.png}
-    \caption{Working from home scenario. The user (top left) is sharing his space with 3 different people; 1) a friend (top right) where she sees his background space tidy, 2) a co-worker (bottom right) where most things in the background are overlaid with a box hiding the details, and 3) a business group meeting (bottom left) where nothing is visible from his background.
+    \caption{Working from home scenario. The user (top left - [a]) is sharing his space with 3 different people; a friend (top right - [b]) where she sees his background space tidy, a co-worker (bottom right [c]) where most things in the background are overlaid with a box hiding the details, and a business group meeting (bottom left [d]) where nothing is visible from his background.
     (Illustrated by Kris Tong)}
     \label{fig:illustration:group-meeting}
 \end{figure}
@@ -78,7 +62,6 @@ The user is at a social event (Figure \ref{fig:illustration:social-event}), wher
 
 \pagebreak
 \subsection{Collaborative decoration}
-
 The user is sharing their room (Figure \ref{fig:illustration:remote-bed}) for decoration purposes with 1) a wife, 2) parents, and 3) a friend. The wife will see the full details of the room. The parents see most details, but a few items in the room are blocked/hidden. The friend will see an abstraction of the room with no details. 
 
 \begin{figure}[ht]
@@ -93,7 +76,25 @@ The user is sharing their room (Figure \ref{fig:illustration:remote-bed}) for de
 % \todo[inline]{ what inspirations? which papers (1/2 page)  initial axes, however realised}
 % Tobias: How have you methodologically created the AR continuum: Once you made clear why you need this continuum, you need to also better explain how you have created it. It sounds at the moment a bit like, we need it, and here it is. But how have you created it? Brainstorming alone, with colleagues, any well know HCI approach? A brainstorming meeting with AR professionals could be the answer here but what has driven this brainstorming and what was the overarching idea. Why are certain metrics not in the continuum and could have looked differently? Do you have earlier versions that you can share and explain why they needed more work. I think if you can demonstrate the iterative development that the model underwent, it would support you. In any case you need to explain how you have designed it.
 
-The scenarios of social AR experiences highlighted patterns in terms of how we see others and objects and how to interact with them. Using observation from previous user studies in social AR and inspiration from continuum designs, the concept of a continuum started to crystallise. The Social AR Continuum varies based on the closeness of social connections that we have with others (our relationships), and this thesis identified the following dimensions where social AR applications can fit along a continuum. The dimensions can be grouped in the categories described in Figure \ref{fig:continuum:dimensions}.
+The scenarios of social AR experiences highlighted patterns in terms of how we see others and objects and how to interact with them. Using observations from previous user studies in virtual social networking, collaborative AR and inspiration from continuum designs, the concept of a continuum started to crystallise. A focus group study as part of this thesis (described in Section \ref{sec:contacts:visualising}) uncovered three main categories of parameters involved in social AR; 1) people, 2) objects \& data and 3) interactions (Figure \ref{fig:continuum:categories}).
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.8\linewidth]{images/30-continuum/continuum_categories5.png}
+    \caption{The Social AR Continuum categories: 1) People (self and others), 2) Data \& objects (surrounding environment), 3) Interactions (e.g., annotations)}
+    \label{fig:continuum:categories}
+\end{figure}
+
+This work categorises the social AR dimensions into three areas: 
+\begin{enumerate}
+    \item People (self and others) - a.k.a. \textit{social contacts},
+    \item Data (including virtual objects and the surrounding environment), and
+    \item Interactions between people and data (including annotation)
+\end{enumerate}
+
+Representing self and others as avatars is described in more detail in Chapter \ref{ch:contacts}. The surrounding environment and sharing different types of data are described in more detail in Chapter \ref{ch:data}, while the interactions between people, in the form of annotation of the surrounding environment, are described in Chapter \ref{ch:annotation}.
+
+The Social AR Continuum varies based on the closeness of social connections that we have with others (our relationships), and this thesis identified the following dimensions where social AR applications can fit along a continuum. The dimensions can be grouped in the categories described in Figure \ref{fig:continuum:dimensions}.
 
 \begin{figure}[ht]
     \centering
@@ -111,28 +112,30 @@ The definition of the dimensions of the Social AR Continuum has evolved during t
     \label{fig:continuum:old-dimensions}
 \end{figure}
 
-\subsection{Contact Representation}
+\subsection{Social Contact Representation}
+
+In the social context, people are being referred to as \textit{social contacts} indicating that the user can get in touch with them for the purpose of sharing social experiences such as sharing a photo, sending a message, etc. Therefore the word \textit{contact} here is used to refer to a social friend. 
 
 Representation of social contacts (Figure \ref{fig:continuum:contact-representations}) can vary on the Social AR Continuum based on the relationship that the user has with the contact, with closer relationships having a higher fidelity representation. For example, \textit{Intimate} contacts could be represented as full 3D animated avatars, \textit{Friends} could be represented as 2D static images, \textit{Acquaintances} could be represented as 2D busts and \textit{Strangers} could be shown as mere emojis. Each contact could choose their representation for each category.
 
 \begin{figure}[ht]
     \centering
     \includegraphics[width=0.8\linewidth]{images/30-continuum/Continuum-representation.jpg}
-    \caption{Illustration of contact representations options based on social proximity. An intimate social contact appear in full body to the viewer, while a friend appear in upper half of the body as a 2D image. A stranger appears as an emoticon representing their face.}
+    \caption{Illustration of contact representations options based on social proximity. An intimate social contact appear in full body to the viewer, while a friend appear in upper half of the body as a 2D image. A stranger appears as an emoticon representing their face. (original icons from Noun Project \cite{TheNounProjectInc.})}
     \label{fig:continuum:contact-representations}
 \end{figure}
 
 % \textbf{Contact Filter}
 % Filtering social contacts to distinguish users from each other could be done using proximity or visual fidelity based on their relationship to the user. Proximity filters contacts by placing them closer or further away. Visual fidelity filters contacts by adding more level of detail to the contact for closer relationships and less detail for further away contacts. 
 
-\subsection{Contact Placement}
+\subsection{Social Contact Placement}
 
 Placing social contacts (Figure \ref{fig:continuum:contact-placement}) can be done by displaying \textit{Intimates} as life-sized avatars on the ground around the user, and others as miniatures on a nearby surface. 
 
 \begin{figure}[ht]
     \centering
     \includegraphics[width=0.8\linewidth]{images/30-continuum/Continuum-placement.jpg}
-    \caption{Illustration of Contact placement options based on social proximity. Close friends can be displayed as life-size avatars, while other can be displayed as a miniature figures.}
+    \caption{Illustration of Contact placement options based on social proximity. Close friends can be displayed as life-size avatars, while other can be displayed as a miniature figures. (original icons from Noun Project \cite{TheNounProjectInc.})}
     \label{fig:continuum:contact-placement}
 \end{figure}
 
@@ -149,7 +152,7 @@ The type of data (Figure \ref{fig:continuum:data-type}) shared between social co
 \begin{figure}[ht]
     \centering
     \includegraphics[width=0.8\linewidth]{images/30-continuum/Continuum-Data-type.jpg}
-    \caption{Illustration of data type options. Close social contacts can see higher fidelity of shared data than the socially further away ones}
+    \caption{Illustration of data type options. Close social contacts can see higher fidelity of shared data than the socially further away ones. (original icons from Noun Project \cite{TheNounProjectInc.})}
     \label{fig:continuum:data-type}
 \end{figure}
 
@@ -160,7 +163,7 @@ In terms of user interactions (Figure \ref{fig:continuum:data-interaction}) with
 \begin{figure}[ht]
     \centering
     \includegraphics[width=0.8\linewidth]{images/30-continuum/Continuum-interaction.jpg}
-    \caption{Illustration of data interactivity options. Closer social contacts can interact with the shared data in higher fidelity (add/edit/remote) than the further away ones (view only)}
+    \caption{Illustration of data interactivity options. Closer social contacts can interact with the shared data in higher fidelity (add/edit/remote) than the further away ones (view only). (original icons from Noun Project \cite{TheNounProjectInc.})}
     \label{fig:continuum:data-interaction}
 \end{figure}
 
@@ -176,7 +179,7 @@ The synchronicity of the shared data (Figure \ref{fig:continuum:data-connection}
 \begin{figure}[ht]
     \centering
     \includegraphics[width=0.8\linewidth]{images/30-continuum/continuum-connection.jpg}
-    \caption{Illustration of data connection options.}
+    \caption{Illustration of data connection options. (original icons from Noun Project \cite{TheNounProjectInc.})}
     \label{fig:continuum:data-connection}
 \end{figure}
 
@@ -188,12 +191,12 @@ The co-location of the social contacts and their interactions (Figure \ref{fig:c
 1) remote (i.e., in a different place than the user), 
 2) face-to-face (i.e., physically in the same location as the user), or 
 3) semi face-to-face (i.e., where the social contact/data is physically in the same location, but virtually hidden or removed). When social contacts are remote, they are represented as virtual avatars based on their relationship with the user. When social contacts are face to face, then AR information is displayed attached to their body (i.e., when social contact moves, the information moves with them). 
-An example of a semi face-to-face interaction was described in a Black Mirror\footnote{http://www.imdb.com/title/tt2085059/} episode "White Christmas" where a person could 'block' another co-located person by blurring them out in their AR view of the real world.
+An example of a semi face-to-face interaction was described in a Black Mirror\footnote{http://www.imdb.com/title/tt2085059/} episode "White Christmas" where a person could \textit{block} another co-located person by blurring them out in their AR view of the real world.
 
 \begin{figure}[ht]
     \centering
     \includegraphics[width=0.8\linewidth]{images/30-continuum/continuum-colocation.jpg}
-    \caption{Illustration of data co-location options.}
+    \caption{Illustration of data co-location options. (original icons from Noun Project \cite{TheNounProjectInc.})}
     \label{fig:continuum:data-colocation}
 \end{figure}
 
@@ -210,7 +213,7 @@ This dimension can be used with social contacts, and if the contact is a close f
 \begin{figure}[ht]
     \centering
     \includegraphics[width=0.8\linewidth]{images/30-continuum/continuum-annotation-2.jpg}
-    \caption{Illustration of annotation options.}
+    \caption{Illustration of annotation options. (original icons from Noun Project \cite{TheNounProjectInc.})}
     \label{fig:continuum:data-annotation}
 \end{figure}
 
@@ -229,7 +232,11 @@ This dimension can be used with social contacts, and if the contact is a close f
 \section{Summary}
 
 This work introduced the concept of the Social AR Continuum and identified several dimensions where a social AR application could be implemented.
-In the next chapters, 
-this thesis explores three categories on the Social AR Continuum through system prototypes and user studies.
+
+3D avatar not always better than 2D. 360 video not always better than 2D image. If different content or more focused content can be useful in lower fidelity, but if the same data/content is represented in 3D it will contain more details about the content than if it was only 2D. However, there is a downside of more content that can be overwhelming to the viewer. 
+
+In the future, there will be additional dimensions on the AR continuum that can be added as guidelines. Social systems are driven by lots of users using them. This thesis focused on exploration of what a social system in AR would look like. After implementing such system and wide adoption, there will be other dimensions discovered. However, the general guidelines of representing people, data and interactions may not change completely. For instance, the hashtag concept was introduced by users of social networks, then later was adopted by social networks systems. 
+
+The next chapters explores three categories on the Social AR Continuum through system prototypes and user studies.
 
 % Gun: close this chapter by giving an overview of the next few chapters.
