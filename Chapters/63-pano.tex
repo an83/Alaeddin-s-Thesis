@@ -4,7 +4,7 @@
 
 A third example of annotation as interaction dimension on the Social AR Continuum is an annotation on 360-degree panoramic images. The level of annotation can be described as drawing or adding text, which then can be mapped into social proximity. This section discusses using panorama images to share social experiences. In particular, it explores awareness and annotation cues between users sharing a social experience through a shared panoramic image.
 
-This work describes the concept of Social Panoramas that combine panorama images, Mixed Reality, and wearable computers to support remote collaboration \cite{Reichherzer2014, Billinghurst2014} (Figure \ref{fig:ismar14:concept}). A prototype was developed that allows a previously captured panorama images to be explored in real-time between a Google Glass user and a remote tablet user. This uses a variety of cues for supporting awareness and enabling pointing and drawing. A user study was conducted to explore if these cues can increase Social Presence. The results suggest that increased interaction does not increase Social Presence, but tools with higher perceived usability show an improved sense of Presence.
+This work describes the concept of Social Panoramas that combine panorama images, Mixed Reality, and wearable computers to support remote collaboration \cite{Reichherzer2014, Billinghurst2014} (Figure \ref{fig:ismar14:concept}). A prototype was developed that allows panoramic images to be explored in real-time between a Google Glass user and a remote tablet user. This uses a variety of cues for supporting awareness and enabling pointing and drawing. A user study was conducted to explore if these cues can increase Social Presence. The results suggest that increased interaction does not increase Social Presence, but tools with higher perceived usability show an improved sense of Presence.
 
 \begin{figure}[ht]
     \centering
@@ -13,7 +13,10 @@ This work describes the concept of Social Panoramas that combine panorama images
     \label{fig:ismar14:concept}
 \end{figure}
 
+
 Camera-equipped mobile devices provide a quick way of capturing and sharing experiences and spaces. Wearable computers that combine head-mounted displays (HMDs) and cameras provide new opportunities for collaboration. For example, Google Glass\footnote{http://www.google.com/glass/} has a camera, microphone, and head-worn display.
+
+This work assumes that the panoramic 360-degree image was captured and stitched beforehand (offline). The Google Glass and the Android tablet are used to view and interact with the panoramic 360-degree image.
 
 \subsection{Prototype Development}
 
@@ -100,7 +103,7 @@ Tablet users generally preferred drawing to pointing and tried to draw the objec
     \label{fig:ismar14:tablet-drawing}
 \end{figure}
 
-\subsection{Observations}
+\subsection{Discussion}
 
 Drawings were more commonly made to explain object shape and dimensions, and pointing gestures were usually used to reference a location or an exact object. Due to the limited space of touchpad on Glass, adding drawing and pointing options did not increase social presence.
 % The Audio condition was the highest score in social Presence due to a lower level of interactivity between subjects and potential misunderstanding during the conversation when relying on Audio only to communicate. 
@@ -108,6 +111,8 @@ Drawings were more commonly made to explain object shape and dimensions, and poi
 Local (Glass) users seemed to be engaged with the remote (Tablet) user by 1) following the orientation cues and being aware of their orientation comparing to the remote user's orientation, 2) being able to annotate (draw and point) on the image to improve their communication. The benefit of sharing panorama is to see the surrounding environment of the remote user, and have mirrored experiences.
 
 This experiment found that adding interaction tools did not increase the Social Presence, compared to the Audio only interface. Users found drawing on the Glass touchpad difficult to use and ranked this as the worst condition for Social Presence, suggesting if a Social Panorama interface is not easy to use it will have a negative impact on Social Presence. 
+
+There have been technological advancements in AR headsets since this work completed. For instance, if HoloLens\footnote{\url{https://en.wikipedia.org/wiki/Microsoft_HoloLens}} was used, there will be an additional level of interaction involving 3D depth data (how far or close the annotations are from the user). Instead, a light AR device (Google Glass) was used without a 3D depth sensor – which meant the user had to be stationary (no moving forward or backward). Having the ability to get closer or further away from the annotation and panoramic seen may increase social presence because of more involvement from the users.
 
 % The results show that effective shared social experiences can be developed with panorama imagery, but more work still needs to be done. 
 
@@ -117,8 +122,6 @@ This section described the concept of Social Panoramas, using wearable computers
 
 Results found a difference in Social Presence between the Audio only condition and those that involved drawing interaction on Glass. Similarly, Audio scored the highest on Glass for usability compared to the Drawing and Dual condition. There was a clear preference from users for pointing tools. However, drawing on the Glass touchpad was perceived as difficult. These results show that effective, shared social experiences can be developed with panorama imagery, but more work still needs to be done.
 Despite adding higher fidelity of annotation (drawing or pointing), in this specific platform (Glass), it did not lead to higher social presence. This indicates that the platform capability can play a factor in social presence in addition to the level of fidelity of the interaction method.
-
-There has been technical advancements in AR headsets since this work completed. For instnace, if HoloLens\footnote{\url{https://en.wikipedia.org/wiki/Microsoft_HoloLens}} was used, there will be additional level of interaction involving 3D depth data (how far or close the annotations are from the user). Instead a light AR device (Google Glass) was used without a 3D depth sensor – which meant the user had to be stationary (no moving forward or back). Having the ability to get closer or further way from the annotation and panoramic seen, may increase social presence because of more involvement from the users.
 
 
 % In the future, there are a number of ways that this research could be extended. First, we could explore ways to overcome the drawing problem on Glass, such as using predefined simple geometric shapes such as circles and rectangles that could be observed being drawn during the experiment. Another possibility for future work is to offer a live-stream of the current field of view of the local user, enabling the Mixed Reality view to show a combination of the captured image and live video. These new interface elements will have to be evaluated in a further series of experiments focusing on usability and Social Presence.
