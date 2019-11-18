@@ -87,7 +87,7 @@ The scenarios of social AR experiences highlighted patterns in terms of how we s
 
 This work categorises the social AR dimensions into three areas: 
 \begin{enumerate}
-    \item People (self and others) - a.k.a. \textit{social contacts},
+    \item People (self and others) - a.k.a. "\textit{social contacts}",
     \item Data (including virtual objects and the surrounding environment), and
     \item Interactions between people and data (including annotation)
 \end{enumerate}
@@ -98,7 +98,7 @@ The Social AR Continuum varies based on the closeness of social connections that
 
 \begin{figure}[ht]
     \centering
-    \includegraphics[width=\linewidth]{images/30-continuum/continuum43-01.eps}
+    \includegraphics[width=.9\linewidth]{images/30-continuum/continuum43-01.eps}
     \caption{Dimensions of the Social AR Continuum.}
     \label{fig:continuum:dimensions}
 \end{figure}
@@ -107,16 +107,19 @@ The definition of the dimensions of the Social AR Continuum has evolved during t
 
 \begin{figure}[ht]
     \centering
-    \includegraphics[width=\linewidth]{images/30-continuum/original-dimensions-diagram.eps}
+    \includegraphics[width=.9\linewidth]{images/30-continuum/original-dimensions-diagram.eps}
     \caption{Earlier version of the dimensions of the Social AR Continuum.}
     \label{fig:continuum:old-dimensions}
 \end{figure}
 
-\subsection{Social Contact Representation}
+\pagebreak
+\subsection{Contact Representation}
 
-In the social context, people are being referred to as \textit{social contacts} indicating that the user can get in touch with them for the purpose of sharing social experiences such as sharing a photo, sending a message, etc. Therefore the word \textit{contact} here is used to refer to a social friend. 
+In the social context, people are being referred to as \textit{social contacts} indicating that the user can get in touch with them to share social experiences such as sharing a photo, sending a message, etc. Therefore the word \textit{contact} here is used to refer to the people in the Viewer's social network. 
 
 Representation of social contacts (Figure \ref{fig:continuum:contact-representations}) can vary on the Social AR Continuum based on the relationship that the user has with the contact, with closer relationships having a higher fidelity representation. For example, \textit{Intimate} contacts could be represented as full 3D animated avatars, \textit{Friends} could be represented as 2D static images, \textit{Acquaintances} could be represented as 2D busts and \textit{Strangers} could be shown as mere emojis. Each contact could choose their representation for each category.
+
+When representing social contacts, a 3D avatar is not always better than a 2D image. In some scenarios (e.g., representing active state online/offline), a lower-fidelity abstract representation may be a better option of representing social contact. 
 
 \begin{figure}[ht]
     \centering
@@ -128,7 +131,7 @@ Representation of social contacts (Figure \ref{fig:continuum:contact-representat
 % \textbf{Contact Filter}
 % Filtering social contacts to distinguish users from each other could be done using proximity or visual fidelity based on their relationship to the user. Proximity filters contacts by placing them closer or further away. Visual fidelity filters contacts by adding more level of detail to the contact for closer relationships and less detail for further away contacts. 
 
-\subsection{Social Contact Placement}
+\subsection{Contact Placement}
 
 Placing social contacts (Figure \ref{fig:continuum:contact-placement}) can be done by displaying \textit{Intimates} as life-sized avatars on the ground around the user, and others as miniatures on a nearby surface. 
 
@@ -144,10 +147,12 @@ Placing social contacts (Figure \ref{fig:continuum:contact-placement}) can be do
 
 
 % The transparency of social contacts can be used based on social proximity. Closer social contacts appear more opaque while further away ones appear more transparent.
-
+\pagebreak
 \subsection{Data Type}
 
 The type of data (Figure \ref{fig:continuum:data-type}) shared between social contacts in AR could be categorised as 1D (e.g., text or audio), 2D (e.g., images, panorama or video), or 3D (e.g., 3D model or scanned-room environment). Based on the relationship between the user and their social contacts, the type of data available could be filtered. For instance, 3D data could be shared with \textit{Intimate} relationships, while \textit{Acquaintances} could see only 2D data.  
+
+Using 3D to represent social data is not always a better option than using a 360-degree video. The Viewer may prefer a non-depth enabled 360-degree video to explore the shared experience. Therefore, options of representing social data (e.g., 3D, 360-degree video and 2D image) are highly contextual.
 
 \begin{figure}[ht]
     \centering
@@ -229,14 +234,17 @@ This dimension can be used with social contacts, and if the contact is a close f
 
 % Gun: add a bit more details on how controlling each dimension based on social proximity would benefit
 
+% \pagebreak
+
 \section{Summary}
 
-This work introduced the concept of the Social AR Continuum and identified several dimensions where a social AR application could be implemented.
+This work introduced the concept of the Social AR Continuum and identified several dimensions where a social AR application could be implemented. 
 
-3D avatar not always better than 2D. 360 video not always better than 2D image. If different content or more focused content can be useful in lower fidelity, but if the same data/content is represented in 3D it will contain more details about the content than if it was only 2D. However, there is a downside of more content that can be overwhelming to the viewer. 
+The dimensions in this chapter were selected based on the observation of participants during informal user groups and extrapolations based on previous literature review. These dimensions are not necessarily the final version. Future implementation and adoption of social concepts are usually driven by users, which may lead to the discovery of additional dimensions or configurations on the Social AR Continuum. 
 
-In the future, there will be additional dimensions on the AR continuum that can be added as guidelines. Social systems are driven by lots of users using them. This thesis focused on exploration of what a social system in AR would look like. After implementing such system and wide adoption, there will be other dimensions discovered. However, the general guidelines of representing people, data and interactions may not change completely. For instance, the hashtag concept was introduced by users of social networks, then later was adopted by social networks systems. 
+% Each dimension represent set of options that can be used to describe sharing social experiences on AR. Some options represent different levels of detail, while others represent different variations or configurations. 
 
-The next chapters explores three categories on the Social AR Continuum through system prototypes and user studies.
+In the next chapters, this thesis explores three categories on the Social AR Continuum through system prototypes and user studies.
+
 
 % Gun: close this chapter by giving an overview of the next few chapters.
